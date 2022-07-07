@@ -1,200 +1,183 @@
-{
-  "HTML":{
-    "quizTitle": "React Quiz Component Demo",
-    "quizSynopsis": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
-    "nrOfQuestions": "4",
-    "questions": [
+{ 
+  "reactData":{
+  "questions":[
       {
-        "question": "How can you access the state of a component from inside of a member function?",
-        "questionType": "text",
-        "questionPic": "https://dummyimage.com/600x400/000/fff&text=X", 
-        "answerSelectionType": "single",
-        "answers": [
-          "this.getState()",
-          "this.prototype.stateValue",
-          "this.state",
-          "this.values"
-        ],
-        "correctAnswer": "3",
-        "messageForCorrectAnswer": "Correct answer. Good job.",
-        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "point": "20"
+          "que":"ReactJS is developed by _____?",
+          "answer":[
+                  "Google Engineers",
+                  "Facebook Engineers"
+                ],
+        "correctAnswer":"Facebook Engineers"
+          
       },
       {
-        "question": "ReactJS is developed by _____?",
-        "questionType": "text",
-        "answerSelectionType": "single",
-        "answers": [
-          "Google Engineers",
-          "Facebook Engineers"
-        ],
-        "correctAnswer": "2",
-        "messageForCorrectAnswer": "Correct answer. Good job.",
-        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "point": "20"
+          "que":"ReactJS is an MVC based framework?",
+          "answer":[
+              "True",
+              "False"
+                ],
+        "correctAnswer":"False"
       },
       {
-        "question": "ReactJS is an MVC based framework?",
-        "questionType": "text",
-        "answerSelectionType": "single",
-        "answers": [
-          "True",
-          "False"
-        ],
-        "correctAnswer": "2",
-        "messageForCorrectAnswer": "Correct answer. Good job.",
-        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "point": "10"
-      },
-      {
-        "question": "Which of the following concepts is/are key to ReactJS?",
-        "questionType": "text",
-        "answerSelectionType": "single",
-        "answers": [
-          "Component-oriented design",
-          "Event delegation model",
-          "Both of the above"
-        ],
-        "correctAnswer": "3",
-        "messageForCorrectAnswer": "Correct answer. Good job.",
-        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "point": "30"
-      },
-      {
-        "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-        "questionType": "photo",
-        "answerSelectionType": "single",
-        "answers": [
-          "https://dummyimage.com/600x400/000/fff&text=A",
-          "https://dummyimage.com/600x400/000/fff&text=B",
-          "https://dummyimage.com/600x400/000/fff&text=C",
-          "https://dummyimage.com/600x400/000/fff&text=D"
-        ],
-        "correctAnswer": "1",
-        "messageForCorrectAnswer": "Correct answer. Good job.",
-        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "point": "20"
-      },
-      {
-        "question": "What are the advantages of React JS?",
-        "questionType": "text",
-        "answerSelectionType": "multiple",
-        "answers": [
-          "React can be used on client and as well as server side too",
-          "Using React increases readability and makes maintainability easier. Component, Data patterns improves readability and thus makes it easier for manitaining larger apps",
-          "React components have lifecycle events that fall into State/Property Updates",
-          "React can be used with any other framework (Backbone.js, Angular.js) as it is only a view layer"
-        ],
-        "correctAnswer": [1, 2, 4],
-        "messageForCorrectAnswer": "Correct answer. Good job.",
-        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "point": "20"
-      }
-    ]
+        "que":"Which of the following are the advantages of React.js?",
+        "answer":[
+                "React.js can increase the application's performance with Virtual DOM.",
+                "React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.",
+                "React.js can render both on client and server side.",
+                "All of the above"
+              ],
+      "correctAnswer":"All of the above"
+        
+    },
+    {
+        "que":"What of the following is used in React.js to increase performance?",
+        "answer":[
+            "Original DOM",
+            "Virtual DOM",
+           " Both A and B",
+            "None of the above."
+              ],
+      "correctAnswer":"Virtual DOM"
+    },
+    {
+      "que":"Which of the following acts as the input of a class-based component?",
+      "answer":[
+              "Class",
+              "Factory",
+             "Render",
+              "Props"
+            ],
+    "correctAnswer":"Props"
+      
   },
-  "CSS":{
-    "quizTitle": "React Quiz Component Demo",
-    "quizSynopsis": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
-    "nrOfQuestions": "4",
-    "questions": [
-      {
-        "question": "How can you access the state of a component from inside of a member function?",
-        "questionType": "text",
-        "questionPic": "https://dummyimage.com/600x400/000/fff&text=X", 
-        "answerSelectionType": "single",
-        "answers": [
-          "this.getState()",
-          "this.prototype.stateValue",
-          "this.state",
-          "this.values"
+  {
+      "que":"What is the default port where webpack-server runs?",
+      "answer":[
+        "3000",
+        "8080",
+        "3030",
+        "6060"
+            ],
+    "correctAnswer":"8080"
+  },
+   {
+    "que":"How many numbers of elements a valid react component can return?",
+    "answer":[
+      "1",
+      "2",
+      "4",
+      "5"
+          ],
+  "correctAnswer":"1"
+    
+},
+{
+    "que":"What is the declarative way to render a dynamic list of components based on values in an array?",
+    "answer":[
+      "Using the reduce array method",
+      "Using the <Each /> component",
+      "Using the Array.map() method",
+      "With a for/while loop"
+          ],
+  "correctAnswer":"Using the Array.map() method"
+},
+{
+  "que":" What is a state in React?",
+  "answer":[
+          "A permanent storage.",
+          "Internal storage of the component.",
+          "External storage of the component.",
+          " None of the above."
         ],
-        "correctAnswer": "3",
-        "messageForCorrectAnswer": "Correct answer. Good job.",
-        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "point": "20"
-      },
-      {
-        "question": "ReactJS is developed by _____?",
-        "questionType": "text",
-        "answerSelectionType": "single",
-        "answers": [
-          "Google Engineers",
-          "Facebook Engineers"
+"correctAnswer":"Internal storage of the component."
+  
+},
+{
+  "que":"What are the two ways to handle data in React?",
+  "answer":[
+      "State & Props",
+      "Services & Components",
+     "State & Services",
+      "State & Component"
         ],
-        "correctAnswer": "2",
-        "messageForCorrectAnswer": "Correct answer. Good job.",
-        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "point": "20"
-      },
-      {
-        "question": "ReactJS is an MVC based framework?",
-        "questionType": "text",
-        "answerSelectionType": "single",
-        "answers": [
-          "True",
-          "False"
+"correctAnswer":"State & Props"
+},
+{
+"que":"Which of the following option is correct in the case of the Babel?",
+"answer":[
+        "Babel is a Compiler.",
+        "Babel is a Transpilar.",
+        "None of the above.",
+        "Both A and B are correct."
+      ],
+"correctAnswer":"Both A and B are correct."
+
+},
+{
+"que":"What will happen if you render an input element with disabled = {false}?",
+"answer":[
+  "It will be rendered as disabled",
+  "It will not be rendered at all",
+  "It will be rendered as enabled",
+  "You cannot set it false."
+      ],
+"correctAnswer":"It will be rendered as enabled"
+},
+{
+  "que":" React.js is a free and open-source front-end....?",
+  "answer":[
+      "JavaScript library",
+      "Bootstrap library",
+      "CSS library",
+      "None of the Above"
         ],
-        "correctAnswer": "2",
-        "messageForCorrectAnswer": "Correct answer. Good job.",
-        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "point": "10"
-      },
-      {
-        "question": "Which of the following concepts is/are key to ReactJS?",
-        "questionType": "text",
-        "answerSelectionType": "single",
-        "answers": [
-          "Component-oriented design",
-          "Event delegation model",
-          "Both of the above"
-        ],
-        "correctAnswer": "3",
-        "messageForCorrectAnswer": "Correct answer. Good job.",
-        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "point": "30"
-      },
-      {
-        "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-        "questionType": "photo",
-        "answerSelectionType": "single",
-        "answers": [
-          "https://dummyimage.com/600x400/000/fff&text=A",
-          "https://dummyimage.com/600x400/000/fff&text=B",
-          "https://dummyimage.com/600x400/000/fff&text=C",
-          "https://dummyimage.com/600x400/000/fff&text=D"
-        ],
-        "correctAnswer": "1",
-        "messageForCorrectAnswer": "Correct answer. Good job.",
-        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "point": "20"
-      },
-      {
-        "question": "What are the advantages of React JS?",
-        "questionType": "text",
-        "answerSelectionType": "multiple",
-        "answers": [
-          "React can be used on client and as well as server side too",
-          "Using React increases readability and makes maintainability easier. Component, Data patterns improves readability and thus makes it easier for manitaining larger apps",
-          "React components have lifecycle events that fall into State/Property Updates",
-          "React can be used with any other framework (Backbone.js, Angular.js) as it is only a view layer"
-        ],
-        "correctAnswer": [1, 2, 4],
-        "messageForCorrectAnswer": "Correct answer. Good job.",
-        "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-        "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "point": "20"
-      }
-    ]
-  }
+"correctAnswer":"JavaScript library"
+},
+{
+"que":"Which of the following acts as the input of a class-based component?",
+"answer":[
+        "Class",
+        "Factory",
+       "Render",
+        "Props"
+      ],
+"correctAnswer":"Props"
+
+},
+{
+"que":"Which of the following is the correct data flow sequence of flux concept?",
+"answer":[
+  " Dispatcher->Action->Store->View",
+  "Action->Dispatcher->View->Store",
+  "Action->Dispatcher->Store->View",
+  "Action->Store->Dispatcher->View"
+      ],
+"correctAnswer":"Action->Dispatcher->Store->View"
+},
+{
+"que":" React was originally created by...?",
+"answer":[
+"Jordan Walke",
+"Rasmus Lerdorf",
+"Miško Hevery",
+"None of the above"
+    ],
+"correctAnswer":"Jordan Walke"
+
+},
+{
+"que":" What is the smallest building block of ReactJS?",
+"answer":[
+"props",
+"elements",
+"components",
+"None of the Above"
+    ],
+"correctAnswer":"components"
+}
+
+  ]
+}
+
+
 }

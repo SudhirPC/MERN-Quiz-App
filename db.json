@@ -177,6 +177,211 @@
 }
 
   ]
+},
+"reduxData":{
+  "questions":[
+      {
+          "que":"Redux solves this problem by managing application’s state with a single global object called ?",
+          "answer":[
+                  "directory",
+                  "file",
+                  "store",
+                  "None of the above"
+                ],
+        "correctAnswer":"store"
+          
+      },
+      {
+          "que":"What is true about redux?",
+          "answer":[
+            "Redux is a predictable state container for JavaScript apps.",
+            "Redux fundamental principles help in maintaining consistency throughout your application",
+            "Redux makes debugging and testing easier",
+            "All of the above"
+                ],
+        "correctAnswer":"All of the above"
+      },
+      {
+        "que":"Actions and states are held together by a function called?",
+        "answer":[
+                "Reducer",
+                "Redux",
+                "suscribe",
+                "view"
+              ],
+      "correctAnswer":"Reducer"
+        
+    },
+    {
+        "que":"The ____________ can retrieve updated state and re-render again.",
+        "answer":[
+            "state",
+            "store",
+           "view",
+            "action"
+              ],
+      "correctAnswer":"view"
+    },
+    {
+      "que":" A store is an ___________ object tree in Redux. ",
+      "answer":[
+              "immutable",
+              "mutable",
+             "Both A and B",
+              "None of the above"
+            ],
+    "correctAnswer":"immutable"
+      
+  },
+  {
+      "que":"A createStore function can have _________ arguments.",
+      "answer":[
+        "1",
+        "2",
+        "3",
+        "4"
+            ],
+    "correctAnswer":"3"
+  },
+   {
+    "que":"Which of the following is react-Redux helper method?",
+    "answer":[
+      "help()",
+      "assist()",
+      "view()",
+      "connect()"
+          ],
+  "correctAnswer":"connect()"
+    
+},
+{
+    "que":"Which of them provide us debugging platform for Redux apps?",
+    "answer":[
+      "Redux-Testing",
+      "Redux-Middleware",
+      "Redux-Devtools",
+      "Redux-suscriber"
+          ],
+  "correctAnswer":"Redux-Devtools"
+},
+{
+  "que":"Which of the following makes stores available?",
+  "answer":[
+          "COMPONENT",
+          "CONTAINER",
+          "ACTIONS",
+          "PROVIDER"
+        ],
+"correctAnswer":"PROVIDER"
+  
+},
+
+{
+  "que":"Predictability of Redux is determined by __________ most important principles.",
+  "answer":[
+      "Two",
+      "Three",
+     "Four",
+      "Five"
+        ],
+"correctAnswer":"Three"
+},
+{
+"que":"___________ is a plain object that describes the intention to cause change with a type property.",
+"answer":[
+        "class",
+        "plain",
+        "action",
+        "object"
+      ],
+"correctAnswer":"action"
+
+},
+{
+"que":"Redux follows the ____________ data flow.",
+"answer":[
+  "unidirectional",
+  "bidirectional",
+  "Both A and B",
+  "None of the above"
+      ],
+"correctAnswer":"unidirectional"
+},
+{
+  "que":"The _______ notifies the view by executing their callback functions",
+  "answer":[
+      "state",
+      "store",
+      "reducer",
+      "action"
+        ],
+"correctAnswer":"store"
+},
+{
+"que":"Redux can have _________ store in your application",
+"answer":[
+        "single",
+        "double",
+       "multi",
+        "None of the above"
+      ],
+"correctAnswer":"single"
+
+},
+{
+"que":"Which method helps you retrieve the current state of your Redux store?",
+"answer":[
+  "dispatch",
+  "subscribe",
+  "action",
+  "getState"
+      ],
+"correctAnswer":"getState"
+},
+{
+"que":"Which of the following rules are correct for Pure Functions?",
+"answer":[
+"A function returns the same result for same arguments.",
+"Its evaluation has no side effects, i.e., it does not alter input data.",
+"No mutation of local & global variables",
+"All of the above"
+    ],
+"correctAnswer":"All of the above"
+
+},
+{
+"que":"Pure functions are unpredictable",
+"answer":[
+"TRUE",
+"FALSE",
+"Can be true or false",
+"Can not say"
+    ],
+"correctAnswer":"FALSE"
+},
+{
+"que":"Both props and state are plain JavaScript objects.",
+"answer":[
+"TRUE",
+"FALSE",
+"Can be true or false",
+"Can not say"
+    ],
+"correctAnswer":"TRUE"
+
+},
+{
+"que":"Which method allows you to dispatch an action to change a state in your application?",
+"answer":[
+"getState",
+"setState",
+"dispatch",
+"subscribe"
+    ],
+"correctAnswer":"dispatch"
+}
+
+  ]
 }
 
 

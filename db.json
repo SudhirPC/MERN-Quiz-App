@@ -382,6 +382,169 @@
 }
 
   ]
+},
+"javaScriptData":{
+  "questions":[
+      {
+        
+        "que":"What is JavaScript?",
+        "answer":[
+          "JavaScript is a scripting language used to make the website interactive",
+          "JavaScript is an assembly language used to make the website interactive",
+          "JavaScript is a compiled language used to make the website interactive",
+          "None of the above"
+              ],
+      "correctAnswer":"JavaScript is a scripting language used to make the website interactive"
+      },
+      {
+        "que":"Javascript is an _______ language?",
+        "answer":[
+                "Object-Oriented",
+                "Object-Based",
+                "Procedural",
+                "None of the above"
+              ],
+      "correctAnswer":"Object-Oriented"
+        
+      },
+      {
+        "que":"Among the given statements, which statement defines closures in JavaScript?",
+        "answer":[
+                " JavaScript is a function that is enclosed with references to its inner function scoper",
+                "JavaScript is a function that is enclosed with references to its lexical environment",
+                "JavaScript is a function that is enclosed with the object to its inner function scope",
+                "None of the mentioned"
+              ],
+      "correctAnswer":"JavaScript is a function that is enclosed with references to its lexical environment"
+        
+    },
+    {
+        "que":"Arrays in JavaScript are defined by which of the following statements?",
+        "answer":[
+            "It is an ordered list of values",
+            "It is an ordered list of objects",
+           "It is an ordered list of string",
+            "It is an ordered list of functions"
+              ],
+      "correctAnswer":"It is an ordered list of values"
+    },
+    {
+      "que":"Which of the following is not javascript data types?",
+      "answer":[
+              "Null type",
+              "Undefined type",
+             "Number type",
+              "All of the mentioned"
+            ],
+    "correctAnswer":"All of the mentioned"
+      
+  },
+  {
+      "que":"Which of the following can be used to call a JavaScript Code Snippet?",
+      "answer":[
+        "Function/Method",
+        "Preprocessor",
+        "Triggering Event",
+        "RMI"
+            ],
+    "correctAnswer":"Function/Method"
+  },
+   {
+    "que":"What is the basic difference between JavaScript and Java?",
+    "answer":[
+      "Functions are considered as fields",
+      "Functions are values, and there is no hard distinction between methods and fields",
+      "Variables are specific",
+      "There is no difference"
+          ],
+  "correctAnswer":"Functions are values, and there is no hard distinction between methods and fields"
+    
+},
+{
+    "que":"Why JavaScript Engine is needed?",
+    "answer":[
+      "Both Compiling & Interpreting the JavaScript",
+      "Parsing the javascript",
+      "Interpreting the JavaScript",
+      "Compiling the JavaScript"
+          ],
+  "correctAnswer":"Interpreting the JavaScript"
+},
+{
+  "que":"Which of the following methods/operation does javascript use instead of == and !=?",
+  "answer":[
+          "JavaScript uses equalto()",
+          "JavaScript uses equals() and notequals() instead",
+          "JavaScript uses bitwise checking",
+          "JavaScript uses === and !== instead"
+        ],
+"correctAnswer":"JavaScript uses === and !== instead"
+  
+},
+
+{
+  "que":"Which of the following is not a framework?",
+  "answer":[
+      "JavaScript .NET",
+      "JavaScript",
+     "Cocoa JS",
+      "jQuery"
+        ],
+"correctAnswer":"JavaScript"
+},
+{
+"que":"Why event handlers is needed in JS?",
+"answer":[
+        "Allows JavaScript code to alter the behaviour of windows",
+        "Adds innerHTML page to the code",
+        "Change the server location",
+        "Performs handling of exceptions and occurrences"
+      ],
+"correctAnswer":"Allows JavaScript code to alter the behaviour of windows"
+
+},
+{
+"que":"Which of the following is the property that is triggered in response to JS errors?",
+"answer":[
+  "onclick",
+  "onerror",
+  "onmessage",
+  "onexception"
+      ],
+"correctAnswer":"onerror"
+},
+{
+  "que":"Which of the following is not an error in JavaScript?",
+  "answer":[
+      "Missing of Bracket",
+      "Division by zero",
+      "Syntax error",
+      "Missing of semicolons"
+        ],
+"correctAnswer":"Division by zero"
+},
+{
+"que":"Which of the following function of String object returns a number indicating the Unicode value of the character at the given index?",
+"answer":[
+        "charAt()",
+        "charCodeAt()",
+       "concat()",
+        "indexOf()"
+      ],
+"correctAnswer":"charCodeAt()"
+
+},
+{
+"que":"Which of the following function of Array object joins all elements of an array into a string?",
+"answer":[
+  "concat()", 
+  "join()",
+  "pop()",
+  "map()"
+      ],
+"correctAnswer":"join()"
+}
+  ]
 }
 
 

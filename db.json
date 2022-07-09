@@ -739,5 +739,199 @@
 "correctAnswer":"text-decoration-line"
 }
   ]
+},
+"htmlData":{
+  "questions":[
+      {
+        
+        "que":"HTML stands for -",
+        "answer":[
+          "HighText Machine Language",
+          "HyperText and links Markup Language",
+          "HyperText Markup Language",
+          "None of these"
+              ],
+      "correctAnswer":"HyperText Markup Language"
+      },
+      {
+        "que":"The correct sequence of HTML tags for starting a webpage is -",
+        "answer":[
+                "Head, Title, HTML, body",
+                "HTML, Body, Title, Head",
+                "HTML, Head, Title, Body",
+                " Head,HTML, Title, Body"
+              ],
+      "correctAnswer":"HTML, Head, Title, Body"
+        
+      },
+      {
+        "que":"Which of the following element is responsible for making the text bold in HTML?",
+        "answer":[
+               "<pre>",
+               "<a>",
+               "<b>",
+                "<br>"
+              ],
+      "correctAnswer":"<b>"
+        
+    },
+    {
+        "que":"Which of the following tag is used for inserting the largest heading in HTML?",
+        "answer":[
+            "<h3>",
+            "<h4>",
+           "<h1>",
+            "<h6>"
+              ],
+      "correctAnswer":"<h1>"
+    },
+    {
+      "que":"How to create an unordered list (a list with the list items in bullets) in HTML?",
+      "answer":[
+              "<ul>",
+              "<ol>",
+             "<li>",
+              "<i>"
+            ],
+    "correctAnswer":"<ul>"
+      
+  },
+  {
+      "que":"<input> is -",
+      "answer":[
+        "a format tag.",
+        "an empty tag.",
+        "All of the above",
+        "None of the above"
+            ],
+    "correctAnswer":"an empty tag."
+  },
+   {
+    "que":"Which of the following tag is used to make the underlined text?",
+    "answer":[
+      "<i>",
+      "<ul>",
+      "<u>",
+      "<pre>"
+          ],
+  "correctAnswer":"<u>"
+    
+},
+{
+    "que":"Which of the following tag is used to define options in a drop-down selection list?",
+    "answer":[
+      "<select>",
+      "<list>",
+      "<dropdown>",
+      "<option>"
+          ],
+  "correctAnswer":"<option>"
+},
+{
+  "que":"Which of the following attribute is used to provide a unique name to an element?",
+  "answer":[
+          "class",
+          "id",
+          "type",
+          "None of the above"
+        ],
+"correctAnswer":"id"
+  
+},
+
+{
+  "que":"Which of the following HTML tag is the special formatting tag?",
+  "answer":[
+      "<p>",
+      "<b>",
+     "<pre>",
+      "None of the above"
+        ],
+"correctAnswer":"<pre>"
+},
+{
+"que":"Which of the following is the container for <tr>, <th>, and <td> ?",
+"answer":[
+        "<data>",
+        "<table>",
+        "<group>",
+        "All of the above"
+      ],
+"correctAnswer":"<table>"
+
+},
+{
+"que":"What are the types of unordered or bulleted list in HTML?",
+"answer":[
+  "disc, square, triangle",
+  "polygon, triangle, circle",
+  "disc, circle, square",
+  "All of the above"
+      ],
+"correctAnswer":"disc, circle, square"
+},
+{
+  "que":"Which of the following HTML attribute is used to define inline styles?",
+  "answer":[
+      "style",
+      "type",
+      "class",
+      "None of the above"
+        ],
+"correctAnswer":"style"
+},
+{
+"que":"Which of the following CSS property defines the different properties of all four sides of an element’s border in a single declaration?",
+"answer":[
+        "border-collapse",
+        "border-width",
+       "padding",
+        "border"
+      ],
+"correctAnswer":"border-width"
+
+},
+{
+"que":"Which of the following is the correct way to apply CSS Styles?",
+"answer":[
+  "in an external CSS file", 
+  "in an external CSS file",
+  "inside the <head> section of an HTML page",
+  "all of the mentioned"
+      ],
+"correctAnswer":"all of the mentioned"
+},
+{
+  "que":"Which of the following CSS property sets the font size of text?",
+  "answer":[
+      "font-size",
+      "text-size",
+      "text",
+      "size"
+        ],
+"correctAnswer":"font-size"
+},
+{
+"que":"Which of the following is not the property of the CSS box model?",
+"answer":[
+        "margin",
+        "color",
+       "width",
+        "height"
+      ],
+"correctAnswer":"color"
+
+},
+{
+"que":"Which of the following CSS property sets what kind of line decorations are added to an element, such as underlines, overlines, etc?",
+"answer":[
+  "text-decoration", 
+  "text-style",
+  "text-decoration-line",
+  "text-line"
+      ],
+"correctAnswer":"text-decoration-line"
+}
+  ]
 }
 }

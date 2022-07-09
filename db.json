@@ -881,56 +881,56 @@
 "correctAnswer":"style"
 },
 {
-"que":"Which of the following CSS property defines the different properties of all four sides of an element’s border in a single declaration?",
+"que":" In HTML, the tags are __________.",
 "answer":[
-        "border-collapse",
-        "border-width",
-       "padding",
-        "border"
+        "in upper case",
+        "case-sensitive",
+       "in lowercase",
+        "not case sensitive"
       ],
-"correctAnswer":"border-width"
+"correctAnswer":"not case sensitive"
 
 },
 {
-"que":"Which of the following is the correct way to apply CSS Styles?",
+"que":"Which of the following tag is used to add rows in the table?",
 "answer":[
-  "in an external CSS file", 
-  "in an external CSS file",
-  "inside the <head> section of an HTML page",
-  "all of the mentioned"
+  "<td> and </td>", 
+  "<th> and </th>",
+  "<tr> and </tr>",
+  "None of the above"
       ],
-"correctAnswer":"all of the mentioned"
+"correctAnswer":"<tr> and </tr>"
 },
 {
-  "que":"Which of the following CSS property sets the font size of text?",
+  "que":"What attribute do we use for data binding?",
   "answer":[
-      "font-size",
-      "text-size",
-      "text",
-      "size"
+      "datasrc",
+      "mayscript",
+      "name",
+      "datafld"
         ],
-"correctAnswer":"font-size"
+"correctAnswer":"datasrc"
 },
 {
-"que":"Which of the following is not the property of the CSS box model?",
+"que":" The <hr> tag in HTML is used for -",
 "answer":[
-        "margin",
-        "color",
-       "width",
-        "height"
+        "new line",
+        "vertical ruler",
+       "new paragraph",
+        "horizontal ruler"
       ],
-"correctAnswer":"color"
+"correctAnswer":"horizontal ruler"
 
 },
 {
-"que":"Which of the following CSS property sets what kind of line decorations are added to an element, such as underlines, overlines, etc?",
+"que":"A program in HTML can be rendered and read by -",
 "answer":[
-  "text-decoration", 
-  "text-style",
-  "text-decoration-line",
-  "text-line"
+  "Web browser", 
+  "Server",
+  "Interpreter",
+  "None of the above"
       ],
-"correctAnswer":"text-decoration-line"
+"correctAnswer":"Web browser"
 }
   ]
 }

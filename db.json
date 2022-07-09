@@ -545,7 +545,199 @@
 "correctAnswer":"join()"
 }
   ]
+},
+"cssData":{
+  "questions":[
+      {
+        
+        "que":"What is CSS",
+        "answer":[
+          "CSS is a style sheet language",
+          "CSS is designed to separate the presentation and content, including layout, colors, and fonts",
+          "CSS is the language used to style the HTML documents",
+          "All of the mentioned"
+              ],
+      "correctAnswer":"All of the mentioned"
+      },
+      {
+        "que":"Which of the following tag is used to embed css in html page?",
+        "answer":[
+                "<css>",
+                "<!DOCTYPE html>",
+                "<style>",
+                "<script>"
+              ],
+      "correctAnswer":"<style>"
+        
+      },
+      {
+        "que":" Which of the following CSS selectors are used to specify a group of elements?",
+        "answer":[
+               "both class and tag",
+               "id",
+               "class",
+                "tag"
+              ],
+      "correctAnswer":"class"
+        
+    },
+    {
+        "que":"Which of the following has introduced text, list, box, margin, border, color, and background properties?",
+        "answer":[
+            "HTML",
+            "PHP",
+           "CSS",
+            "Ajax"
+              ],
+      "correctAnswer":"CSS"
+    },
+    {
+      "que":"Which of the following CSS framework is used to create a responsive design?",
+      "answer":[
+              "django",
+              "rails",
+             "larawell",
+              "bootstrap"
+            ],
+    "correctAnswer":"bootstrap"
+      
+  },
+  {
+      "que":"Which of the following CSS selector is used to specify a rule to bind a particular unique element?",
+      "answer":[
+        "tag",
+        "id",
+        "class",
+        "both class and tag"
+            ],
+    "correctAnswer":"id"
+  },
+   {
+    "que":"Which of the following CSS property is used to make the text bold?",
+    "answer":[
+      "text-decoration: bold",
+      "font-weight: bold",
+      "font-style: bold",
+      "text-align: bold"
+          ],
+  "correctAnswer":"font-weight: bold"
+    
+},
+{
+    "que":"Which of the following CSS style property is used to specify an italic text?",
+    "answer":[
+      "style",
+      "font",
+      "font-style",
+      "@font-face"
+          ],
+  "correctAnswer":"font-style"
+},
+{
+  "que":"Which of the following are the CSS Extension Prefixes for Webkit?",
+  "answer":[
+          "-chrome",
+          "-web",
+          "-o-",
+          "-webkit"
+        ],
+"correctAnswer":"-webkit"
+  
+},
+
+{
+  "que":"Which of the following is the correct syntax to link an external style sheet in the HTML file?",
+  "answer":[
+      "<link rel=”stylesheet” href=”style.css” />",
+      "<link rel=”stylesheet” src=”style.css” />",
+     "<style rel=”stylesheet” src=”style.css” />",
+      "<style rel=”stylesheet” link=”style.css” />"
+        ],
+"correctAnswer":"<link rel=”stylesheet” href=”style.css” />"
+},
+{
+"que":"Which of the following is the first CSS specification to become an official W3C Recommendation?",
+"answer":[
+        "CSS level 2",
+        "(X)HTML CSS",
+        "CSS level 1",
+        "CSS level 2.1"
+      ],
+"correctAnswer":"CSS level 1"
+
+},
+{
+"que":"Which of the following function defines a linear gradient as a CSS image?",
+"answer":[
+  "gradient()",
+  "linear-gradient()",
+  "grayscale()",
+  "image()"
+      ],
+"correctAnswer":"linear-gradient()"
+},
+{
+  "que":"Which of the following CSS property can be used to set the image as a border instead of the border style?",
+  "answer":[
+      "background-image-source",
+      "background-image",
+      "border-image-source",
+      "border-image"
+        ],
+"correctAnswer":"border-image-source"
+},
+{
+"que":"Which of the following CSS property defines the different properties of all four sides of an element’s border in a single declaration?",
+"answer":[
+        "border-collapse",
+        "border-width",
+       "padding",
+        "border"
+      ],
+"correctAnswer":"border-width"
+
+},
+{
+"que":"Which of the following is the correct way to apply CSS Styles?",
+"answer":[
+  "in an external CSS file", 
+  "in an external CSS file",
+  "inside the <head> section of an HTML page",
+  "all of the mentioned"
+      ],
+"correctAnswer":"all of the mentioned"
+},
+{
+  "que":"Which of the following CSS property sets the font size of text?",
+  "answer":[
+      "font-size",
+      "text-size",
+      "text",
+      "size"
+        ],
+"correctAnswer":"font-size"
+},
+{
+"que":"Which of the following is not the property of the CSS box model?",
+"answer":[
+        "margin",
+        "color",
+       "width",
+        "height"
+      ],
+"correctAnswer":"color"
+
+},
+{
+"que":"Which of the following CSS property sets what kind of line decorations are added to an element, such as underlines, overlines, etc?",
+"answer":[
+  "text-decoration", 
+  "text-style",
+  "text-decoration-line",
+  "text-line"
+      ],
+"correctAnswer":"text-decoration-line"
 }
-
-
+  ]
+}
 }

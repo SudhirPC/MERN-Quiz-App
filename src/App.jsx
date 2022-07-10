@@ -4,6 +4,7 @@ import { QuizePage } from './Components/QuizePage.jsx';
 import { Home } from './Components/Home.jsx';
 import { Navbar } from './Components/Navbar.jsx';
 import { TopicQuiz } from './Components/TopicQuiz.jsx';
+import { Footer } from './Components/Footer.jsx';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
      {/* <QuizePage/> */}
      {/* <Home/> */}
      <TopicQuiz/>
+     <Footer/>
     </div>
   );
 }

@@ -3,8 +3,8 @@ import React from "react";
 export const TopicQuiz = () => {
   return (
     <div className="mt-10 mb-10">
-      <h1 className="font-bold text-2xl mb-10 ">Prepare By Topics</h1>
-      <div className="grid grid-cols-2 w-11/12 m-auto gap-8 shadow-2xl">
+      <h1 className="font-bold text-2xl ">Prepare By Topics</h1>
+      <div className="grid grid-cols-2 w-11/12 p-10 m-auto gap-8 shadow-2xl">
         <div className="border-2 cursor-pointer topicdiv text-white font-sans text-4xl font-bold  h-36 justify-items-center rounded-2xl pl-10 flex ">
           <div className="w-3/5 bg-rgb(27,169,76)">
             <h1 className="pt-12">HTML</h1>

@@ -1,3 +1,14 @@
 .App {
   text-align: center;
 }
+/* -----------------topicquize page------------- */
+.topicdiv{
+  background-color:rgb(27,169,76)
+}
+.topicdiv:hover{
+  height:145px;
+  width:101%;
+}
+
+
+/* ----------        ------------- */

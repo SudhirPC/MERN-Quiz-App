@@ -14,7 +14,7 @@ function App() {
      <Navbar/>
      {/* <QuizePage/> */}
      {/* <Home/> */}
-     {/* <TopicQuiz/> */}
+     <TopicQuiz/>
      <NewQuizPage/>
      <Footer/>
     </div>

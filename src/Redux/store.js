@@ -6,9 +6,9 @@ import {
 } from "redux"
 
 import thunk from "redux-thunk"
-import {QuizReducer} from "./Reducer.js";
+import {QuizReducer} from "./reducer.js";
 
-const rootReducer = combineReducers({mernQuize:ProductReducer});
+const rootReducer = combineReducers({mernQuize:QuizReducer});
 
 const composeEnhancers = window.REDUX_DEVTOOLS_EXTENSION_COMPOSE || compose;
 

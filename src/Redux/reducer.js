@@ -1,4 +1,4 @@
-import * as types from './ActionType.js'
+import * as types from './actiontype.js'
 
 const init = {
  loading: false,
@@ -29,7 +29,7 @@ export const QuizReducer = (state = init, action) => {
         loading: false,
         quiz: payload,
       }
-    case types.FETCH_QUIZDATA_FAILURE:
+    case types.FETCH_QUIZ_FAILURE:
       return {
         ...state,
         error: payload,

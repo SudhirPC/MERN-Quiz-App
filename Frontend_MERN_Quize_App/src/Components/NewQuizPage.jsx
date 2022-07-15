@@ -3,10 +3,12 @@ import axios from "axios"
 export const NewQuizPage = () => {
   const [data, setData] = useState([]);
   const [count, setCount] = useState(0);
+  // const [show,setShow]=useState(false)
   const handleAnswer=(i,index,e,index1)=>{
     if(e[index]===data[index1].correctAnswer){
         // console.log("right answer")
         setCount(count+1)
+        
     }
     console.log("option click")
     // console.log(index1)
@@ -24,12 +26,13 @@ export const NewQuizPage = () => {
     fetchQuizData()
  },[])
   console.log(data);
+  // {show?<h1>hello world</h1>:null}
   return (
     <div className="">
-        <div> Count:{count}</div>
+        <div className="justify-end flex mr-28 mb-4 mt-4 "> <div className="border-red-900 p-2 pr-4 border-2 w-20">Count:{count}</div></div>
         {data.map((e,index1)=>{
             return(
-               <div className="ml-28 pl-6 w-10/12 mb-8  border-red-900 border-4" key={e.id}>
+              <div className="ml-28 pl-6 w-10/12 mb-8  border-red-900 border-4" key={e.id}>
                 <div className="flex border-2 border-grey-400 pl-1 pt-2 pb-2 mt-2  mr-4">
                 <div className="w-32">
                 <h3>Question {index1 + 1}) </h3>
@@ -42,7 +45,7 @@ export const NewQuizPage = () => {
                 <ol>
                   {e.answer.map((el, index, e) => {
                     return (
-                      <div className="ml-32 mb-6 mt-1" key={el.id}>
+                      <div  className="ml-32 mb-6 mt-1" key={el.id}>
                         <li type="a" className="cursor-pointer hoverOption" onClick={() => handleAnswer(el, index, e, index1)}>
                           {el}
                         </li>

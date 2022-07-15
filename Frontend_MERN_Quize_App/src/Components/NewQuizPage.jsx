@@ -25,21 +25,21 @@ export const NewQuizPage = () => {
  },[])
   console.log(data);
   return (
-    <div className=" justify-center items-center">
+    <div className="">
         <div> Count:{count}</div>
         {data.map((e,index1)=>{
             return(
-               <div key={e.id}>
-                <div className="flex ml-96">
-                <h3>{index1 + 1}) </h3>
+               <div className="ml-24 pl-36 w-4/5 mb-4  border-red-900 border-4" key={e.id}>
+                <div className="flex">
+                <h3>Question {index1 + 1}) </h3>
                 <h1 className="ml-2">{e.que}</h1>
                 </div>
                 <div>
                 <ol>
                   {e.answer.map((el, index, e) => {
                     return (
-                      <div key={el.id}>
-                        <li onClick={() => handleAnswer(el, index, e, index1)}>
+                      <div className="ml-24" key={el.id}>
+                        <li type="a" className="cursor-pointer" onClick={() => handleAnswer(el, index, e, index1)}>
                           {el}
                         </li>
                       </div>

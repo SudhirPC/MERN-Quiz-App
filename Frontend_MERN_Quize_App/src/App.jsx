@@ -12,9 +12,9 @@ function App() {
     <div className="App">
      {/* <h1 className="bg-red-700">Quize App</h1> */}
      <Navbar/>
-     <QuizePage/>
+     {/* <QuizePage/> */}
      {/* <Home/> */}
-     <TopicQuiz/>
+     {/* <TopicQuiz/> */}
      <NewQuizPage/>
      <Footer/>
     </div>

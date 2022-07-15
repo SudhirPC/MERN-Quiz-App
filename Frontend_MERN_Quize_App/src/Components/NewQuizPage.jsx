@@ -29,17 +29,21 @@ export const NewQuizPage = () => {
         <div> Count:{count}</div>
         {data.map((e,index1)=>{
             return(
-               <div className="ml-24 pl-36 w-4/5 mb-4  border-red-900 border-4" key={e.id}>
-                <div className="flex">
+               <div className="ml-28 pl-6 w-10/12 mb-4  border-red-900 border-4" key={e.id}>
+                <div className="flex border-2 border-grey-400 pl-1 pt-2 pb-2 mt-2 w-full mr-2">
+                <div className="w-32">
                 <h3>Question {index1 + 1}) </h3>
-                <h1 className="ml-2">{e.que}</h1>
+                </div>
+                <div className="w-11/12 -ml-8 ">
+                <h1 >{e.que}</h1>
+                </div>
                 </div>
                 <div>
                 <ol>
                   {e.answer.map((el, index, e) => {
                     return (
-                      <div className="ml-24" key={el.id}>
-                        <li type="a" className="cursor-pointer" onClick={() => handleAnswer(el, index, e, index1)}>
+                      <div className="ml-32" key={el.id}>
+                        <li type="a" className="cursor-pointer " onClick={() => handleAnswer(el, index, e, index1)}>
                           {el}
                         </li>
                       </div>

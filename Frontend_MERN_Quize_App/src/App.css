@@ -11,4 +11,7 @@
 }
 
 
-/* ----------        ------------- */
+/* ----------   anwer tag     ------------- */
+.hoverOption:hover{
+ font-weight: bold
+}

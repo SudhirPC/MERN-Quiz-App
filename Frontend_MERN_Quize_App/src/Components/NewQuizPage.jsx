@@ -32,8 +32,8 @@ export const NewQuizPage = () => {
         <div className="justify-end flex mr-28 mb-4 mt-4 "> <div className="border-red-900 p-2 pr-4 border-2 w-20">Count:{count}</div></div>
         {data.map((e,index1)=>{
             return(
-              <div className="ml-28 pl-6 w-10/12 mb-8  border-red-900 border-4" key={e.id}>
-                <div className="flex border-2 border-grey-400 pl-1 pt-2 pb-2 mt-2  mr-4">
+              <div className="ml-28 pl-6 w-10/12 mb-8  border-red-900 border-2" key={e.id}>
+                <div className="flex border border-grey-200 pl-1 pt-2 pb-2 mt-2  mr-4">
                 <div className="w-32">
                 <h3>Question {index1 + 1}) </h3>
                 </div>

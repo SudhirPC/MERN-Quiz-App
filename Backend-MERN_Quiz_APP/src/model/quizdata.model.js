@@ -1,16 +1,19 @@
 const mongoose = require('mongoose')
 const questionArr = new mongoose.Schema({
-    title: { type: String },
-    que: { type: String },
+  title: { type: String },
+  que: { type: String },
     answer: [],
     correctAnswer: { type: String },
   });
 
   const postQuizSchema = new mongoose.Schema({
     title: { type: String },
-    questionArray: [questionArr],
+    questions: [questionArr],
     createdAt: {
       type: Date,
       default: new Date(),
     },
   });
+
+  const Postquiz = new mongoose.model('Postquiz', postQuizSchema)
+  module.exports = Postquiz

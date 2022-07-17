@@ -10,7 +10,8 @@ app.use("/",loginAuth)
 const RegisterAuth=require("./controller/auth.controller.js")
 app.use("/",RegisterAuth)
 
-
+const quizAdd=require("./controller/quizAdd.controller.js")
+app.use("/admin",quizAdd)
 
 app.listen(Port,async function(){
     try {

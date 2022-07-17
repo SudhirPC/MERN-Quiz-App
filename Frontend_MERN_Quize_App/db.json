@@ -938,193 +938,191 @@
   "questions":[
       {
         
-        "que":"HTML stands for -",
+        "que":"What is MongoDB?",
         "answer":[
-          "HighText Machine Language",
-          "HyperText and links Markup Language",
-          "HyperText Markup Language",
-          "None of these"
+          "A file system.",
+          "A SQL database.",
+          "A NoSQL database.",
+          "An Access database."
               ],
-      "correctAnswer":"HyperText Markup Language"
+      "correctAnswer":"A NoSQL database."
       },
       {
-        "que":"The correct sequence of HTML tags for starting a webpage is -",
+        "que":"How to create a database in mongodb?",
         "answer":[
-                "Head, Title, HTML, body",
-                "HTML, Body, Title, Head",
-                "HTML, Head, Title, Body",
-                " Head,HTML, Title, Body"
+                "use databaseName",
+                "new databaseName",
+                "create databaseName",
+                "None of the above"
               ],
-      "correctAnswer":"HTML, Head, Title, Body"
+      "correctAnswer":"use databaseName"
         
       },
       {
-        "que":"Which of the following element is responsible for making the text bold in HTML?",
+        "que":"MongoDB is a _________ database that provides high performance, high availability, and easy scalability.",
         "answer":[
-               "<pre>",
-               "<a>",
-               "<b>",
-                "<br>"
+               "Graph",
+               "Key value",
+               "Document",
+                "All of the mentioned"
               ],
-      "correctAnswer":"<b>"
+      "correctAnswer":"Document"
         
     },
     {
-        "que":"Which of the following tag is used for inserting the largest heading in HTML?",
+        "que":"Which field is always the first field in the document.?",
         "answer":[
-            "<h3>",
-            "<h4>",
-           "<h1>",
-            "<h6>"
+            "_id",
+            "Ob_id",
+           "id",
+            "None of these"
               ],
-      "correctAnswer":"<h1>"
+      "correctAnswer":"_id"
     },
     {
-      "que":"How to create an unordered list (a list with the list items in bullets) in HTML?",
+      "que":"Which of the following is incorrect statement about find and findOne operations in MongoDB?",
       "answer":[
-              "<ul>",
-              "<ol>",
-             "<li>",
-              "<i>"
+              "find() returns all the documents in a collection while findOne() retrieves only the first one.",
+              "find() and findOne() returns cursors to the collection documents",
+             "findOne() returns the actual first document retrieved from a collection",
+              "find.limit(1) is not the same query as findOne()"
             ],
-    "correctAnswer":"<ul>"
+    "correctAnswer":"find() and findOne() returns cursors to the collection documents"
       
   },
   {
-      "que":"<input> is -",
+      "que":"By default, the MongoDB cursor in mongo shell is configured to return how many documents? To get the next set of documents, which command is used?",
       "answer":[
-        "a format tag.",
-        "an empty tag.",
-        "All of the above",
-        "None of the above"
+        "20, it",
+        "200, more",
+        "50, it",
+        "No limit, none"
             ],
-    "correctAnswer":"an empty tag."
+    "correctAnswer":"20, it"
   },
    {
-    "que":"Which of the following tag is used to make the underlined text?",
+    "que":"Which of the following command is used to get all the indexes on a collection?",
     "answer":[
-      "<i>",
-      "<ul>",
-      "<u>",
-      "<pre>"
+      "db.collection.getIndexes()",
+      "db.collection.showIndexes()",
+      "db.collection.findIndexes()",
+      "db.showIndexes()"
           ],
-  "correctAnswer":"<u>"
+  "correctAnswer":"db.collection.getIndexes()"
     
 },
 {
-    "que":"Which of the following tag is used to define options in a drop-down selection list?",
+    "que":"In which year the MongoDB was Initial release?",
     "answer":[
-      "<select>",
-      "<list>",
-      "<dropdown>",
-      "<option>"
+      "2008",
+      "2009",
+      "2011",
+      "2010"
           ],
-  "correctAnswer":"<option>"
+  "correctAnswer":"2009"
 },
 {
-  "que":"Which of the following attribute is used to provide a unique name to an element?",
+  "que":" A collection and a document in MongoDB is equivalent to............. concepts respectively.",
   "answer":[
-          "class",
-          "id",
-          "type",
-          "None of the above"
+          "Table and Column",
+          "Table and Row",
+          "Column and Row",
+          "Database and Table"
         ],
-"correctAnswer":"id"
+"correctAnswer":"Table and Row"
   
 },
 
 {
-  "que":"Which of the following HTML tag is the special formatting tag?",
+  "que":"What is the good alternatives to MongoDB?",
   "answer":[
-      "<p>",
-      "<b>",
-     "<pre>",
-      "None of the above"
+      "Redis & CouchDB",
+      "Riak & Hbase",
+     "<Cassandra",
+      "All of the mentioned"
         ],
-"correctAnswer":"<pre>"
+"correctAnswer":"All of the mentioned"
 },
 {
-"que":"Which of the following is the container for <tr>, <th>, and <td> ?",
+"que":"Does MongoDB supports query joins between collections ?",
 "answer":[
-        "<data>",
-        "<table>",
-        "<group>",
-        "All of the above"
+        "No",
+        "Yes"
       ],
-"correctAnswer":"<table>"
+"correctAnswer":"Yes"
 
 },
 {
-"que":"What are the types of unordered or bulleted list in HTML?",
+"que":"MongoDB stores all documents in ...........",
 "answer":[
-  "disc, square, triangle",
-  "polygon, triangle, circle",
-  "disc, circle, square",
-  "All of the above"
-      ],
-"correctAnswer":"disc, circle, square"
-},
-{
-  "que":"Which of the following HTML attribute is used to define inline styles?",
-  "answer":[
-      "style",
-      "type",
-      "class",
-      "None of the above"
-        ],
-"correctAnswer":"style"
-},
-{
-"que":" In HTML, the tags are __________.",
-"answer":[
-        "in upper case",
-        "case-sensitive",
-       "in lowercase",
-        "not case sensitive"
-      ],
-"correctAnswer":"not case sensitive"
-
-},
-{
-"que":"Which of the following tag is used to add rows in the table?",
-"answer":[
-  "<td> and </td>", 
-  "<th> and </th>",
-  "<tr> and </tr>",
+  "Rows",
+  "Tables",
+  "Collections",
   "None of the above"
       ],
-"correctAnswer":"<tr> and </tr>"
+"correctAnswer":"Collections"
 },
 {
-  "que":"What attribute do we use for data binding?",
+  "que":"MongoDB has been adopted as ________ software by a number of major websites and services.",
   "answer":[
-      "datasrc",
-      "mayscript",
-      "name",
-      "datafld"
+      "backend",
+      "frontend",
+      "proprietary",
+      "None of the above"
         ],
-"correctAnswer":"datasrc"
+"correctAnswer":"backend"
 },
 {
-"que":" The <hr> tag in HTML is used for -",
+"que":"To create index in descending order, the value of key is?",
 "answer":[
-        "new line",
-        "vertical ruler",
-       "new paragraph",
-        "horizontal ruler"
+        "0",
+        "1",
+       "-1",
+        "Infinite"
       ],
-"correctAnswer":"horizontal ruler"
+"correctAnswer":"-1"
 
 },
 {
-"que":"A program in HTML can be rendered and read by -",
+"que":"Which method deletes multiple (specified) indexes on a collection?",
 "answer":[
-  "Web browser", 
-  "Server",
-  "Interpreter",
-  "None of the above"
+  "dropIndexes()", 
+  "dropIndex()",
+  "Both A and B can be used",
+  "getIndexes()"
       ],
-"correctAnswer":"Web browser"
+"correctAnswer":"dropIndexes()"
+},
+{
+  "que":"Which of the following line skips the first 5 documents in the bios collection and returns all remaining documents?",
+  "answer":[
+      "db.bios.find().limit( 5 )",
+      "db.bios.find().skip( 1 )",
+      "db.bios.find().skip( 5)",
+      "db.bios.find().sort( 5 )"
+        ],
+"correctAnswer":"db.bios.find().skip( 5)"
+},
+{
+"que":"Command display the list of databases.",
+"answer":[
+        "show db",
+        "show dbs",
+       "show data",
+        "display dbs"
+      ],
+"correctAnswer":"show dbs"
+
+},
+{
+"que":"Which of the following operation adds a new document to the users collection ?",
+"answer":[
+  "add", 
+  "insert",
+  "truecate",
+  "drop"
+      ],
+"correctAnswer":"insert"
 }
   ]
 }

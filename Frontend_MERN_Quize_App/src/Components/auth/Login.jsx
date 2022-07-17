@@ -23,9 +23,9 @@ export const Login = ({ setLoginUser}) => {
     }
 
     const login = () => {
-        axios.post("https://gear-best-by-sudhir.herokuapp.com/login", user)
-        .then(res => {
-            console.log(res.data.user.name)
+        // axios.post("https://gear-best-by-sudhir.herokuapp.com/login", user)
+        // .then(res => {
+        //     console.log(res.data.user.name)
 
             // dispatch(loginUser(res.data.user._id))
             // dispatch(loginUserName(res.data.user.name))
@@ -36,13 +36,13 @@ export const Login = ({ setLoginUser}) => {
            
             // setLoginUser(res.data.user)
        
-        }).catch((err) => {
-            alert("Invalid Credientials")
-        })
+        // }).catch((err) => {
+        //     alert("Invalid Credientials")
+        // })
     }
 
     return (
-        <div className="login ">
+        <div className="login">
             {console.log(user)}
             <h1  className="text-2xl font-semibold">Login</h1>
             <input type="text" name="email" value={user.email} onChange={handleChange} placeholder="Enter your Email"></input>

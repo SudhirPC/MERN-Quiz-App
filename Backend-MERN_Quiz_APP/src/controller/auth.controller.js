@@ -7,12 +7,12 @@ router.post('/login', (req, res) => {
        User.findOne({email:email},(err,user)=>{
            if(user){
                 if(password===user.password){
-                    res.send({ message:"login succesfully",user:user})
+                    res.send({ message:"Login Succesfully",user:user})
                 }else{
-                    res.send({message:"Password didnt match"})
+                    res.send({message:"Invalid Password"})
                 }
            }else{
-            res.send({message:"User not Regiter"})
+            res.send({message:"User Not Regitered "})
            }
        })
 })
@@ -21,7 +21,7 @@ router.post('/register', (req, res) => {
   const { name, email, password } = req.body
   User.findOne({ email: email }, (err, user) => {
     if (user) {
-      res.send({ message: 'USer already Registered' })
+      res.send({ message: 'User Already Registered' })
     } else {
       const user = new User({
         name,
@@ -32,7 +32,7 @@ router.post('/register', (req, res) => {
         if (err) {
           res.send(err)
         } else {
-          res.send({ message: 'Successfully Registerd' })
+          res.send({ message: 'Successfully Registered' })
         }
       })
     }

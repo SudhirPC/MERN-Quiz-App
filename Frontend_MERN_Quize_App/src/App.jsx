@@ -9,6 +9,7 @@ import { NewQuizPage } from './Components/NewQuizPage.jsx';
 import { Login } from './Components/auth/Login.jsx';
 import { Register } from './Components/auth/Register.jsx';
 import { Route, Routes } from 'react-router-dom';
+import { Admin } from './Components/Admin/Admin.jsx';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     <div className="App ">
      {/* <h1 className="bg-red-700">Quize App</h1> */}
      <Navbar/>
-     <Routes>
+     {/* <Routes>
      <Route path="/" element={ <TopicQuiz/>} />
         <Route path="/login" element={ <Login/>}  />
         <Route path="/register" element={ <Register  /> } />
@@ -24,8 +25,11 @@ function App() {
      {/* <QuizePage/> */}
      {/* <Home/> */}
      
-     <NewQuizPage/>
-     <Footer/>
+     {/* <NewQuizPage/>
+      */}
+      <Admin/>
+     <Footer/> 
+    
     </div>
   );
 }

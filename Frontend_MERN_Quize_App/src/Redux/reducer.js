@@ -8,6 +8,7 @@ const init = {
   quiz:"",
   currentQuiz:[],
   count:"",
+  questions:[]
   
 }
 
@@ -16,6 +17,13 @@ export const QuizReducer = (state = init, action) => {
 
   switch (type) {
     
+    case types.CREATE_QUIZ_SUCCESS:
+      return {
+        ...state,
+        error:"",
+        loading: false,
+        questions:[...state.questions,payload]
+      }
     case types.FETCH_QUIZ_REQUEST:
       return {
         ...state,

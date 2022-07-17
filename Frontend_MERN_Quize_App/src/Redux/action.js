@@ -1,5 +1,28 @@
-import * as types from "./actionType.js";
+import * as types from "./actiontype.js";
 import Axios from "axios";
+import axios from "axios";
+
+// Create quiz in redux store
+export const quizRequest = () => {
+  return {
+    type: types.CREATE_QUIZ_REQUEST,
+  };
+};
+
+export const quizSuccess = (quiz) => {
+  console.log("hello",quiz)
+  return {
+    type: types.CREATE_QUIZ_SUCCESS,
+    payload: quiz,
+  };
+};
+
+export const quizFailure = (error) => {
+  return {
+    type: types.CREATE_QUIZ_FAILURE,
+    payload: error,
+  };
+};
 
 
 const fetchQuizRequest = (payload) => {
@@ -69,3 +92,14 @@ const fetchQuizRequest = (payload) => {
       payload
     }
   }
+  export const postQuizObj = (obj) => (dispatch) => {
+    // console.log(obj);
+    axios
+      .post("http://localhost:3755/admin", obj)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };

@@ -21,13 +21,13 @@ const navigate=useNavigate()
                     alert(res.data.message)
                     navigate("/login")
                 }else{
-                    alert("Innvalid  registration Credentials")
+                    alert("Invalid  Registration Credentials")
                 }
                 console.log(res)
                 
             })
         } else {
-            alert("invalid input")
+            alert("Invalid Input")
         }
         
     }

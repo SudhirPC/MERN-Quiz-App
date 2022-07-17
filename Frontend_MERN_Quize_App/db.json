@@ -937,7 +937,6 @@
 "mongodbData":{
   "questions":[
       {
-        
         "que":"What is MongoDB?",
         "answer":[
           "A file system.",
@@ -956,7 +955,6 @@
                 "None of the above"
               ],
       "correctAnswer":"use databaseName"
-        
       },
       {
         "que":"MongoDB is a _________ database that provides high performance, high availability, and easy scalability.",
@@ -967,7 +965,6 @@
                 "All of the mentioned"
               ],
       "correctAnswer":"Document"
-        
     },
     {
         "que":"Which field is always the first field in the document.?",
@@ -977,7 +974,7 @@
            "id",
             "None of these"
               ],
-      "correctAnswer":"_id"
+        "correctAnswer":"_id"
     },
     {
       "que":"Which of the following is incorrect statement about find and findOne operations in MongoDB?",

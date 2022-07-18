@@ -17,7 +17,7 @@ function App() {
     <div className="App ">
      {/* <h1 className="bg-red-700">Quize App</h1> */}
      <Navbar/>
-     {/* <Routes>
+      <Routes>
      <Route path="/" element={ <TopicQuiz/>} />
         <Route path="/login" element={ <Login/>}  />
         <Route path="/register" element={ <Register  /> } />
@@ -27,7 +27,9 @@ function App() {
      
      {/* <NewQuizPage/>
       */}
-      <Admin/>
+      {/* <Admin/> */}
+      {/* <Login/>
+      <Register  /> */}
      <Footer/> 
     
     </div>

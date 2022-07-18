@@ -2,12 +2,13 @@ import React, {useState} from "react"
 import "./Login.css"
 import axios from "axios"
 import {Link, useNavigate} from "react-router-dom"
-// import { loginUser, loginUserName } from "../Redux/Action.js"
-// import { useDispatch, useSelector } from "react-redux"
+
+import { useDispatch, useSelector } from "react-redux"
+import { loginUser, loginUserName } from "../../Redux/action.js"
 
 export const Login = ({ setLoginUser}) => {
-//     const userId=useSelector((state)=>state.gearbest.userId)
-//  const dispatch=useDispatch()
+    const userId=useSelector((state)=>state.mernQuize.userId)
+ const dispatch=useDispatch()
  const navigate=useNavigate()
     const [ user, setUser] = useState({
         email:"",
@@ -23,22 +24,22 @@ export const Login = ({ setLoginUser}) => {
     }
 
     const login = () => {
-        // axios.post("https://gear-best-by-sudhir.herokuapp.com/login", user)
-        // .then(res => {
-        //     console.log(res.data.user.name)
+        axios.post("http://localhost:3755/login", user)
+        .then(res => {
+            console.log(res.data.user.name)
 
-            // dispatch(loginUser(res.data.user._id))
-            // dispatch(loginUserName(res.data.user.name))
-            // if(userId!==""){
-            //     alert(res.data.message)
-            //     navigate("/")
-            //   }
+            dispatch(loginUser(res.data.user._id))
+            dispatch(loginUserName(res.data.user.name))
+            if(userId!==""){
+                alert(res.data.message)
+                navigate("/")
+              }
            
             // setLoginUser(res.data.user)
        
-        // }).catch((err) => {
-        //     alert("Invalid Credientials")
-        // })
+        }).catch((err) => {
+            alert("Invalid Credientials")
+        })
     }
 
     return (

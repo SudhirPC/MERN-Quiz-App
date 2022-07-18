@@ -15,15 +15,15 @@ const navigate=useNavigate()
     const register = () => {
         const { name, email, password, reEnterPassword } = user
         if( name && email && password && (password === reEnterPassword)){
-            axios.post("https://gear-best-by-sudhir.herokuapp.com/register", user)
+            axios.post("http://localhost:3755/register", user)
             .then( res => {
-                if(res.data.message==="Successfully Registerd"){
+                if(res.data.message==="Successfully Registered"){
                     alert(res.data.message)
                     navigate("/login")
                 }else{
                     alert("Invalid  Registration Credentials")
                 }
-                console.log(res)
+                console.log("res register",res)
                 
             })
         } else {

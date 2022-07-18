@@ -87,7 +87,7 @@
           "A permanent storage.",
           "Internal storage of the component.",
           "External storage of the component.",
-          " None of the above."
+          "None of the above."
         ],
 "correctAnswer":"Internal storage of the component."
   
@@ -166,7 +166,7 @@
 
 },
 {
-"que":" What is the smallest building block of ReactJS?",
+"que":"What is the smallest building block of ReactJS?",
 "answer":[
 "props",
 "elements",

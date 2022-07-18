@@ -1,0 +1,85 @@
+React
+
+1) ReactJS is developed by _____?
+[Google Engineers,Facebook Engineers]
+Facebook Engineers
+
+2)ReactJS is an MVC based framework?
+[True,False]
+False
+
+3)Which of the following are the advantages of React.js?
+[React.js can increase the application's performance with Virtual DOM,React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library,React.js can render both on client and server side,All of the above]
+All of the above
+
+4)What of the following is used in React.js to increase performance?
+[Original DOM,Virtual DOM,Both A and B,None of the above]
+Virtual DOM
+
+5)Which of the following acts as the input of a class-based component?
+[Class,Factory,Render,Props]
+Props
+
+
+6)What is the default port where webpack-server runs?
+[3000,8080,3030,6060]
+8080
+
+7)How many numbers of elements a valid react component can return?
+[1,2,4,5]
+1
+
+8)What is the declarative way to render a dynamic list of components based on values in an array?
+[Using the reduce array method,Using the <Each /> component,Using the Array.map() method,With a for/while loop]
+Using the Array.map() method
+
+
+9) What is a state in React?
+[A permanent storage,Internal storage of the component,External storage of the component,None of the above]
+Internal storage of the component
+
+10)What are the two ways to handle data in React?
+[State & Props,Services & Components,State & Services,State & Component]
+State & Props
+
+
+11)Which of the following option is correct in the case of the Babel?
+[Babel is a Compiler,Babel is a Transpilar,None of the above,Both A and B are correct]
+Both A and B are correct
+
+12)What will happen if you render an input element with disabled = {false}?
+[It will be rendered as disabled,It will not be rendered at all,It will be rendered as enabled,You cannot set it false]
+It will be rendered as enabled
+
+13)React.js is a free and open-source front-end....?
+[JavaScript library,Bootstrap library,CSS library,None of the Above]
+JavaScript library
+
+14)Which of the following acts as the input of a class-based component?
+[Class,Factory,Render,Props]
+Props
+
+15)Which of the following is the correct data flow sequence of flux concept?
+[Dispatcher->Action->Store->View,Action->Dispatcher->View->Store,Action->Dispatcher->Store->View,Action->Store->Dispatcher->View]
+Action->Dispatcher->Store->View
+
+
+16)React was originally created by...?
+[Jordan Walke,Rasmus Lerdorf,Miško Hevery,None of the above]
+Jordan Walke
+
+
+17)What is the smallest building block of ReactJS?
+[components,elements,props,None of the Above]
+components
+
+18)What is the default port where React runs?
+[3000,8080,3030,6060]
+3000
+
+19)
+
+
+
+
+

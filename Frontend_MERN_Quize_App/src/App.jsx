@@ -21,12 +21,18 @@ function App() {
      <Route path="/" element={ <TopicQuiz/>} />
         <Route path="/login" element={ <Login/>}  />
         <Route path="/register" element={ <Register  /> } />
+        <Route path="/HTML" element={ <NewQuizPage />} />
+        <Route path="/CSS" element={ <NewQuizPage />} />
+        <Route path="/Javascript" element={ <NewQuizPage />} />
+        <Route path="/React" element={ <NewQuizPage />} />
+        <Route path="/Redux" element={ <NewQuizPage />} />
+        <Route path="/Mongodb" element={ <NewQuizPage />} />
      </Routes>
      {/* <QuizePage/> */}
      {/* <Home/> */}
      
-     {/* <NewQuizPage/>
-      */}
+    <NewQuizPage/>
+     
       {/* <Admin/> */}
       {/* <Login/>
       <Register  /> */}

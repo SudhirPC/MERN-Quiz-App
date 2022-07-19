@@ -5,8 +5,8 @@ const init = {
  userId:"",
   error: '',
   userName:"",
-  quiz:"",
-  currentQuiz:[],
+  quizTitle:"",
+  QuizData:[],
   count:"",
   questions:[]
   
@@ -35,7 +35,7 @@ export const QuizReducer = (state = init, action) => {
         ...state,
         error: '',
         loading: false,
-        quiz: payload,
+        QuizData: payload,
       }
     case types.FETCH_QUIZ_FAILURE:
       return {

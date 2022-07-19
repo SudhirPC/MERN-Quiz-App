@@ -1,9 +1,21 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
+import { useDispatch, useSelector } from "react-redux";
+import { fetchQuizDataFrombackend } from "../Redux/action.js";
 export const NewQuizPage = () => {
-  const [data, setData] = useState([]);
+  const data= useSelector((state) => state.mernQuize.QuizData)
+  
   const [count, setCount] = useState(0);
-  // const [show,setShow]=useState(false)
+  const pathname=window.location.pathname.split("").splice(1,(window.location.pathname).length).join("")
+
+ const filtertopicwise= data.filter((el)=>{
+  return pathname===el.title
+  })
+
+  console.log("filtertopicwise",filtertopicwise)
+const dispatch = useDispatch()
+
+
   const handleAnswer=(i,index,e,index1)=>{
     if(e[index]===data[index1].correctAnswer){
         // console.log("right answer")
@@ -14,23 +26,25 @@ export const NewQuizPage = () => {
     // console.log(index1)
     // console.log("e",e[index])
  }
-  const fetchQuizData = () => {
-    axios
-      .get("http://localhost:8080/javaScriptData")
-      .then((res) =>  setData(res.data.questions),
-      
-      )
-      .catch((err) => console.log(err));
-  };
+
+
+  const fetchQuizData=()=>{
+
+    dispatch(fetchQuizDataFrombackend())
+  }
+
  useEffect(() =>{
     fetchQuizData()
  },[])
-  console.log(data);
-  // {show?<h1>hello world</h1>:null}
+  console.log("data",data);
+
+
+
+console.log(pathname)
   return (
     <div className="">
         <div className="justify-end flex mr-28 mb-4 mt-4 "> <div className="border-red-900 p-2 pr-4 border-2 w-20">Count:{count}</div></div>
-        {data.map((e,index1)=>{
+        {/* {data.map((e,index1)=>{
             return(
               <div className="ml-28 pl-6 w-10/12 mb-8  border-red-900 border-2" key={e.id}>
                 <div className="flex border border-grey-200 pl-1 pt-2 pb-2 mt-2  mr-4">
@@ -56,7 +70,7 @@ export const NewQuizPage = () => {
               </div>
                </div>
             )
-        })}
+        })} */}
      
     </div>
   );

@@ -25,25 +25,6 @@ export const quizFailure = (error) => {
 };
 
 
-const fetchQuizRequest = (payload) => {
-    return {
-      type: types.FETCH_QUIZ_REQUEST,
-      payload,
-    }
-  }
-  const fetchQuizSuccess = (payload) => {
-    return {
-      type: types.FETCH_QUIZ_SUCCESS,
-      payload,
-    }
-  }
-  const fetchQuizFailure = (payload) => {
-    return {
-      type: types.FETCH_QUIZ_FAILURE,
-      payload,
-    }
-  }
-
   const getCurrentQuizRequest = (payload) => {
     return {
       type: types.GET_CURRENT_QUIZ_REQUEST,
@@ -102,4 +83,32 @@ const fetchQuizRequest = (payload) => {
       .catch((err) => {
         console.log(err);
       });
+  };
+
+
+  // ----------------------------- fetching quiz data subject wise -------------
+
+const fetchQuizRequest = (payload) => {
+  return {
+    type: types.FETCH_QUIZ_REQUEST,
+    payload,
+  }
+}
+const fetchQuizSuccess = (payload) => {
+  return {
+    type: types.FETCH_QUIZ_SUCCESS,
+    payload,
+  }
+}
+const fetchQuizFailure = (payload) => {
+  return {
+    type: types.FETCH_QUIZ_FAILURE,
+    payload,
+  }
+}
+  export const fetchQuizDataFrombackend = ()=>(dispatch)=> {
+    axios
+      .get("http://localhost:3755/api/quiz")
+      .then((res) => dispatch(fetchQuizSuccess (res.data)))
+      .catch((err) => console.log(err));
   };

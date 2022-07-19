@@ -10,6 +10,7 @@ import { Login } from './Components/auth/Login.jsx';
 import { Register } from './Components/auth/Register.jsx';
 import { Route, Routes } from 'react-router-dom';
 import { Admin } from './Components/Admin/Admin.jsx';
+import { Profile } from './Components/Profile.jsx';
 
 
 function App() {
@@ -30,9 +31,6 @@ function App() {
      </Routes>
      {/* <QuizePage/> */}
      {/* <Home/> */}
-     
-    <NewQuizPage/>
-     
       {/* <Admin/> */}
       {/* <Login/>
       <Register  /> */}

@@ -13,6 +13,10 @@ app.use("/",RegisterAuth)
 const quizAdd=require("./controller/quizAdd.controller.js")
 app.use("/admin",quizAdd)
 
+const quiz=require("./controller/displayQuiz.controller.js")
+app.use("/api",quiz)
+
+
 app.listen(Port,async function(){
     try {
         await connect();

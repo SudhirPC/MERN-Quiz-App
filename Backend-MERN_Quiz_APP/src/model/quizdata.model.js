@@ -16,4 +16,5 @@ const questionArr = new mongoose.Schema({
   });
 
   const Postquiz = new mongoose.model('Postquiz', postQuizSchema)
+  
   module.exports = Postquiz

@@ -15,3 +15,8 @@
 .hoverOption:hover{
  font-weight: bold
 }
+
+/*  */
+.li-option-tag{
+  list-style-type: none;
+}

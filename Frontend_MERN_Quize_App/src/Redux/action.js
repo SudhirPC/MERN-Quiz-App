@@ -1,5 +1,4 @@
 import * as types from "./actiontype.js";
-import Axios from "axios";
 import axios from "axios";
 
 // Create quiz in redux store
@@ -49,12 +48,12 @@ export const quizFailure = (error) => {
       payload,
     }
   }
-//   const getlogoutUser = (payload) => {
-//     return {
-//       type: types.LOGOUTUSER,
-//       payload,
-//     }
-//   }
+  // const getlogoutUser = (payload) => {
+  //   return {
+  //     type: types.LOGOUTUSER,
+  //     payload,
+  //   }
+  // }
 
 
 
@@ -73,6 +72,17 @@ export const quizFailure = (error) => {
       payload
     }
   }
+ 
+  export  const Logouthandleraction= (payload) => {
+    return {
+     type:types.LOGOUTUSER,
+     payload
+    }
+}
+
+
+
+
   export const postQuizObj = (obj) => (dispatch) => {
     // console.log(obj);
     axios

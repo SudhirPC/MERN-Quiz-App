@@ -33,13 +33,6 @@ export const NewQuizPage = () => {
   // console.log("newfilter",filtertopicwise[0])
   const dispatch = useDispatch();
 
-  // const handleAnswer = (i, index, e, index1) => {
-  //   if (e[index] === data[index1].correctAnswer) {
-  //     // console.log("right answer")
-  //     setCount(count + 1);
-  //   }
-  //   console.log("option click");
-  // };
   const fetchQuizData = () => {
     dispatch(fetchQuizDataFrombackend());
   };
@@ -52,25 +45,32 @@ export const NewQuizPage = () => {
 
   return (
     <div className="">
-      <h1>count:{count}</h1>
-      <div>
+      <div className="border-red-500 absolute  right-24 top-24 border-2 mb-8 p-1 pl-2  pr-2 ">
+      <h1 className="text-xl font-bold">Count:{count}</h1>
+      </div>
+      <div className="mt-20">
         {newfilterquestions?.map((el, index) => {
           return (
             <div>
-              <div className="flex  w-11/12  pl-1 pt-2 pb-2 mt-2   mr-4">
-                <div className="border-red-700 w-10/12 border-grey-200 border-2 pl-1 ml-24 ">
-                  <div className="flex">
-                    <p className="text-xl font-normal  pl-2">
-                      Question {index + 1}){" "}
+              <div className="flex  w-12/12  pl-1 pt-2 pb-2 mt-2   mr-4">
+                <div className="border-red-700 w-11/12 border-grey-200 border-2 pl-1 ml-24 ">
+                  <div className="flex w-11/12">
+                    <div className="w-40">
+                    <p className="text-xl font-normal  pl-1">
+                      Question {index + 1})
                     </p>
-                    <p className="text-xl font-normal  pl-2">
+                    </div>
+                   <div className="w-10/12 -ml-10">
+                   <p className="text-xl font-normal  ">
                       {el.que}
                     </p>
+                   </div>
+                  
                   </div>
                   {el?.answer[0]?.map((e, index) => {
                     // console.log("index",index)
                     return (
-                      <div className="flex ml-24">
+                      <div className="flex ml-32">
                         <p className="mr-2">{index + 1})</p>
                         <div
                           className="cursor-pointer hoverOption"

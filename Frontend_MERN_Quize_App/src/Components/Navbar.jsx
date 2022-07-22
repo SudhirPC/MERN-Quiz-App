@@ -1,8 +1,18 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+import { useDispatch, useSelector } from 'react-redux'
+import {Link, useNavigate} from "react-router-dom"
+import { Logouthandleraction } from '../Redux/action.js'
+
 
 export const Navbar = () => {
- 
+  const userId=useSelector((state)=>state.mernQuize.userId)
+  const userName=useSelector((state)=>state.mernQuize.userName)
+  const navigate=useNavigate()
+  const dispatch=useDispatch()
+  const logouthandler=() => {
+    dispatch(Logouthandleraction())
+    navigate("/")
+}
   return (
     <div className="w-11/12 h-16 m-auto flex bg-slate-100 ">
       <Link to="/" className="w-3/12 flex ">
@@ -12,7 +22,6 @@ export const Navbar = () => {
           alt=""
           className="w-1/2 "
         />
-       
       </Link>
 
   <div className="w-2/5 py-2 mx-36">
@@ -44,7 +53,9 @@ export const Navbar = () => {
   
       <div className="w-3/12 flex justify-around py-4">
       <Link to="/register"> <div className="flex">
-          <h1  to="/cart" className="font-medium mr-2">SIGN IN</h1>
+      <div className=" pt-2">
+      {userName!==""?<div className="flex "><div className="font-small cursor-pointer ">Hi {userName}</div> <div onClick={()=>{logouthandler()}} className="ml-4 cursor-pointer">Logout</div></div> :<Link to="/register" className="font-small mt-8">Sign In</Link>}
+      </div>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-10 " viewBox="0 0 20 20" fill="currentColor">
   <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clipRule="evenodd" />
 </svg>

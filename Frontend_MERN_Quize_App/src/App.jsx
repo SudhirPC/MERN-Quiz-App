@@ -28,6 +28,7 @@ function App() {
         <Route path="/React" element={ <NewQuizPage />} />
         <Route path="/Redux" element={ <NewQuizPage />} />
         <Route path="/Mongodb" element={ <NewQuizPage />} />
+        <Route path="/admin" element={ <Admin />} />
      </Routes>
      {/* <QuizePage/> */}
      {/* <Home/> */}

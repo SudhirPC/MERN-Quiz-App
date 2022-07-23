@@ -23,7 +23,6 @@ export const quizFailure = (error) => {
   };
 };
 
-
   const getCurrentQuizRequest = (payload) => {
     return {
       type: types.GET_CURRENT_QUIZ_REQUEST,
@@ -80,8 +79,24 @@ export const quizFailure = (error) => {
     }
 }
 
+export const loginAdminId=(payload)=>{
+  // console.log(payload)
+  return {
+    type:types.GETADMINID,
+    payload,
+  }
+}
+export const loginAdminName=(payload)=>{
+  // console.log(payload)
+  return {
+    type:types.GETADMINNAME,
+    payload,
+  }
+}
 
 
+
+// ----------post quiz--------------
 
   export const postQuizObj = (obj) => (dispatch) => {
     // console.log(obj);

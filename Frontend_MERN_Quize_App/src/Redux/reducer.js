@@ -1,95 +1,110 @@
-import * as types from './actiontype.js'
+import * as types from "./actiontype.js";
 
 const init = {
- loading: false,
- userId:"",
-  error: '',
-  userName:"",
-  quizTitle:"",
-  QuizData:[],
-  count:"",
-  questions:[]
-  
-}
+  loading: false,
+  userId: null,
+  adminId:null,
+  adminName: null,
+  error: "",
+  userName: null,
+  quizTitle: "",
+  QuizData: [],
+  count: "",
+  questions: [],
+};
 
 export const QuizReducer = (state = init, action) => {
-  const { type, payload } = action
+  const { type, payload } = action;
 
   switch (type) {
-    
     case types.CREATE_QUIZ_SUCCESS:
       return {
         ...state,
-        error:"",
+        error: "",
         loading: false,
-        questions:[...state.questions,payload]
-      }
+        questions: [...state.questions, payload],
+      };
     case types.FETCH_QUIZ_REQUEST:
       return {
         ...state,
-        error: '',
+        error: "",
         loading: true,
-      }
+      };
     case types.FETCH_QUIZ_SUCCESS:
       return {
         ...state,
-        error: '',
+        error: "",
         loading: false,
         QuizData: payload,
-      }
+      };
     case types.FETCH_QUIZ_FAILURE:
       return {
         ...state,
         error: payload,
         loading: false,
-      }
+      };
     case types.GET_CURRENT_QUIZ_REQUEST:
       return {
         ...state,
-        error: '',
+        error: "",
         loading: true,
-      }
+      };
     case types.GET_CURRENT_QUIZ_SUCCESS:
       return {
         ...state,
-        currentQuiz:payload,
-        error: '',
+        currentQuiz: payload,
+        error: "",
         loading: false,
-      }
+      };
     case types.GET_CURRENT_QUIZ_FAILURE:
       return {
         ...state,
         error: payload,
         loading: false,
-      }
+      };
 
-      case types.GETCOUNTDATA:
+    case types.GETCOUNTDATA:
+      console.log("payload", payload);
 
-        console.log("payload",payload)
-  
-        return {
-          ...state,
-          count: payload,
-        }
-   case types.GETUSERID:
+      return {
+        ...state,
+        count: payload,
+      };
+    case types.GETUSERID:
       return {
         ...state,
         userId: payload,
-      }
+      };
 
-        case types.GETUSERNAME:
-          return {
-            ...state,
-            userName:payload
-          }
-          case types.LOGOUTUSER:
-            return {
-              ...state,
-              userId: "",
-              userName:""
-            }
+    case types.GETUSERNAME:
+      return {
+        ...state,
+        userName: payload,
+      };
+    case types.LOGOUTUSER:
+      return {
+        ...state,
+        userId: null,
+        userName: null,
+        adminName:null,
+        adminId:null
+      };
+    case types.GETADMINID:
+      return {
+        ...state,
+        adminId: payload,
+        userId: null,
+        userName: null,
+      };
+    //username
+    case types.GETADMINNAME:
+      return {
+        ...state,
+        adminName: payload,
+        userId: null,
+        userName: null,
+      };
     default:
-      return state
+      return state;
   }
-}
- 
+};

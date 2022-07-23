@@ -6,11 +6,15 @@ import { Questions } from "./Questions.jsx";
 export const NewQuizPage = () => {
   const data = useSelector((state) => state.mernQuize.QuizData);
   const [count, setCount] = useState(0);
+const [clickoption,setClickOption] = useState(false);
+
   const handleAnswer = (index, e, el) => {
     // console.log("e[index]",e[index])
-    if (el.answer[0][index] === el.correctAnswer) {
-      console.log("right answer");
-      setCount(count + 1);
+    if(clickoption==false){
+      if (el.answer[0][index] === el.correctAnswer) {
+        console.log("right answer");
+        setCount(count + 1);
+      }
     }
     console.log("option click");
   };
@@ -42,6 +46,13 @@ export const NewQuizPage = () => {
     // fetchtopicwisedata()
   }, []);
   // console.log("data",);
+
+
+  const handlecount=(index) => {
+    console.log("index", index);
+    setClickOption(true)
+  }
+
 
   return (
     <div className="">
@@ -76,7 +87,7 @@ export const NewQuizPage = () => {
                           className="cursor-pointer hoverOption"
                           onClick={() => handleAnswer(index, e, el)}
                         >
-                          <li className="text-xl li-option-tag">{e}</li>
+                          <li onClick={()=>{handlecount(index)}} className="text-xl li-option-tag">{e}</li>
                         </div>
                       </div>
                     );

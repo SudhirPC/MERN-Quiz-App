@@ -10,7 +10,10 @@ import { Login } from './Components/auth/Login.jsx';
 import { Register } from './Components/auth/Register.jsx';
 import { Route, Routes } from 'react-router-dom';
 import { Admin } from './Components/Admin/Admin.jsx';
-import { Profile } from './Components/Profile.jsx';
+
+import { QuizForm } from './Components/Admin/QuizForm.jsx';
+import { Profile } from './Components/Profile/Profile.jsx';
+import { ProfileMain } from './Components/Profile/ProfileMain.jsx';
 
 
 function App() {
@@ -29,6 +32,9 @@ function App() {
         <Route path="/Redux" element={ <NewQuizPage />} />
         <Route path="/Mongodb" element={ <NewQuizPage />} />
         <Route path="/admin" element={ <Admin />} />
+        <Route path="/addquiz" element={ <QuizForm/>} />
+        <Route path="/profile" element={ <ProfileMain/>} />
+       
      </Routes>
      {/* <QuizePage/> */}
      {/* <Home/> */}

@@ -21,3 +21,7 @@ export const GETUSERID="GETUSERID";
 export const GETUSERNAME="GETUSERNAME";
 
 export const LOGOUTUSER="LOGOUTUSER";
+
+export const GETADMINID="GETADMINID"
+
+export const GETADMINNAME="GETADMINNAME"

@@ -16,11 +16,11 @@ export const Admin = () => {
     <div className="md:w-11/12 mx-auto bg-gray-100/10 flex p-4 my-6 mt-24">
       <div className="w-7/12 ">
           <div className="ml-32 ">
-             <img className="h-[60px] w-[150px] rounded-full" src="./201.webp" alt="" />
+             <img className="h-[125px] w-[250px] rounded-full" src="./admin.gif" alt="" />
           </div>
         <div>
           <h1
-            className="title text-4xl font-semibold flex text-black pb-8 mt-8 ml-32"
+            className="title text-4xl font-semibold flex text-black pb-6 mt-8 ml-32"
             style={{ fontFamily: 'Quicksand' }}
           >
             Hi Admin, 
@@ -40,7 +40,7 @@ export const Admin = () => {
             love travelling and doing farming in free time.
           </p>
         </div>
-        <div className="flex mt-12 space-x-6 ml-32 ">
+        <div className="flex mt-12 space-x-4 ml-32 ">
           <a
             href="#"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white"

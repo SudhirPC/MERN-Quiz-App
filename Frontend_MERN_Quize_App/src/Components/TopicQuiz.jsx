@@ -10,8 +10,8 @@ export const TopicQuiz = () => {
       </div>
       <div className="grid grid-cols-2 w-11/12 p-10 m-auto gap-8 shadow-2xl">
       <Link to="/HTML">  <div   className="border-2 cursor-pointer topicdiv text-white font-sans text-4xl font-bold  h-36 justify-items-center rounded-2xl pl-10 flex ">
-          <div className="w-3/5 bg-rgb(27,169,76)">
-            <h1 className="pt-12">HTML</h1>
+          <div className="w-3/5 h-full bg-rgb(27,169,76)">
+            <h1 className="pt-12 pl-16 topicdivh1">HTML</h1>
           </div>
           <img
             className="w-2/5  rounded-2xl"
@@ -20,8 +20,8 @@ export const TopicQuiz = () => {
           />
         </div></Link>
         <Link to="/CSS">    <div className="border-2 cursor-pointer topicdiv text-white font-sans text-4xl font-bold  h-36 justify-items-center rounded-2xl pl-10 flex ">
-          <div className="w-3/5 bg-rgb(27,169,76)">
-            <h1 className="pt-12">CSS</h1>
+          <div className="w-3/5 h-full bg-rgb(27,169,76)">
+            <h1 className="pt-12 pl-16 topicdivh1">CSS</h1>
           </div>
           <img
             className="w-2/5  rounded-2xl"
@@ -30,8 +30,8 @@ export const TopicQuiz = () => {
           />
         </div></Link>
         <Link to="/Javascript">  <div className="border-2 cursor-pointer topicdiv text-white font-sans text-4xl font-bold  h-36 justify-items-center rounded-2xl pl-10 flex ">
-          <div className="w-3/5 bg-rgb(27,169,76)">
-            <h1 className="pt-12">JavaScript</h1>
+          <div className="w-3/5  h-full bg-rgb(27,169,76)">
+            <h1 className="pt-12 pl-16 topicdivh1">JavaScript</h1>
           </div>
           <img
             className="w-2/5 rounded-2xl "
@@ -40,8 +40,8 @@ export const TopicQuiz = () => {
           />
         </div></Link>
         <Link to="/React">   <div className="border-2 cursor-pointer topicdiv text-white font-sans text-4xl font-bold  h-36 justify-items-center rounded-2xl pl-10 flex ">
-          <div className="w-3/5 bg-rgb(27,169,76)">
-            <h1 className="pt-12">React</h1>
+          <div className="w-3/5 h-full bg-rgb(27,169,76)">
+            <h1 className="pt-12 pl-16 topicdivh1">React</h1>
           </div>
           <img
             className="w-2/5 rounded-2xl "
@@ -50,8 +50,8 @@ export const TopicQuiz = () => {
           />
         </div></Link>
         <Link to="/Redux">   <div className="border-2 cursor-pointer topicdiv text-white font-sans text-4xl font-bold  h-36 justify-items-center rounded-2xl pl-10 flex ">
-          <div className="w-3/5 bg-rgb(27,169,76)">
-            <h1 className="pt-12">Redux</h1>
+          <div className="w-3/5 h-full bg-rgb(27,169,76)">
+            <h1 className="pt-12 pl-16 topicdivh1">Redux</h1>
           </div>
           <img
             className="w-2/5 rounded-2xl"
@@ -60,8 +60,8 @@ export const TopicQuiz = () => {
           />
         </div></Link>
         <Link to="/Mongodb"> <div className="border-2 cursor-pointer topicdiv text-white font-sans text-4xl font-bold  h-36 justify-items-center rounded-2xl pl-10 flex ">
-          <div className="w-3/5 bg-rgb(27,169,76)">
-            <h1 className="pt-12">MongoDb</h1>
+          <div className="w-3/5 h-full bg-rgb(27,169,76)">
+            <h1 className="pt-12 pl-16 topicdivh1">MongoDb</h1>
           </div>
           <img
             className="w-2/5 rounded-2xl h-full"

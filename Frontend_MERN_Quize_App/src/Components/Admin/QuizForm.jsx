@@ -32,11 +32,16 @@ export const QuizForm = () => {
     dispatch(postQuizObj(obj));
   };
   return (
-    <div className="w-64 text-slate-50">
-      <div className="text-lg text-yellow-300 font-bold font-serif mb-5">
-        Add Questions
+    <div className="w-11/12 flex text-slate-50 ml-18 mb-36 justify-evenly">
+      <div className="w-1/2 mt-36 ml-32">
+        <img className="h-80 pl-36 mt-8" src="./feedback.gif" alt="feedback" />
       </div>
-      <form>
+      <div className="w-1/2 -ml-24 ">
+      <div className=" flex text-yellow-500  w-96 font-bold font-serif mb-2 ml-36 mt-14">
+        <h1 className="text-2xl mt-10">Add Questions</h1>
+        <img src="./add.gif" alt="add icon" className="w-1/2 h-20 mt-4" />
+      </div>
+      <form className="ml-36 -mt-4">
         <label
           className="block uppercase tracking-wide  text-xs font-bold mb-2"
           htmlFor="grid-first-name"
@@ -44,7 +49,7 @@ export const QuizForm = () => {
           Title{" "}
         </label>
         <input
-          className=" block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+          className=" block w-72 bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
           id="grid-first-name"
           type="text"
           placeholder="Title"
@@ -59,7 +64,7 @@ export const QuizForm = () => {
           Question{" "}
         </label>
         <input
-          className=" block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+          className=" block w-72 bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
           id="grid-first-name"
           type="text"
           placeholder="Question"
@@ -74,7 +79,7 @@ export const QuizForm = () => {
           Answers{" "}
         </label>
         <input
-          className=" block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+          className=" block w-72 bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
           id="grid-first-name"
           type="text"
           placeholder="Options"
@@ -89,7 +94,7 @@ export const QuizForm = () => {
           CorrectAnswer{" "}
         </label>
         <input
-          className=" block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+          className=" block w-72 bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
           id="grid-first-name"
           type="text"
           placeholder="Answer"
@@ -97,6 +102,7 @@ export const QuizForm = () => {
             setQuiz({ ...quiz, correctAnswer: event.target.value })
           }
         />
+
         <button
           onClick={handleQuiz}
           className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
@@ -104,12 +110,17 @@ export const QuizForm = () => {
           Submit
         </button>
       </form>
+      <div className="ml-12 -mt-14">
       <button
         onClick={handleUpload}
-        className=" mt-1 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+        className=" bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  mt-3  ml-72 "
       >
         Upload
-      </button> 
+      </button>
+      </div>
+      </div>
+     
+
     </div>
   );
 };

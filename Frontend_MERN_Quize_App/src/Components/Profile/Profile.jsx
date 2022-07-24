@@ -9,11 +9,9 @@ export const Profile = () => {
     const userName = useSelector((state) => state.mernQuize.userName);
 
     return(
-      <div>
-        <h1> Hi, I am {userName} 👋</h1>
-
-
-
+      <div className="margin-auto flex w-4/5 mb-56 ml-64 mt-16">
+        <img src="./profile.gif" alt="prfile" className="w-1/2 h-64" />
+        <h1 className="ml-8 w-1/2 mt-32 text-2xl text-sky-600  "> Welcome! {userName}👋</h1>
         
     </div>
     )     

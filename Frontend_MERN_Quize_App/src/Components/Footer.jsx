@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="flex text-cyan-300 ml-28 justify-items-right m-auto p-2">
+    <div className="flex text-cyan-300 ml-40 justify-items-right m-auto p-2 ">
       <div className="w-24 border-r-2 h-6">
         <h1 className="ml-14 cursor-pointer ">Blog</h1>
       </div>

@@ -5,9 +5,11 @@
 .topicdiv{
   background-color:rgb(27,169,76)
 }
-.topicdiv:hover{
-  height:145px;
-  width:101%;
+.topicdivh1:hover{
+  font: weight 600px;;
+  font-size:larger;
+  /* font-style:italic; */
+  color:rgb(154, 87, 87)
 }
 
 

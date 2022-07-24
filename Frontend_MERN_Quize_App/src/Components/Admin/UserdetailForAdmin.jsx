@@ -1,10 +1,20 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { deleteUserByAdmin } from '../../Redux/action.js';
 
 export const UserdetailForAdmin = (props) => {
 
+
+const dispatch= useDispatch();
+
+  const DeleteUser=(e)=>{
+    dispatch(deleteUserByAdmin(e))
+}
+
+
     return (
-        <div className="flex w-4/5 m-auto mb-10">
-        <div class="flex flex-col container max-w-md mt-10  bg-teal-500 rounded-lg ">
+        <div className="flex w-4/5 m-auto">
+        <div class="flex flex-col container max-w-md mt-10  w-1/2  bg-teal-500 rounded-lg ">
           <ul class="flex flex-col divide-y w-full">
             {props.data.map((e) => {
               return (
@@ -31,7 +41,7 @@ export const UserdetailForAdmin = (props) => {
                       <svg 
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6 text-orange-200 mr-2 mt-1"
-                        // onClick={()=>DeleteUser(e._id)}
+                        onClick={()=>DeleteUser(e._id)}
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"

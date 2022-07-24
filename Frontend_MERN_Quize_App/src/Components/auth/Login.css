@@ -5,9 +5,8 @@
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     border-radius: 8px;
     padding: 1rem;
-    align-items: center;
     text-align: center;
-    margin-left: 40%;
+    /* margin-left: 40%; */
     margin-top:2%
 
 }

@@ -113,7 +113,7 @@ const getAllUserDataFailure = (payload) => {
   }
 }
 
-// ----------------------- details of user  for admin page ---------------
+// ----------------------- details of user  for admin page  and delete user by admin ---------------
 
 export const getAllUserDataFromBackend = (payload) => (dispatch) => {
   dispatch(getAllUserDataRequest())
@@ -126,7 +126,15 @@ export const getAllUserDataFromBackend = (payload) => (dispatch) => {
     })
 }
 
-
+export const deleteUserByAdmin = (payload) => (dispatch) => {
+  axios.delete(`http://localhost:3755/user/${payload}`)
+    .then((response) => {
+      dispatch(getAllUserDataFromBackend())
+    })
+    .catch((error) => {
+      console.log('error')
+    })
+}
 
 // ----------post quiz--------------
 

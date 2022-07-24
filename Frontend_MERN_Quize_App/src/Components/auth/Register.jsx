@@ -43,17 +43,22 @@ const navigate=useNavigate()
     
     
     return (
-        <div className="register mb-32">
-     {console.log( user)}
+        <div className="flex w-4/5 justify-around m-auto mt-10">
+            <div className="register w-1/2 ml-24">
+            {console.log( user)}
             <p className="text-2xl font-semibold">Register</p>
             <input type="text" name="name" value={user.name} placeholder="Your Name" onChange={ handleChange }></input>
             <input type="text" name="email" value={user.email} placeholder="Your Email" onChange={ handleChange }></input>
             <input type="password" name="password" value={user.password} placeholder="Your Password" onChange={ handleChange }></input>
             <input type="password" name="reEnterPassword" value={user.reEnterPassword} placeholder="Re-enter Password" onChange={ handleChange }></input>
-           <div className="pl-8 pr-8 bg-blue-500 h-10 rounded-sm text-white pt-2 text-xl" onClick={register} >Register</div>
-            <div>or</div>
+           <div className="pl-8 pr-8 bg-blue-500 h-10 rounded-sm text-white pt-2 text-xl " onClick={register} >Register</div>
+            <div>OR</div>
             <Link to="/login"> <div className="pl-8 pr-8   bg-blue-500 h-10 rounded-sm text-white pt-2 text-xl">Login</div> </Link>
-        </div>
+            </div>
+            <div className="mb-8 w-1/2 ml-48 " >
+            <img src="./register.gif" alt="registergif" />
+            </div>
+         </div>
     )
 }
 

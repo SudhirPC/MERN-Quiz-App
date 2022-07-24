@@ -49,7 +49,10 @@ export const Login = ({ setLoginUser }) => {
   };
 
   return (
-    <div className="login mb-32">
+    <div className=" flex w-4/5 justify-around m-auto mt-16">
+
+
+      <div className="login mb-28 w-1/2 ml-48 ">
       {console.log(user)}
       <h1 className="text-2xl font-semibold">Login</h1>
       <input
@@ -72,18 +75,23 @@ export const Login = ({ setLoginUser }) => {
           onClick={() => {
             login();
           }}
-          className="pl-8 pr-8 bg-blue-500 h-10 rounded-md text-white pt-2 text-xl"
+          className="pl-8 pr-8 bg-blue-500 mt-6 h-10 rounded-md text-white pt-2 text-xl"
         >
           Login
         </div>
       </Link>
-      <div>or</div>
+      <div>OR</div>
       <Link to="/register">
         {" "}
-        <div className="pl-8 pr-8  bg-blue-500  h-10 rounded-md text-white pt-2 text-xl">
+        <div className="pl-8 pr-8 mb-8 bg-blue-500  h-10 rounded-md text-white pt-2 text-xl">
           Register
         </div>{" "}
       </Link>
+      </div>
+      <div className="w-1/2 ml-24">
+    <img className="h-96 w-96" src="./login.gif" alt="logingif" />
+</div>
+      
     </div>
   );
 };

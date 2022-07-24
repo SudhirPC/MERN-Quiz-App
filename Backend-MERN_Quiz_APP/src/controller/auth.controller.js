@@ -38,7 +38,7 @@ router.post('/register', (req, res) => {
     }
   })
 })
-
+//  ------------ get data of user by admin controller-----------
 router.get('/getuser', async (req, res) => {
   try {
     const data = await User.find({}).lean().exec()
@@ -48,7 +48,16 @@ router.get('/getuser', async (req, res) => {
   }
 })
 
+//  ------------delete user by admin controller-----------
 
+router.delete('/:id',async (req, res) => {
+  console.log(req.params.id)
+  User.deleteOne({_id:req.params.id}).then(()=>{
+   res.send("user deleted")
+  }).catch((err) => {
+   res.send("An error Occured")
+  })
+})
 
 
 

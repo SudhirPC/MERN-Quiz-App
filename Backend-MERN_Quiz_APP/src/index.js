@@ -16,6 +16,9 @@ app.use("/admin",quizAdd)
 const quiz=require("./controller/displayQuiz.controller.js")
 app.use("/api",quiz)
 
+const user=require("./controller/auth.controller.js")
+app.use("/user",user)
+
 
 app.listen(Port,async function(){
     try {

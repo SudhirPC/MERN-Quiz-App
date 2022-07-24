@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import "./Register.css"
 import axios from "axios"
 import {Link, useNavigate} from "react-router-dom"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Register = () => {
 
@@ -16,15 +18,19 @@ const navigate=useNavigate()
         const { name, email, password, reEnterPassword } = user
         if( name && email && password && (password === reEnterPassword)){
             axios.post("http://localhost:3755/register", user)
-            .then( res => {
-                if(res.data.message==="Successfully Registered"){
-                    alert(res.data.message)
+            .then( (res) => {
+                console.log("res",res)
+                toast("Successfully Registered",{
+                    type:"success"
+                })
+                setTimeout(() =>{
                     navigate("/login")
-                }else{
-                    alert("Invalid  Registration Credentials")
-                }
-                console.log("res register",res)
+                },4000)
                 
+            }).catch(err => {
+                toast("Invalid Input",{
+                    type:"error"
+                })
             })
         } else {
             alert("Invalid Input")
@@ -51,13 +57,15 @@ const navigate=useNavigate()
             <input type="text" name="email" value={user.email} placeholder="Your Email" onChange={ handleChange }></input>
             <input type="password" name="password" value={user.password} placeholder="Your Password" onChange={ handleChange }></input>
             <input type="password" name="reEnterPassword" value={user.reEnterPassword} placeholder="Re-enter Password" onChange={ handleChange }></input>
-           <div className="pl-8 pr-8 bg-blue-500 h-10 rounded-sm text-white pt-2 text-xl " onClick={register} >Register</div>
+           <button className="pl-8 pr-8 bg-blue-500 h-10 rounded-sm text-white pt-2 text-xl " onClick={register} >Register</button>
+           {/* <ToastContainer /> */}
             <div>OR</div>
             <Link to="/login"> <div className="pl-8 pr-8   bg-blue-500 h-10 rounded-sm text-white pt-2 text-xl">Login</div> </Link>
             </div>
-            <div className="mb-8 w-1/2 ml-48 " >
+            <button className="mb-8 w-1/2 ml-48 " >
             <img src="./register.gif" alt="registergif" />
-            </div>
+            </button>
+       
          </div>
     )
 }

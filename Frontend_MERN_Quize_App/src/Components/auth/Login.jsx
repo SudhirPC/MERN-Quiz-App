@@ -71,27 +71,26 @@ export const Login = ({ setLoginUser }) => {
       ></input>
       <Link to="/">
         {" "}
-        <div
+        <button
           onClick={() => {
             login();
           }}
           className="pl-8 pr-8 bg-blue-500 mt-6 h-10 rounded-md text-white pt-2 text-xl"
         >
           Login
-        </div>
+        </button>
       </Link>
       <div>OR</div>
       <Link to="/register">
         {" "}
-        <div className="pl-8 pr-8 mb-8 bg-blue-500  h-10 rounded-md text-white pt-2 text-xl">
+        <button className="pl-8 pr-8 mb-8 bg-blue-500  h-10 rounded-md text-white pt-2 text-xl">
           Register
-        </div>{" "}
+        </button>{" "}
       </Link>
       </div>
       <div className="w-1/2 ml-24">
     <img className="h-96 w-96" src="./login.gif" alt="logingif" />
 </div>
-      
     </div>
   );
 };

@@ -19,7 +19,7 @@ const [clickoption,setClickOption] = useState(false);
     console.log("option click");
   };
 
-  // ------taking path frommwindow object and compairing with the backend data
+  // ------taking path from window object and compairing with the backend data
 
   const pathname = window.location.pathname
     .split("")
@@ -52,7 +52,6 @@ const [clickoption,setClickOption] = useState(false);
     console.log("index", index);
     setClickOption(true)
   }
-
 
   return (
     <div className="">

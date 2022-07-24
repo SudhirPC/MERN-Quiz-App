@@ -47,12 +47,6 @@ export const quizFailure = (error) => {
       payload,
     }
   }
-  // const getlogoutUser = (payload) => {
-  //   return {
-  //     type: types.LOGOUTUSER,
-  //     payload,
-  //   }
-  // }
 
 
 
@@ -92,6 +86,44 @@ export const loginAdminName=(payload)=>{
     type:types.GETADMINNAME,
     payload,
   }
+}
+
+
+// ----------------------- action creator function for  details of user  for admin page ---------------
+
+
+const getAllUserDataRequest = (payload) => {
+  return {
+    type: types.GET_ALL_USER_DATA_REQUEST,
+    payload,
+  }
+}
+
+const getAllUserDataSuccess = (payload) => {
+  return {
+    type: types.GET_ALL_USER_DATA_SUCCESS,
+    payload,
+  }
+}
+
+const getAllUserDataFailure = (payload) => {
+  return {
+    type: types.GET_ALL_USER_DATA_FAILURE,
+    payload,
+  }
+}
+
+// ----------------------- details of user  for admin page ---------------
+
+export const getAllUserDataFromBackend = (payload) => (dispatch) => {
+  dispatch(getAllUserDataRequest())
+  axios.get('http://localhost:3755/getuser')
+    .then((res) => {
+      dispatch(getAllUserDataSuccess(res.data))
+    })
+    .catch((err) => {
+      dispatch(getAllUserDataFailure())
+    })
 }
 
 

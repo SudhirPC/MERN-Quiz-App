@@ -87,7 +87,8 @@ const [clickoption,setClickOption] = useState(false);
                           className="cursor-pointer hoverOption"
                           onClick={() => handleAnswer(index, e, el)}
                         >
-                          <li onClick={()=>{handlecount(index)}} className="text-xl li-option-tag">{e}</li>
+                          <li  className="text-xl li-option-tag">{e}</li>
+                          {/* onClick={()=>{handlecount(index)}} */}
                         </div>
                       </div>
                     );

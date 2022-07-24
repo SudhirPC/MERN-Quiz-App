@@ -11,6 +11,7 @@ const init = {
   QuizData: [],
   count: "",
   questions: [],
+  Alluser:[]
 };
 
 export const QuizReducer = (state = init, action) => {
@@ -104,6 +105,26 @@ export const QuizReducer = (state = init, action) => {
         userId: null,
         userName: null,
       };
+
+      case types.GET_ALL_USER_DATA_REQUEST:
+            return{
+                ...state,
+                loading:true,
+                error:""
+            }
+        case types.GET_ALL_USER_DATA_SUCCESS:
+            return {
+                ...state,
+                loading:false,
+                error:"",
+                Alluser:payload
+            }
+        case types.GET_ALL_USER_DATA_FAILURE:
+            return{
+                ...state,
+                loading:false,
+                error:payload
+            }
     default:
       return state;
   }

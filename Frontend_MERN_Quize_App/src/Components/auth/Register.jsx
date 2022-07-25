@@ -33,7 +33,9 @@ const navigate=useNavigate()
                 })
             })
         } else {
-            alert("Invalid Input")
+            toast("Invalid Input",{
+                type:"error"
+            })
         }
         
     }

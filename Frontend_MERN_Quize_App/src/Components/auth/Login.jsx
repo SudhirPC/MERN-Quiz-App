@@ -45,7 +45,7 @@ export const Login = () => {
         }else{
           dispatch(loginUser(res.data.user._id))
           dispatch(loginUserName(res.data.user.name))
-          toast(`Welcome  ${res.data.user.name}`,{
+          toast(`Successfully Login `,{
             type:"success"
         })
           setTimeout(() =>{

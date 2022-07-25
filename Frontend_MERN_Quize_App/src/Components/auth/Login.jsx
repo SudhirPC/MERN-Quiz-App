@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import "./Login.css";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-
 import { useDispatch, useSelector } from "react-redux";
 import { loginAdminId, loginAdminName, loginUser, loginUserName } from "../../Redux/action.js";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-export const Login = ({ setLoginUser }) => {
+
+
+export const Login = () => {
   const userId = useSelector((state) => state.mernQuize.userId);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -27,31 +30,44 @@ export const Login = ({ setLoginUser }) => {
     axios
       .post("http://localhost:3755/login", user)
       .then((res) => {
-        console.log(res.data)
+        // console.log(res.data)
         if(res.data.user.email=="sudhirchavhan100@gmail.com"){
+
           dispatch(loginAdminId(res.data.user._id))
           dispatch(loginAdminName(res.data.user.name))
+          toast(`Welcome Admin ${res.data.user.name}`,{
+            type:"success"
+        })
+
+        setTimeout(() =>{
+          navigate("/profile")
+      },4000)
         }else{
           dispatch(loginUser(res.data.user._id))
           dispatch(loginUserName(res.data.user.name))
+          toast(`Welcome  ${res.data.user.name}`,{
+            type:"success"
+        })
+          setTimeout(() =>{
+            navigate("/profile")
+        },4000)
         }
     
-        if(res.data.message=="login succesfully"){
-            alert("Login succesfully")
-              navigate('/')   
-        }
-
-
+//         if(res.data.message=="login successfully"){
+// alert("Login successfully")
+//         }
+// navigate('/')  
+        
       })
       .catch((err) => {
-        alert("Invalid Credientials");
+        toast("Invalid Credientials",{
+          type:"error"
+      })
       });
   };
 
   return (
-    <div className=" flex w-4/5 justify-around m-auto mt-16">
-
-
+    <div className=" flex w-4/5 justify-around m-auto mt-16 mb-16">
       <div className="login mb-28 w-1/2 ml-48 ">
       {console.log(user)}
       <h1 className="text-2xl font-semibold">Login</h1>
@@ -69,21 +85,22 @@ export const Login = ({ setLoginUser }) => {
         onChange={handleChange}
         placeholder="Enter your Password"
       ></input>
-      <Link to="/">
+      <div >
         {" "}
         <button
           onClick={() => {
             login();
           }}
-          className="pl-8 pr-8 bg-blue-500 mt-6 h-10 rounded-md text-white pt-2 text-xl"
+          className="p-2 pl-28 pr-28 bg-blue-500 h-10 rounded-md text-white  text-xl "
         >
           Login
         </button>
-      </Link>
+        <ToastContainer/>
+      </div>
       <div>OR</div>
       <Link to="/register">
         {" "}
-        <button className="pl-8 pr-8 mb-8 bg-blue-500  h-10 rounded-md text-white pt-2 text-xl">
+        <button className="p-2 pl-28 pr-24 bg-blue-500 h-10 rounded-md text-white  text-xl ">
           Register
         </button>{" "}
       </Link>
@@ -94,3 +111,5 @@ export const Login = ({ setLoginUser }) => {
     </div>
   );
 };
+
+ 

@@ -19,7 +19,7 @@ const navigate=useNavigate()
         if( name && email && password && (password === reEnterPassword)){
             axios.post("http://localhost:3755/register", user)
             .then( (res) => {
-                console.log("res",res)
+                // console.log("res",res)
                 toast("Successfully Registered",{
                     type:"success"
                 })
@@ -49,23 +49,22 @@ const navigate=useNavigate()
     
     
     return (
-        <div className="flex w-4/5 justify-around m-auto mt-10">
-            <div className="register w-1/2 ml-24">
+        <div className="flex w-4/5 registermain justify-around m-auto mt-10">
+            <div className="register w-1/2 h-96 ml-24">
             {console.log( user)}
             <p className="text-2xl font-semibold">Register</p>
             <input type="text" name="name" value={user.name} placeholder="Your Name" onChange={ handleChange }></input>
             <input type="text" name="email" value={user.email} placeholder="Your Email" onChange={ handleChange }></input>
             <input type="password" name="password" value={user.password} placeholder="Your Password" onChange={ handleChange }></input>
             <input type="password" name="reEnterPassword" value={user.reEnterPassword} placeholder="Re-enter Password" onChange={ handleChange }></input>
-           <button className="pl-8 pr-8 bg-blue-500 h-10 rounded-sm text-white pt-2 text-xl " onClick={register} >Register</button>
-           {/* <ToastContainer /> */}
+           <button className="p-2 pl-28 pr-28 bg-blue-500 h-10 rounded-md text-white  text-xl " onClick={register} >Register</button>
+           <ToastContainer/>
             <div>OR</div>
-            <Link to="/login"> <div className="pl-8 pr-8   bg-blue-500 h-10 rounded-sm text-white pt-2 text-xl">Login</div> </Link>
+            <Link to="/login"> <div className="p-2 pl-28 pr-24 bg-blue-500 h-10 rounded-md text-white  text-xl ">Login</div> </Link>
             </div>
             <button className="mb-8 w-1/2 ml-48 " >
             <img src="./register.gif" alt="registergif" />
             </button>
-       
          </div>
     )
 }

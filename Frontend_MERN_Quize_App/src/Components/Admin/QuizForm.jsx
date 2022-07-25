@@ -2,7 +2,8 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { postQuizObj, quizSuccess } from "../../Redux/action.js";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const QuizForm = () => {
   const data = useSelector((state) => state.mernQuize.questions);
@@ -17,7 +18,6 @@ export const QuizForm = () => {
 
   const handleQuiz = (event) => {
     event.preventDefault();
-
     console.log(quiz);
     dispatch(quizSuccess(quiz));
   };
@@ -120,7 +120,7 @@ export const QuizForm = () => {
       </div>
       </div>
      
-
+      <ToastContainer/>
     </div>
   );
 };

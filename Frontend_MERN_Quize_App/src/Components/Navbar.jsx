@@ -2,6 +2,8 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { Logouthandleraction } from "../Redux/action.js";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Navbar = () => {
   const userId = useSelector((state) => state.mernQuize.userId);
@@ -10,7 +12,20 @@ export const Navbar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const logouthandler = () => {
+
+  if(userName!==null){
     dispatch(Logouthandleraction());
+    toast(`${userName} Successfully Logout `,{
+      type:"success"
+  })
+  }
+  if(adminName=="Sudhir P Chavhan"){
+  
+    toast(`Sudhir P Chavhan Successfully Logout `,{
+      type:"success"
+  })
+  dispatch(Logouthandleraction());
+  }
     navigate("/");
   };
 
@@ -95,7 +110,7 @@ export const Navbar = () => {
               />
             </svg>
           </div>
-
+          <ToastContainer/>
       </div>
     </div>
   );

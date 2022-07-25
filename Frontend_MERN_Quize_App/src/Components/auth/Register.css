@@ -1,3 +1,8 @@
+.registermain{
+    height: 530px;
+}
+
+
 .register {
     width: 400px;
     background: #fff;
@@ -9,7 +14,7 @@
     text-align: center;
     /* margin-left: 40%; */
     margin-top:2%;
-    height:450px
+    height:425px
 }
 
 .register > input {
@@ -33,4 +38,5 @@
     border-radius: 8px;
     outline: none;
     cursor: pointer;
+    width:220px
 }

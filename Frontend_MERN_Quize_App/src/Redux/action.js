@@ -177,3 +177,4 @@ const fetchQuizFailure = (payload) => {
       .then((res) => dispatch(fetchQuizSuccess (res.data)))
       .catch((err) => console.log(err));
   };
+

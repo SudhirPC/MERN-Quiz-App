@@ -1,13 +1,13 @@
 const express = require('express')
 const router = express.Router()
-const PostUser=require("../model/userdata.model.js")
+const User=require("../model/auth.model.js")
 
 
 
 router.post("/:id", async (req, res) => {
     console.log(req.params.id, "hello");
     try {
-      const data = await PostUser.findByIdAndUpdate(
+      const data = await User.findByIdAndUpdate(
         req.params.id,
         {
           $addToSet: {

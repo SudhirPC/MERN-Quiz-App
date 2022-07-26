@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { postQuizObj, quizSuccess } from "../../Redux/action.js";
 
-
 export const QuizForm = () => {
   const data = useSelector((state) => state.mernQuize.questions);
   const dispatch = useDispatch();
@@ -30,12 +29,13 @@ export const QuizForm = () => {
     console.log(quiz);
     dispatch(quizSuccess(quiz));
   };
-  const handleUpload = () => {
+  const handleUploadnew = (event) => {
+    event.preventDefault();
     const obj = {
       title: data[0].title,
       questionArray: data,
     };
-    // console.log(obj);
+    console.log("handleUploadnew",obj);
 
     dispatch(postQuizObj(obj));
   };
@@ -52,11 +52,17 @@ export const QuizForm = () => {
   };
 
   return (
-    <div className="w-96 text-slate-50">
-      <div className="text-lg text-yellow-300 font-bold font-serif mb-5 mt-5">
-        Add Questions
+    <div className="w-10/12 flex  text-slate-50">
+      <div className="w-1/2 mt-24 ml-32">
+        <img className="h-80 pl-36 mt-8" src="./feedback.gif" alt="feedback" />
       </div>
-      <form>
+
+      <div className="">
+      <div className="flex text-yellow-500  w-96 font-bold font-serif mb-2 ml-12 mt-14">
+     <h1 className="text-2xl ">ADD QUESTIONS </h1>
+     <img src="./add.gif" alt="add icon" className="w-1/3 h-20 -mt-6" />
+      </div>
+      <form className="-mt-6">
         <label
           className="block uppercase tracking-wide  text-xs font-bold mb-2"
           htmlFor="grid-first-name"
@@ -153,19 +159,23 @@ export const QuizForm = () => {
             setQuiz({ ...quiz, correctAnswer: event.target.value })
           }
         />
+        <div className="flex">
         <button
           onClick={handleQuiz}
-          className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+          className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded "
         >
           Submit
         </button>
-      </form>
       <button
-        onClick={handleUpload}
-        className=" mt-1 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+        onClick={handleUploadnew}
+        className=" bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  ml-36 "
       >
         Upload
       </button>
+        </div>
+      </form>
+      </div>
+     
     </div>
   );
 };

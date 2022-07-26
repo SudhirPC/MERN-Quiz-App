@@ -11,7 +11,8 @@ const init = {
   QuizData: [],
   count: "",
   questions: [],
-  Alluser:[]
+  Alluser:[],
+  ans:[]
 };
 
 export const QuizReducer = (state = init, action) => {
@@ -23,7 +24,7 @@ export const QuizReducer = (state = init, action) => {
         ...state,
         error: "",
         loading: false,
-        questions: payload,
+        questions: [...state.questions,payload],
       };
     case types.FETCH_QUIZ_REQUEST:
       return {
@@ -125,6 +126,7 @@ export const QuizReducer = (state = init, action) => {
                 loading:false,
                 error:payload
             }
+         
     default:
       return state;
   }

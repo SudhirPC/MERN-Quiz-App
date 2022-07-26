@@ -14,9 +14,9 @@ export const Quiz = ( props ) => {
   const questionArr=props.questionArr
   const data = useSelector((state) => state.mernQuize.QuizData);
   console.log("datanew",data)
-  const user = useSelector((state) => state.user);
-  const userID = user._id;
-  const quizID = data[0]._id;
+  // const user = useSelector((state) => state.user);
+  // const userID = user._id;
+  // const quizID = data[0]._id;
   const dispatch = useDispatch();
 
   const [num, setNum] = useState(0);
@@ -47,7 +47,7 @@ export const Quiz = ( props ) => {
         <ol className="" disabled={disable}>
           {questionArr[num]?.options?.map((answer, index) => (
             <li
-              key={answer._id}
+              key={index}
               className={
                 index == disable && disable != null
                   ? "show border border-gray-300 text-center m-2 p-2"
@@ -78,11 +78,11 @@ export const Quiz = ( props ) => {
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded mr-1"
               onClick={() => {
                 // dispatch(postUserResult(ans));
-                const obj = {
-                  quizId: quizID,
-                  userId: userID,
-                  quizResult: ans,
-                };
+                // const obj = {
+                //   quizId: quizID,
+                //   userId: userID,
+                //   quizResult: ans,
+                // };
                 // dispatch(postQuizResult(obj));
               }}
             >

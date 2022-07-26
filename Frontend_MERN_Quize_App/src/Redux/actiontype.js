@@ -29,3 +29,7 @@ export const GETADMINNAME="GETADMINNAME"
 export const GET_ALL_USER_DATA_REQUEST="GET_ALL_USER_DATA_REQUEST"
 export const GET_ALL_USER_DATA_SUCCESS="GET_ALL_USER_DATA_SUCCESS"
 export const GET_ALL_USER_DATA_FAILURE="GET_ALL_USER_DATA_FAILURE"
+
+
+// ----------- answer array to the user backend------------------------
+export const  POST_USER_RESULT_SUCCESS ="POST_USER_RESULT_SUCCESS"

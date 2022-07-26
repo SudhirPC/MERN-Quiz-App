@@ -17,6 +17,7 @@ export const Quizes = () => {
   useEffect(() => {
     dispatch(getQuiz(params))
   }, []);
+  
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);

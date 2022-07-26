@@ -3,14 +3,17 @@ import "./Quiz.css";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  getSingleQuiz,
-  postQuizResult,
-  postUserResult,
-} from "../../Redux/Action/action";
+// import {
+//   getSingleQuiz,
+//   postQuizResult,
+//   postUserResult,
+// } from "../../Redux/Action/action";
 
-export const Quiz = ({ questionArr }) => {
-  const data = useSelector((state) => state.singleQuiz);
+export const Quiz = ( props ) => {
+  console.log("Quiz.js", props.questionArr)
+  const questionArr=props.questionArr
+  const data = useSelector((state) => state.mernQuize.QuizData);
+  console.log("datanew",data)
   const user = useSelector((state) => state.user);
   const userID = user._id;
   const quizID = data[0]._id;
@@ -24,6 +27,7 @@ export const Quiz = ({ questionArr }) => {
   const handleQue = (index) => {
     setDisable(index);
   };
+
   return (
     <div className=" h-96 pt-5 bg-cyan-900">
       <div className="w-full text-center">
@@ -73,13 +77,13 @@ export const Quiz = ({ questionArr }) => {
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded mr-1"
               onClick={() => {
-                dispatch(postUserResult(ans));
+                // dispatch(postUserResult(ans));
                 const obj = {
                   quizId: quizID,
                   userId: userID,
                   quizResult: ans,
                 };
-                dispatch(postQuizResult(obj));
+                // dispatch(postQuizResult(obj));
               }}
             >
               Result

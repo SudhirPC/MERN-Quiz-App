@@ -23,7 +23,7 @@ export const QuizReducer = (state = init, action) => {
         ...state,
         error: "",
         loading: false,
-        questions: [...state.questions, payload],
+        questions: payload,
       };
     case types.FETCH_QUIZ_REQUEST:
       return {

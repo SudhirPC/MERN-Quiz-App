@@ -14,6 +14,7 @@ import { Admin } from './Components/Admin/Admin.jsx';
 import { QuizForm } from './Components/Admin/QuizForm.jsx';
 import { Profile } from './Components/Profile/Profile.jsx';
 import { ProfileMain } from './Components/Profile/ProfileMain.jsx';
+import { Quizes } from './Components/QuizNew/Quizes.jsx';
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
         <Route path="/CSS" element={ <NewQuizPage />} />
         <Route path="/Javascript" element={ <NewQuizPage />} />
         <Route path="/React" element={ <NewQuizPage />} />
-        <Route path="/Redux" element={ <NewQuizPage />} />
+        <Route path="/quiz/:id" element={ <Quizes />} />
         <Route path="/Mongodb" element={ <NewQuizPage />} />
         <Route path="/admin" element={ <Admin />} />
         <Route path="/addquiz" element={ <QuizForm/>} />

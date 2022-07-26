@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose')
 const quizAttemptedSchema = new mongoose.Schema({
   quizId: { type: mongoose.Schema.Types.ObjectId, ref: "PostQuiz" },
   quizResult: [],
@@ -10,4 +10,4 @@ const postUserSchema = new mongoose.Schema({
 });
 
 const PostUser = mongoose.model("PostUser", postUserSchema);
-export default PostUser;
+module.exports=PostUser

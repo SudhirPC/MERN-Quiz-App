@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose')
 
 const questionArr = new mongoose.Schema({
   title: { type: String },
@@ -16,4 +16,5 @@ const postQuizSchema = new mongoose.Schema({
 });
 
 const PostQuiz = mongoose.model("PostQuiz", postQuizSchema);
-export default PostQuiz;
+
+module.exports=PostQuiz

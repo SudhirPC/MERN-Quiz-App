@@ -14,7 +14,10 @@ const quizAdd=require("./controller/quizAdd.controller.js")
 app.use("/admin",quizAdd)
 
 const quiz=require("./controller/displayQuiz.controller.js")
-app.use("/api",quiz)
+app.use("/quiz",quiz)
+
+const getquiz = require("./controller/quizAdd.controller.js")
+app.use("/quiz",getquiz)
 
 const user=require("./controller/auth.controller.js")
 app.use("/user",user)

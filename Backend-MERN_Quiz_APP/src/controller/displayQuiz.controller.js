@@ -5,7 +5,7 @@ const router =express.Router()
 
 const Postquiz=require("../model/quizdata.model.js")
 
-router.get("/quiz",async(req,res)=>{
+router.get("/",async(req,res)=>{
     try{
 const Postquizdata=await Postquiz.find().lean().exec()
 res.send(Postquizdata)

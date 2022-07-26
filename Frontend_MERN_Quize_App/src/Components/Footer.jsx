@@ -12,7 +12,7 @@ export const Footer = () => {
             className="text-xl uppercase p-1 border-b-2 border-white w-fit my-2"
             style={{
               width: "fit-content",
-              color: "#2196f3",
+              color: "#4fa0e3",
               fontWeight: "bolder",
             }}
           >
@@ -27,7 +27,7 @@ export const Footer = () => {
             className="text-white text-xl uppercase p-1 border-b-2 border-white w-fit my-2"
             style={{
               width: "fit-content",
-              color: "#2196f3",
+              color: "#4fa0e3",
               fontWeight: "bolder",
             }}
           >
@@ -47,7 +47,7 @@ export const Footer = () => {
             className="text-white text-xl uppercase p-1 border-b-2 border-white w-fit my-2"
             style={{
               width: "fit-content",
-              color: "#2196f3",
+              color: "#4fa0e3",
               fontWeight: "bolder",
             }}
           >
@@ -89,7 +89,7 @@ export const Footer = () => {
             className="text-white text-xl uppercase p-1 border-b-2 border-white w-fit my-2"
             style={{
               width: "fit-content",
-              color: "#2196f3",
+              color: "#4fa0e3",
               fontWeight: "bolder",
             }}
           >

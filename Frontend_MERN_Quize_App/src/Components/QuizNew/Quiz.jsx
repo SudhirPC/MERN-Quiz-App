@@ -3,26 +3,24 @@ import "./Quiz.css";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import {
-//   getSingleQuiz,
-//   postQuizResult,
-//   postUserResult,
-// } from "../../Redux/Action/action";
+import { postQuizResult, postUserResult } from "../../Redux/action.js";
+
 
 export const Quiz = ( props ) => {
   console.log("Quiz.js", props.questionArr)
   const questionArr=props.questionArr
   const data = useSelector((state) => state.mernQuize.QuizData);
+  const result = useSelector((state) => state.mernQuize.result);
   console.log("datanew",data)
-  // const user = useSelector((state) => state.user);
-  // const userID = user._id;
-  // const quizID = data[0]._id;
+  const userID = useSelector((state) => state.mernQuize.userId);
+  console.log("userId",userID)
+  const quizID = data[0]._id;
   const dispatch = useDispatch();
 
   const [num, setNum] = useState(0);
   const [ans, setAns] = useState([]);
   const [btnshow, setBtnshow] = useState(false);
-  console.log(ans);
+  console.log("btnshow",btnshow);
   const [disable, setDisable] = useState(null);
   const handleQue = (index) => {
     setDisable(index);
@@ -41,7 +39,7 @@ export const Quiz = ( props ) => {
             </h1>
           </div>
           <div className=" font-serif text-slate-900">
-            {num + "/" + (questionArr.length - 1)}
+            {num + "/" + (questionArr.length)}
           </div>
         </div>
         <ol className="" disabled={disable}>
@@ -77,13 +75,13 @@ export const Quiz = ( props ) => {
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded mr-1"
               onClick={() => {
-                // dispatch(postUserResult(ans));
-                // const obj = {
-                //   quizId: quizID,
-                //   userId: userID,
-                //   quizResult: ans,
-                // };
-                // dispatch(postQuizResult(obj));
+                dispatch(postUserResult(ans));
+                const obj = {
+                  quizId: quizID,
+                  userId: userID,
+                  quizResult: ans,
+                };
+                dispatch(postQuizResult(obj));
               }}
             >
               Result
@@ -94,7 +92,7 @@ export const Quiz = ( props ) => {
               onClick={() => {
                 setNum(num + 1);
                 setDisable(null);
-                if (questionArr.length - 2 == num) {
+                if (questionArr.length-1 == num) {
                   setBtnshow(true);
                 }
               }}

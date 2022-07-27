@@ -15,13 +15,7 @@ export const quizSuccess = (quiz) => {
     payload: quiz,
   };
 };
-export const postuserAnswer = (ans) => {
-  console.log("hello", ans);
-  return {
-    type: types.POST_USER_RESULT_SUCCESS,
-    payload: ans,
-  };
-};
+
 
 export const quizFailure = (error) => {
   return {
@@ -197,16 +191,51 @@ export const getQuiz = (params) => (dispatch) => {
 
 //------------posting the user quiz result ------------
 
-// export const postQuizResult = (obj) => (dispatch) => {
-//   const { quizId, userId, quizResult } = obj;
-//   dispatch(postUserResultRequest());
-//   axios
-//     .post(`http://localhost:3755/admin/${userId}`, obj)
-//     .then((res) => {
-//       console.log(res.data);
-//       dispatch(postUserResultSuccess(res.data));
-//     })
-//     .catch((err) => {
-//       dispatch(postUserResultFailure(err));
-//     });
-// };
+//  -----------posting user result ------------
+
+
+export const postUserResult = (ans) => {
+  return {
+    type: types.SET_USER_RESULT_SUCCESS,
+    payload: ans,
+  };
+};
+
+
+
+// ------action creator function and axios function =-------
+
+ const postUserResultRequest = (ans) => {
+
+  return {
+    type: types.POST_USER_RESULT_SUCCESS,
+    payload: ans,
+  };
+};
+ const postUserResultSuccess = (ans) => {
+  console.log("hello", ans);
+  return {
+    type: types.POST_USER_RESULT_SUCCESS,
+    payload: ans,
+  };
+};
+ const postUserResultFailure = (ans) => {
+
+  return {
+    type: types.POST_USER_RESULT_SUCCESS,
+    payload: ans,
+  };
+};
+export const postQuizResult = (obj) => (dispatch) => {
+  const { quizId, userId, quizResult } = obj;
+  dispatch(postUserResultRequest());
+  axios
+    .post(`http://localhost:3755/userResult/${userId}`, obj)
+    .then((res) => {
+      console.log(res.data.quizAttempted,"datafrombaceknd");
+      dispatch(postUserResultSuccess(res.data));
+    })
+    .catch((err) => {
+      dispatch(postUserResultFailure(err));
+    });
+};

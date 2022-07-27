@@ -9,7 +9,7 @@ const init = {
   userName: null,
   quizTitle: "",
   QuizData: [],
-  count: "",
+  result:[],
   questions: [],
   Alluser:[],
   ans:[]
@@ -65,13 +65,7 @@ export const QuizReducer = (state = init, action) => {
         loading: false,
       };
 
-    case types.GETCOUNTDATA:
-      console.log("payload", payload);
 
-      return {
-        ...state,
-        count: payload,
-      };
     case types.GETUSERID:
       return {
         ...state,
@@ -126,7 +120,20 @@ export const QuizReducer = (state = init, action) => {
                 loading:false,
                 error:payload
             }
-         
+            case types.POST_USER_RESULT_SUCCESS:
+              return {
+                ...state,
+                isLoading: false,
+                isError: false,
+                user: payload,
+              };
+              case types.SET_USER_RESULT_SUCCESS:
+                return {
+                  ...state,
+                  isLoading: false,
+                  isError: false,
+                  result: payload,
+                };
     default:
       return state;
   }

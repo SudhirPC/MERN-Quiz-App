@@ -33,3 +33,8 @@ export const GET_ALL_USER_DATA_FAILURE="GET_ALL_USER_DATA_FAILURE"
 
 // ----------- answer array to the user backend------------------------
 export const  POST_USER_RESULT_SUCCESS ="POST_USER_RESULT_SUCCESS"
+export const POST_USER_RESULT_REQUEST ="POST_USER_RESULT_REQUEST"
+export const POST_USER_RESULT_FAILURE="POST_USER_RESULT_FAILURE"
+
+//post result to redux
+export const SET_USER_RESULT_SUCCESS = "SET_USER_RESULT_SUCCESS";

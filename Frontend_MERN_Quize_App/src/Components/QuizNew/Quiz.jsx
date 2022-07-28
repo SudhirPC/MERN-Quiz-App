@@ -27,22 +27,26 @@ export const Quiz = ( props ) => {
   };
 
   return (
-    <div className=" h-96 pt-5 bg-cyan-900">
-      <div className="w-full text-center">
+    <div className=" w-11/12 h-96 pt-5 bg-white">
+      <div className="w-full ">
         <div className="flex justify-between align-middle">
           <div className="w-16  h-16">
             <img src="./mark.gif" className="w-full h-full" />
           </div>
-          <div>
+          <div className="flex">
+           <h1 className="text-3xl m-2 text-sky-400/25">{num+1})</h1>
             <h1 className="text-3xl m-2 text-sky-400/25">
               {questionArr[num]?.questions}
             </h1>
           </div>
+          <div className="border-red-500 absolute  right-24 top-24 border-2 mb-8 p-1 pl-2  pr-2 ">
+      <h1 className="text-xl font-bold">Attempted : {num + "/" + (questionArr.length)}</h1>
+      </div>
           <div className=" font-serif text-slate-900">
-            {num + "/" + (questionArr.length)}
+            {/* {num + "/" + (questionArr.length)} */}
           </div>
         </div>
-        <ol className="" disabled={disable}>
+        <ol className=" w-96" disabled={disable}>
           {questionArr[num]?.options?.map((answer, index) => (
             <li
               key={index}

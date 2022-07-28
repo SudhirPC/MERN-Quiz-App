@@ -23,9 +23,9 @@ const dispatch= useDispatch();
 
 
     return (
-        <div className=" flex w-4/5 m-auto">
-          <div className="bg-teal-500 rounded-lg w-56 pl-16 p-3"><h1>List of Users</h1></div>
-        <div class="flex flex-col container max-w-md mt-10  w-1/2  bg-teal-500 rounded-lg ">
+        <div className="  w-4/5 m-auto">
+          <div className="bg-teal-500 rounded-lg w-56 pl-16 p-4 text-2xl"><h1>List of Users</h1></div>
+        <div class="flex flex-col container max-w-md -mt-16  w-1/2  bg-teal-500 rounded-lg ml-64">
           <ul class="flex flex-col divide-y w-full">
             {props.data.map((e) => {
               return (

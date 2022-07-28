@@ -12,8 +12,6 @@ export const Quizes = () => {
   const [isLoading, setLoading] = useState(true);
   const questionArr = singleQuiz[0]?.questionArray;
   console.log("questionArr",questionArr);
-  
-
   useEffect(() => {
     dispatch(getQuiz(params))
   }, []);
@@ -21,7 +19,7 @@ export const Quizes = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 4000);
   }, []);
-  return isLoading ? <div>...loading</div> : <Quiz questionArr={questionArr} />;
+  return isLoading ? <div><iframe className="w-4/5 h-96 ml-40" src="https://embed.lottiefiles.com/animation/9844"></iframe></div> : <Quiz questionArr={questionArr} />;
 };

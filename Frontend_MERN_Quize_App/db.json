@@ -147,7 +147,7 @@
 {
 "que":"Which of the following is the correct data flow sequence of flux concept?",
 "answer":[
-  " Dispatcher->Action->Store->View",
+  "Dispatcher->Action->Store->View",
   "Action->Dispatcher->View->Store",
   "Action->Dispatcher->Store->View",
   "Action->Store->Dispatcher->View"

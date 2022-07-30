@@ -50,8 +50,14 @@ export const Resultshow = () => {
  },)
   return (
     <div>
+      <div>
+        <img src="./resultAnalysis.gif" alt="resultAnalysis" />
+      </div>
+        <div>
         <h1>Total Marks : {count}</h1>
         <h1>{feedback}</h1>
+        </div>
+
     </div>
   )
 }

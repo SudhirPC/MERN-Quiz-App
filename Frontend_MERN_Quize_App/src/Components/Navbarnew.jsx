@@ -5,7 +5,7 @@ import { Logouthandleraction } from "../Redux/action.js";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-export const Navbar = () => {
+export const Navbarnew = () => {
   const userId = useSelector((state) => state.mernQuize.userId);
   const userName = useSelector((state) => state.mernQuize.userName);
   const adminName = useSelector((state) => state.mernQuize.adminName);
@@ -47,11 +47,12 @@ export const Navbar = () => {
         />
       </Link>
 
-      <div className="w-2/5 py-2 mx-36">
-        <div className="flex h-10 py-2 mt-1 bg-gray-200">
+      <div className="w-2/5  ">
+        <img className="w-48 h-24" src="./MERN2.png" alt="" />
+        {/* <div className="flex h-10 py-2 mt-1 bg-gray-200">
           <div className="w-3/4 ">
             <input
-              className="w-4/5 pl-6 bg-gray-200 focus:outline-none"
+              className="w-3/4 pl-8 bg-gray-200 focus:outline-none"
               type="text"
               placeholder="What are you looking for?"
             />
@@ -70,7 +71,7 @@ export const Navbar = () => {
               ></path>
             </svg>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="w-3/12 flex justify-around py-4">

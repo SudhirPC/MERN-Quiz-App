@@ -16,6 +16,7 @@ import { Profile } from './Components/Profile/Profile.jsx';
 import { ProfileMain } from './Components/Profile/ProfileMain.jsx';
 import { Quizes } from './Components/QuizNew/Quizes.jsx';
 import { Resultshow } from './Components/Resultshow.jsx';
+import { Navbarnew } from './Components/Navbarnew.jsx';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <div className="App ">
      {/* <h1 className="bg-red-700">Quize App</h1> */}
      <Navbar/>
+     {/* <Navbarnew/> */}
       <Routes>
      <Route path="/" element={ <TopicQuiz/>} />
         <Route path="/login" element={ <Login/>}  />

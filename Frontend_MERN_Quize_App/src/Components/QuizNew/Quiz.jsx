@@ -28,15 +28,16 @@ export const Quiz = ( props ) => {
   };
 
   return (
-    <div className=" w-11/12 h-96 pt-5 bg-white">
-      <div className="w-full ">
+    <div className=" w-11/12 h-96 pt-5 mt-16 bg-white">
+      <div className="w-full shadow-lg  m-4 p-4 ml-12">
         <div className="flex justify-between align-middle">
           <div className="w-16  h-16">
-            <img src="./mark.gif" className="w-full h-full" />
+            <img  className="w-full h-full" src="./faqQ.gif" alt=""/>
+            {/* <video className="w-full" src="./businessanalysis.mp4" /> */}
           </div>
-          <div className="flex">
-           <h1 className="text-3xl m-2 text-sky-400/25">{num+1})</h1>
-            <h1 className="text-3xl m-2 text-sky-400/25">
+          <div className="flex w-4/5 pl-24 ml-12">
+           <h1 className="text-2xl m-2 text-black-400/25">{num+1})</h1>
+            <h1 className="text-2xl m-2 text-black-400/25">
               {questionArr[num]?.questions}
             </h1>
           </div>
@@ -47,14 +48,14 @@ export const Quiz = ( props ) => {
             {/* {num + "/" + (questionArr.length)} */}
           </div>
         </div>
-        <ol className=" w-96" disabled={disable}>
+        <ol className=" w-3/5 ml-64" disabled={disable}>
           {questionArr[num]?.options?.map((answer, index) => (
             <li
               key={index}
               className={
                 index == disable && disable != null
-                  ? "show border border-gray-300 text-center m-2 p-2"
-                  : `notshow border border-gray-300 text-center m-2 p-2`
+                  ? "show border border-gray-300 text-center m-2 p-2 rounded-lg"
+                  : `notshow border border-gray-300 text-center m-2 p-2 rounded-lg`
               }
               onClick={(e) => {
                 setAns([...ans, answer.option]);
@@ -66,7 +67,7 @@ export const Quiz = ( props ) => {
             </li>
           ))}
         </ol>
-        <div className="mt-3">
+        <div className="mt-3 ml-80 pl-48">
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-1"
             onClick={() => {

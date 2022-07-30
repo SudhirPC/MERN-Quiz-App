@@ -15,6 +15,7 @@ import { QuizForm } from './Components/Admin/QuizForm.jsx';
 import { Profile } from './Components/Profile/Profile.jsx';
 import { ProfileMain } from './Components/Profile/ProfileMain.jsx';
 import { Quizes } from './Components/QuizNew/Quizes.jsx';
+import { Resultshow } from './Components/Resultshow.jsx';
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
         <Route path="/admin" element={ <Admin />} />
         <Route path="/addquiz" element={ <QuizForm/>} />
         <Route path="/profile" element={ <ProfileMain/>} />
-       
+        <Route path="/result" element={ <Resultshow/>} />
      </Routes>
      {/* <QuizePage/> */}
      {/* <Home/> */}

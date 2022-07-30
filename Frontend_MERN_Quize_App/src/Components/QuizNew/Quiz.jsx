@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { postQuizResult, postUserResult } from "../../Redux/action.js";
+import { Link } from "react-router-dom";
 
 
 export const Quiz = ( props ) => {
@@ -76,7 +77,7 @@ export const Quiz = ( props ) => {
             Skip
           </button>
           {btnshow ? (
-            <button
+       <Link to="/result">  <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded mr-1"
               onClick={() => {
                 dispatch(postUserResult(ans));
@@ -89,14 +90,14 @@ export const Quiz = ( props ) => {
               }}
             >
               Result
-            </button>
+            </button></Link>   
           ) : (
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded mr-1"
               onClick={() => {
                 setNum(num + 1);
                 setDisable(null);
-                if (questionArr.length-1 == num) {
+                if (questionArr.length-2 == num) {
                   setBtnshow(true);
                 }
               }}

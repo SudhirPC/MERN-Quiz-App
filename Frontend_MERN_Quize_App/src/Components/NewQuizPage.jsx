@@ -55,7 +55,7 @@ const [clickoption,setClickOption] = useState(false);
 
   return (
     <div className="">
-      <div className="border-red-500 absolute  right-24 top-24 border-2 mb-8 p-1 pl-2  pr-2 ">
+      <div className="border-teal-500 absolute  right-24 top-24 border-2 mb-8 p-1 pl-2  pr-2 ">
       <h1 className="text-xl font-bold">Count:{count}</h1>
       </div>
       <div className="mt-20">

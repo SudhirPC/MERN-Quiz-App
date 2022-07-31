@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom';
 
 export const Resultshow = () => {
     let [count,setCount]=useState(0);
@@ -49,15 +50,21 @@ export const Resultshow = () => {
     calcPercent()
  },)
   return (
-    <div>
-      <div>
+    <div className=" w-11/12 shadow-2xl ml-16 ">
+      <h1 className="ml-72 pl-64 mt-8 text-3xl text-sky-700">Result Analysis</h1>
+      <div className="flex -mt-24">
+      <div className="w-2/5 ml-4">
         <img src="./resultAnalysis.gif" alt="resultAnalysis" />
       </div>
-        <div>
-        <h1>Total Marks : {count}</h1>
-        <h1>{feedback}</h1>
+        <div className="w-2/5  mt-24 p-8">
+        <h1 className="text-2xl text-red-600">{feedback}</h1>
+        <strong className="text-xl italic text-teal-600">Total Marks : {count}</strong>
         </div>
-
+      </div>
+    
+      <div className="border-red-500 absolute  bg-teal-300  right-24 top-28 border-2 mb-8 p-1 pl-2  pr-2 ">
+     <Link to="/"><button className="text-xl font-bold rounded-md">Attempt More Quiz</button></Link> 
+      </div>
     </div>
   )
 }

@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { postQuizResult, postUserResult } from "../../Redux/action.js";
 import { Link } from "react-router-dom";
 
-
 export const Quiz = ( props ) => {
   console.log("Quiz.js", props.questionArr)
   const questionArr=props.questionArr
@@ -31,8 +30,9 @@ export const Quiz = ( props ) => {
     <div className=" w-11/12 h-96 pt-5 mt-16 bg-white">
       <div className="w-full shadow-lg  m-4 p-4 ml-12">
         <div className="flex justify-between align-middle">
-          <div className="w-16  h-16">
-            <img  className="w-full h-full" src="./faqQ.gif" alt=""/>
+          <div className="w-24  h-16">
+            {/* <img  className="w-full h-full" src="./questionpages.gif" alt="think"/> */}
+            <iframe src="https://embed.lottiefiles.com/animation/103649"></iframe>
             {/* <video className="w-full" src="./businessanalysis.mp4" /> */}
           </div>
           <div className="flex w-4/5 pl-24 ml-12">
@@ -41,7 +41,7 @@ export const Quiz = ( props ) => {
               {questionArr[num]?.questions}
             </h1>
           </div>
-          <div className="border-red-500 absolute  right-24 top-24 border-2 mb-8 p-1 pl-2  pr-2 ">
+          <div className="border-red-500 absolute  right-24 top-32 border-2 mb-8 p-1 pl-2  pr-2 ">
       <h1 className="text-xl font-bold">Attempted : {num + "/" + (questionArr.length)}</h1>
       </div>
           <div className=" font-serif text-slate-900">

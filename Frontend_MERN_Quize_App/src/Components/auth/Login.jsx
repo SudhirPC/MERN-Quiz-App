@@ -28,7 +28,7 @@ export const Login = () => {
 
   const login = () => {
     axios
-      .post("http://localhost:3755/login", user)
+      .post("https://mernquiz-by-sudhir.herokuapp.com/login", user)
       .then((res) => {
         // console.log(res.data)
         if(res.data.user.email=="sudhirchavhan100@gmail.com"){

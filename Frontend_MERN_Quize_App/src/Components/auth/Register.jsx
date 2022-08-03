@@ -17,7 +17,7 @@ const navigate=useNavigate()
     const register = () => {
         const { name, email, password, reEnterPassword } = user
         if( name && email && password && (password === reEnterPassword)){
-            axios.post("http://localhost:3755/register", user)
+            axios.post("https://mernquiz-by-sudhir.herokuapp.com/register", user)
             .then( (res) => {
                 // console.log("res",res)
                 toast("Successfully Registered",{

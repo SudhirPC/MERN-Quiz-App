@@ -114,7 +114,7 @@ const getAllUserDataFailure = (payload) => {
 export const getAllUserDataFromBackend = (payload) => (dispatch) => {
   dispatch(getAllUserDataRequest());
   axios
-    .get("http://localhost:3755/getuser")
+    .get("https://mernquiz-by-sudhir.herokuapp.com/getuser")
     .then((res) => {
       dispatch(getAllUserDataSuccess(res.data));
     })
@@ -125,7 +125,7 @@ export const getAllUserDataFromBackend = (payload) => (dispatch) => {
 
 export const deleteUserByAdmin = (payload) => (dispatch) => {
   axios
-    .delete(`http://localhost:3755/user/${payload}`)
+    .delete(`https://mernquiz-by-sudhir.herokuapp.com/user/${payload}`)
     .then((response) => {
       dispatch(getAllUserDataFromBackend());
     })
@@ -139,7 +139,7 @@ export const deleteUserByAdmin = (payload) => (dispatch) => {
 export const postQuizObj = (obj) => (dispatch) => {
   console.log("obj", obj);
   axios
-    .post("http://localhost:3755/admin", obj)
+    .post("https://mernquiz-by-sudhir.herokuapp.com/admin", obj)
     .then((res) => {
       console.log(res.data);
     })
@@ -170,7 +170,7 @@ const fetchQuizFailure = (payload) => {
 };
 export const fetchQuizDataFrombackend = () => (dispatch) => {
   axios
-    .get("http://localhost:3755/api/quiz")
+    .get("https://mernquiz-by-sudhir.herokuapp.com/api/quiz")
     .then((res) => dispatch(fetchQuizSuccess(res.data)))
     .catch((err) => console.log(err));
 };
@@ -178,7 +178,7 @@ export const fetchQuizDataFrombackend = () => (dispatch) => {
 export const getQuiz = (params) => (dispatch) => {
   console.log(params, "helo");
   axios
-    .get(`http://localhost:3755/quiz/${params.id}`)
+    .get(`https://mernquiz-by-sudhir.herokuapp.com/quiz/${params.id}`)
     .then((res) => {
       // console.log(res.data);
       dispatch(fetchQuizSuccess(res.data))
@@ -230,7 +230,7 @@ export const postQuizResult = (obj) => (dispatch) => {
   const { quizId, userId, quizResult } = obj;
   dispatch(postUserResultRequest());
   axios
-    .post(`http://localhost:3755/userResult/${userId}`, obj)
+    .post(`https://mernquiz-by-sudhir.herokuapp.com/userResult/${userId}`, obj)
     .then((res) => {
       console.log(res.data.quizAttempted,"datafrombaceknd");
       dispatch(postUserResultSuccess(res.data));

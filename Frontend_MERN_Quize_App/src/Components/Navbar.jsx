@@ -93,7 +93,7 @@ export const Navbar = () => {
                 </div>
               ) : (
                 <Link to="/register" className="font-medium mt-8">
-                  SIGN IN
+                  SIGN 
                 </Link>
               )}
             </div>

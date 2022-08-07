@@ -50,7 +50,7 @@ export const Login = () => {
         })
           setTimeout(() =>{
             navigate("/profile")
-        },4000)
+        },3000)
         }
     
 //         if(res.data.message=="login successfully"){

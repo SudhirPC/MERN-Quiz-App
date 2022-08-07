@@ -58,7 +58,7 @@ export const Resultshow = () => {
       </div>
         <div className="w-2/5  mt-24 p-8">
         <h1 className="text-2xl text-red-600">{feedback}</h1>
-        <strong className="text-xl italic text-teal-600">Total Marks : {count}</strong>
+        <strong className="text-xl italic text-teal-600">Total Marks : {count}/{questionArr.length}</strong>
         </div>
       </div>
     

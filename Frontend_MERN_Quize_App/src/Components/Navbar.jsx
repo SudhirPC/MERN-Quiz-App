@@ -33,7 +33,7 @@ export const Navbar = () => {
     navigate("/profile");
   };
   return (
-    <div className="w-11/12 h-16 m-auto flex bg-slate-100 ">
+    <div className="w-11/12 h-16 m-auto flex bg-slate-100  ">
       <Link to="/" className="w-4/12 flex ">
         <img
           className=""

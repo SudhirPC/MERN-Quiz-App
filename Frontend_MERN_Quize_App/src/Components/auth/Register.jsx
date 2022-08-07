@@ -25,7 +25,7 @@ const navigate=useNavigate()
                 })
                 setTimeout(() =>{
                     navigate("/login")
-                },4000)
+                },3000)
                 
             }).catch(err => {
                 toast("Invalid Input",{

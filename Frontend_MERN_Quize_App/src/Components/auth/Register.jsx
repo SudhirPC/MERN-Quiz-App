@@ -59,10 +59,10 @@ const navigate=useNavigate()
             <input type="text" name="email" value={user.email} placeholder="Your Email" onChange={ handleChange }></input>
             <input type="password" name="password" value={user.password} placeholder="Your Password" onChange={ handleChange }></input>
             <input type="password" name="reEnterPassword" value={user.reEnterPassword} placeholder="Re-enter Password" onChange={ handleChange }></input>
-           <button className="p-2 pl-28 pr-28 bg-blue-500 h-10 rounded-md text-white  text-xl " onClick={register} >Register</button>
+           <button className="p-2 pl-24 pr-24 clicabledivRegsiter bg-blue-500 h-10 rounded-md text-white  text-xl " onClick={register} >Register</button>
            <ToastContainer/>
             <div>OR</div>
-            <Link to="/login"> <div className="p-2 pl-28 pr-24 bg-blue-500 h-10 rounded-md text-white  text-xl ">Login</div> </Link>
+            <Link to="/login"> <div className="p-2 pl-36 pr-28 clicablediv bg-blue-500 h-10 rounded-md text-white  text-xl ">Login</div> </Link>
             </div>
             <button className="mb-8 w-1/2 ml-48 " >
             <img src="./register.gif" alt="registergif" />

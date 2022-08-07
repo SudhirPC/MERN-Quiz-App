@@ -50,7 +50,7 @@ export const Resultshow = () => {
     calcPercent()
  },)
   return (
-    <div className=" w-11/12 shadow-2xl ml-16 ">
+    <div className=" w-11/12 shadow-2xl ml-16  mt-24">
       <h1 className="ml-72 pl-64 mt-8 text-3xl text-sky-700">Result Analysis</h1>
       <div className="flex -mt-24">
       <div className="w-2/5 ml-4">

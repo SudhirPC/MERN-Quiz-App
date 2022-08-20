@@ -14,8 +14,10 @@ The MERN-Quiz-App is a place where users can come and attempt the quiz and get t
 <img src="https://user-images.githubusercontent.com/97445870/183289441-0be05676-c1bc-40cd-a5e6-77f58b584ee9.png"/>
 <h2>7) Questions of Quiz Page </h2>
 <img src="https://user-images.githubusercontent.com/97445870/183289932-ba457305-485e-4066-b0bd-ef2cc3be88b5.png"/>
-<h2>8) Result Page it comes after user attempted the Quiz</h2>
+<h2>8) Sumarry of User's answered and Correct Answer </h2>
+<img src="https://user-images.githubusercontent.com/97445870/185743768-650a3b06-61a4-4833-a8e3-087ebe99759f.png"/>
+<h2>9) Result Page it comes after user attempted the Quiz</h2>
 <img src="https://user-images.githubusercontent.com/97445870/183289452-7109adfa-58f5-4412-87f7-bbaa0bf761a9.png"/>
-<h2>9) Footer Page</h2>
+<h2>10) Footer Page</h2>
 <img src="https://user-images.githubusercontent.com/97445870/183289598-dd60cb2c-05df-4ae8-9048-b2f127d1122f.png"/>
 

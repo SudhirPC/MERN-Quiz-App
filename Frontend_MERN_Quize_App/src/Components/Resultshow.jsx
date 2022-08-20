@@ -62,8 +62,8 @@ export const Resultshow = () => {
         </div>
       </div>
     
-      <div className="border-red-500 absolute  bg-teal-300  right-24 top-28 border-2 mb-8 p-1 pl-2  pr-2 ">
-     <Link to="/"><button className="text-xl font-bold rounded-md">Attempt More Quiz</button></Link> 
+      <div className=" absolute  bg-blue-300 rounded-2xl right-24 top-28 border-2 mb-8 p-2 pl-4  pr-4 ">
+     <Link to="/"><button className="text-xl font-bold ">Attempt More Quiz</button></Link> 
       </div>
     </div>
   )

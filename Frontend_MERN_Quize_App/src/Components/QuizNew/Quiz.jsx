@@ -41,7 +41,7 @@ export const Quiz = ( props ) => {
               {questionArr[num]?.questions}
             </h1>
           </div>
-          <div className="border-red-500 absolute  right-24 top-32 border-2 mb-8 p-1 pl-2  pr-2 ">
+          <div className="border-teal-500 rounded-2xl absolute  right-24 top-32 border-2 mb-8 p-1 pl-2  pr-2 ">
       <h1 className="text-xl font-bold">Attempted : {num + "/" + (questionArr.length)}</h1>
       </div>
           <div className=" font-serif text-slate-900">
@@ -54,8 +54,8 @@ export const Quiz = ( props ) => {
               key={index}
               className={
                 index == disable && disable != null
-                  ? "show border border-gray-300 text-center m-2 p-2 rounded-lg"
-                  : `notshow border border-gray-300 text-center m-2 p-2 rounded-lg`
+                  ? "show border border-gray-300 text-center cursor-pointer m-2 p-2 rounded-lg"
+                  : `notshow border border-gray-300 text-center cursor-pointer m-2 p-2 rounded-lg`
               }
               onClick={(e) => {
                 setAns([...ans, answer.option]);

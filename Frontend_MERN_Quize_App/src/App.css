@@ -34,5 +34,9 @@ table, th, td {
   margin-bottom: 50px;
   float: right;
   margin-right: 100px;
+  border-radius: 20px;
 
+}
+.finalresult:hover{
+  background-color:rgb(35, 135, 92)
 }

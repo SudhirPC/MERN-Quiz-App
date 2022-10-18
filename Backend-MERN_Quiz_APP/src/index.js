@@ -4,7 +4,7 @@ const Port = process.env.PORT || 3755
 var cors = require('cors')
 const app=express();
 app.use(express.json());
-
+app.use(cors())
 
 const loginAuth=require("./controller/auth.controller.js")
 app.use("/",loginAuth)
@@ -25,7 +25,7 @@ app.use("/user",user)
 
 const userResult=require("./controller/userData.controller.js")
 app.use("/userResult",userResult)
-app.use(cors())
+
 app.listen(Port,async function(){
     try {
         await connect();

@@ -7,19 +7,28 @@ import { Quiz } from "./Quiz";
 
 export const Quizes = () => {
   const singleQuiz = useSelector((state) => state?.mernQuize.QuizData);
-  const params = useParams()
+  const params = useParams();
   const dispatch = useDispatch();
   const [isLoading, setLoading] = useState(true);
   const questionArr = singleQuiz[0]?.questionArray;
-  console.log("questionArr",questionArr);
+  // console.log("questionArr",questionArr);
   useEffect(() => {
-    dispatch(getQuiz(params))
+    dispatch(getQuiz(params));
   }, []);
-  
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 4000);
   }, []);
-  return isLoading ? <div><iframe className="w-4/5 h-96 ml-40" src="https://embed.lottiefiles.com/animation/9844"></iframe></div> : <Quiz questionArr={questionArr} />;
+  return isLoading ? (
+    <div>
+      <iframe
+        className="w-4/5 h-96 ml-40"
+        src="https://embed.lottiefiles.com/animation/9844"
+      ></iframe>
+    </div>
+  ) : (
+    <Quiz questionArr={questionArr} />
+  );
 };

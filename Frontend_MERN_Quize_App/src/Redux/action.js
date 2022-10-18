@@ -9,13 +9,12 @@ export const quizRequest = () => {
 };
 
 export const quizSuccess = (quiz) => {
-  console.log("hello", quiz);
+  // console.log("hello", quiz);
   return {
     type: types.CREATE_QUIZ_SUCCESS,
     payload: quiz,
   };
 };
-
 
 export const quizFailure = (error) => {
   return {
@@ -137,14 +136,14 @@ export const deleteUserByAdmin = (payload) => (dispatch) => {
 // ----------post quiz--------------
 
 export const postQuizObj = (obj) => (dispatch) => {
-  console.log("obj", obj);
+  // console.log("obj", obj);
   axios
     .post("https://mernquiz-by-sudhir.herokuapp.com/admin", obj)
     .then((res) => {
-      console.log(res.data);
+      // console.log(res.data);
     })
     .catch((err) => {
-      console.log(err);
+      // console.log(err);
     });
 };
 
@@ -181,18 +180,16 @@ export const getQuiz = (params) => (dispatch) => {
     .get(`https://mernquiz-by-sudhir.herokuapp.com/quiz/${params.id}`)
     .then((res) => {
       // console.log(res.data);
-      dispatch(fetchQuizSuccess(res.data))
+      dispatch(fetchQuizSuccess(res.data));
     })
     .catch((err) => {
-      console.log(err);
+      // console.log(err);
     });
 };
-
 
 //------------posting the user quiz result ------------
 
 //  -----------posting user result ------------
-
 
 export const postUserResult = (ans) => {
   return {
@@ -201,26 +198,22 @@ export const postUserResult = (ans) => {
   };
 };
 
-
-
 // ------action creator function and axios function =-------
 
- const postUserResultRequest = (ans) => {
-
+const postUserResultRequest = (ans) => {
   return {
     type: types.POST_USER_RESULT_SUCCESS,
     payload: ans,
   };
 };
- const postUserResultSuccess = (ans) => {
-  console.log("hello", ans);
+const postUserResultSuccess = (ans) => {
+  // console.log("hello", ans);
   return {
     type: types.POST_USER_RESULT_SUCCESS,
     payload: ans,
   };
 };
- const postUserResultFailure = (ans) => {
-
+const postUserResultFailure = (ans) => {
   return {
     type: types.POST_USER_RESULT_SUCCESS,
     payload: ans,
@@ -232,7 +225,7 @@ export const postQuizResult = (obj) => (dispatch) => {
   axios
     .post(`https://mernquiz-by-sudhir.herokuapp.com/userResult/${userId}`, obj)
     .then((res) => {
-      console.log(res.data.quizAttempted,"datafrombaceknd");
+      // console.log(res.data.quizAttempted,"datafrombaceknd");
       dispatch(postUserResultSuccess(res.data));
     })
     .catch((err) => {

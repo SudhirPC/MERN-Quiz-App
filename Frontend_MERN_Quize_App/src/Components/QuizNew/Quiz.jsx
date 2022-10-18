@@ -6,21 +6,21 @@ import { useDispatch, useSelector } from "react-redux";
 import { postQuizResult, postUserResult } from "../../Redux/action.js";
 import { Link } from "react-router-dom";
 
-export const Quiz = ( props ) => {
-  console.log("Quiz.js", props.questionArr)
-  const questionArr=props.questionArr
+export const Quiz = (props) => {
+  // console.log("Quiz.js", props.questionArr)
+  const questionArr = props.questionArr;
   const data = useSelector((state) => state.mernQuize.QuizData);
   const result = useSelector((state) => state.mernQuize.result);
-  console.log("datanew",data)
+  // console.log("datanew",data)
   const userID = useSelector((state) => state.mernQuize.userId);
-  console.log("userId",userID)
+  // console.log("userId",userID)
   const quizID = data[0]._id;
   const dispatch = useDispatch();
 
   const [num, setNum] = useState(0);
   const [ans, setAns] = useState([]);
   const [btnshow, setBtnshow] = useState(false);
-  console.log("btnshow",btnshow);
+  // console.log("btnshow",btnshow);
   const [disable, setDisable] = useState(null);
   const handleQue = (index) => {
     setDisable(index);
@@ -36,14 +36,16 @@ export const Quiz = ( props ) => {
             {/* <video className="w-full" src="./businessanalysis.mp4" /> */}
           </div>
           <div className="flex w-4/5 pl-24 ml-12">
-           <h1 className="text-2xl m-2 text-black-400/25">{num+1})</h1>
+            <h1 className="text-2xl m-2 text-black-400/25">{num + 1})</h1>
             <h1 className="text-2xl m-2 text-black-400/25">
               {questionArr[num]?.questions}
             </h1>
           </div>
           <div className="border-teal-500 rounded-2xl absolute  right-24 top-32 border-2 mb-8 p-1 pl-2  pr-2 ">
-      <h1 className="text-xl font-bold">Attempted : {num + "/" + (questionArr.length)}</h1>
-      </div>
+            <h1 className="text-xl font-bold">
+              Attempted : {num + "/" + questionArr.length}
+            </h1>
+          </div>
           <div className=" font-serif text-slate-900">
             {/* {num + "/" + (questionArr.length)} */}
           </div>
@@ -59,7 +61,7 @@ export const Quiz = ( props ) => {
               }
               onClick={(e) => {
                 setAns([...ans, answer.option]);
-             
+
                 handleQue(index);
               }}
             >
@@ -78,27 +80,30 @@ export const Quiz = ( props ) => {
             Skip
           </button>
           {btnshow ? (
-       <Link to="/showallanswer">  <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded mr-1"
-              onClick={() => {
-                dispatch(postUserResult(ans));
-                const obj = {
-                  quizId: quizID,
-                  userId: userID,
-                  quizResult: ans,
-                };
-                dispatch(postQuizResult(obj));
-              }}
-            >
-              Result
-            </button></Link>   
+            <Link to="/showallanswer">
+              {" "}
+              <button
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded mr-1"
+                onClick={() => {
+                  dispatch(postUserResult(ans));
+                  const obj = {
+                    quizId: quizID,
+                    userId: userID,
+                    quizResult: ans,
+                  };
+                  dispatch(postQuizResult(obj));
+                }}
+              >
+                Result
+              </button>
+            </Link>
           ) : (
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded mr-1"
               onClick={() => {
                 setNum(num + 1);
                 setDisable(null);
-                if (questionArr.length-2 == num) {
+                if (questionArr.length - 2 == num) {
                   setBtnshow(true);
                 }
               }}

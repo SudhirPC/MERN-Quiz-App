@@ -26,7 +26,7 @@ export const QuizForm = () => {
   const handleQuiz = (event) => {
     event.preventDefault();
     // console.log(ans, "ans");
-    console.log(quiz);
+    // console.log(quiz);
     dispatch(quizSuccess(quiz));
   };
   const handleUploadnew = (event) => {
@@ -35,7 +35,7 @@ export const QuizForm = () => {
       title: data[0].title,
       questionArray: data,
     };
-    console.log("handleUploadnew",obj);
+    // console.log("handleUploadnew",obj);
 
     dispatch(postQuizObj(obj));
   };
@@ -58,63 +58,63 @@ export const QuizForm = () => {
       </div>
 
       <div className="">
-      <div className="flex text-yellow-500  w-96 font-bold font-serif mb-2 ml-12 mt-14">
-     <h1 className="text-2xl ">ADD QUESTIONS </h1>
-     <img src="./add.gif" alt="add icon" className="w-1/3 h-20 -mt-6" />
-      </div>
-      <form className="-mt-6">
-        <label
-          className="block uppercase tracking-wide  text-xs font-bold mb-2"
-          htmlFor="grid-first-name"
-        >
-          Title{" "}
-        </label>
-        <input
-          className=" block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-          id="grid-first-name"
-          type="text"
-          placeholder="Title"
-          onChange={(event) => {
-            setQuiz({ ...quiz, title: event.target.value });
-          }}
-        />
-        <label
-          className="block uppercase tracking-wide text-xs font-bold mb-2"
-          htmlFor="grid-first-name"
-        >
-          Question{" "}
-        </label>
-        <input
-          className=" block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-          id="grid-first-name"
-          type="text"
-          placeholder="Question"
-          onChange={(event) =>
-            setQuiz({ ...quiz, questions: event.target.value })
-          }
-        />
-        <label
-          className="block uppercase tracking-wide  text-xs font-bold mb-2"
-          htmlFor="grid-first-name"
-        >
-          Options
-        </label>
-        <div className="">
-          {ans?.map((x) => {
-            return (
-              <div key={x.id} className="flex  gap-1 ">
-                <input
-                  className="w-1/2 block  bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  type="text"
-                  placeholder={`Option ${x.id}`}
-                  name="option"
-                  value={x.option}
-                  onChange={(e) => {
-                    handleType(x.id)(e);
-                  }}
-                />
-                <select
-                  className="form-select appearance-none
+        <div className="flex text-yellow-500  w-96 font-bold font-serif mb-2 ml-12 mt-14">
+          <h1 className="text-2xl ">ADD QUESTIONS </h1>
+          <img src="./add.gif" alt="add icon" className="w-1/3 h-20 -mt-6" />
+        </div>
+        <form className="-mt-6">
+          <label
+            className="block uppercase tracking-wide  text-xs font-bold mb-2"
+            htmlFor="grid-first-name"
+          >
+            Title{" "}
+          </label>
+          <input
+            className=" block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-first-name"
+            type="text"
+            placeholder="Title"
+            onChange={(event) => {
+              setQuiz({ ...quiz, title: event.target.value });
+            }}
+          />
+          <label
+            className="block uppercase tracking-wide text-xs font-bold mb-2"
+            htmlFor="grid-first-name"
+          >
+            Question{" "}
+          </label>
+          <input
+            className=" block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-first-name"
+            type="text"
+            placeholder="Question"
+            onChange={(event) =>
+              setQuiz({ ...quiz, questions: event.target.value })
+            }
+          />
+          <label
+            className="block uppercase tracking-wide  text-xs font-bold mb-2"
+            htmlFor="grid-first-name"
+          >
+            Options
+          </label>
+          <div className="">
+            {ans?.map((x) => {
+              return (
+                <div key={x.id} className="flex  gap-1 ">
+                  <input
+                    className="w-1/2 block  bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    type="text"
+                    placeholder={`Option ${x.id}`}
+                    name="option"
+                    value={x.option}
+                    onChange={(e) => {
+                      handleType(x.id)(e);
+                    }}
+                  />
+                  <select
+                    className="form-select appearance-none
                   block
                   w-1/2
                   px-3
@@ -129,53 +129,52 @@ export const QuizForm = () => {
                   ease-in-out
                   m-0
                   focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                  name="isCorrect"
-                  id=""
-                  v-model="allowMultiple"
-                  value={x.boolean}
-                  onChange={(e) => {
-                    handleType(x.id)(e);
-                  }}
-                >
-                  <option value="">Select the value</option>
-                  <option value={true}>true</option>
-                </select>
-              </div>
-            );
-          })}
-        </div>
-        <label
-          className="block uppercase tracking-wide  text-xs font-bold mb-2"
-          htmlFor="grid-first-name"
-        >
-          Answer{" "}
-        </label>
-        <input
-          className=" block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-          id="grid-first-name"
-          type="text"
-          placeholder="Answer"
-          onChange={(event) =>
-            setQuiz({ ...quiz, correctAnswer: event.target.value })
-          }
-        />
-        <div className="flex">
-        <button
-          onClick={handleQuiz}
-          className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded "
-        >
-          Submit
-        </button>
-      <button
-        onClick={handleUploadnew}
-        className=" bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  ml-36 "
-      >
-        Upload
-      </button>
-        </div>
-      </form>
+                    name="isCorrect"
+                    id=""
+                    v-model="allowMultiple"
+                    value={x.boolean}
+                    onChange={(e) => {
+                      handleType(x.id)(e);
+                    }}
+                  >
+                    <option value="">Select the value</option>
+                    <option value={true}>true</option>
+                  </select>
+                </div>
+              );
+            })}
+          </div>
+          <label
+            className="block uppercase tracking-wide  text-xs font-bold mb-2"
+            htmlFor="grid-first-name"
+          >
+            Answer{" "}
+          </label>
+          <input
+            className=" block w-full bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-first-name"
+            type="text"
+            placeholder="Answer"
+            onChange={(event) =>
+              setQuiz({ ...quiz, correctAnswer: event.target.value })
+            }
+          />
+          <div className="flex">
+            <button
+              onClick={handleQuiz}
+              className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded "
+            >
+              Submit
+            </button>
+            <button
+              onClick={handleUploadnew}
+              className=" bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  ml-36 "
+            >
+              Upload
+            </button>
+          </div>
+        </form>
       </div>
-     
     </div>
   );
 };

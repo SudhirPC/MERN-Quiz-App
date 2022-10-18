@@ -6,11 +6,11 @@ import { Questions } from "./Questions.jsx";
 export const NewQuizPage = () => {
   const data = useSelector((state) => state.mernQuize.QuizData);
   const [count, setCount] = useState(0);
-const [clickoption,setClickOption] = useState(false);
+  const [clickoption, setClickOption] = useState(false);
 
   const handleAnswer = (index, e, el) => {
     // console.log("e[index]",e[index])
-    if(clickoption==false){
+    if (clickoption == false) {
       if (el.answer[0][index] === el.correctAnswer) {
         console.log("right answer");
         setCount(count + 1);
@@ -30,9 +30,9 @@ const [clickoption,setClickOption] = useState(false);
     return pathname === el.title;
   });
 
-  console.log(pathname);
+  // console.log(pathname);
   const newfilterquestions = filtertopicwise[0]?.questions;
-  console.log("filtertopicwise", newfilterquestions);
+  // console.log("filtertopicwise", newfilterquestions);
 
   // console.log("newfilter",filtertopicwise[0])
   const dispatch = useDispatch();
@@ -47,16 +47,15 @@ const [clickoption,setClickOption] = useState(false);
   }, []);
   // console.log("data",);
 
-
-  const handlecount=(index) => {
-    console.log("index", index);
-    setClickOption(true)
-  }
+  const handlecount = (index) => {
+    // console.log("index", index);
+    setClickOption(true);
+  };
 
   return (
     <div className="">
       <div className="border-teal-500 absolute  right-24 top-24 border-2 mb-8 p-1 pl-2  pr-2 ">
-      <h1 className="text-xl font-bold">Count:{count}</h1>
+        <h1 className="text-xl font-bold">Count:{count}</h1>
       </div>
       <div className="mt-20">
         {newfilterquestions?.map((el, index) => {
@@ -66,16 +65,13 @@ const [clickoption,setClickOption] = useState(false);
                 <div className="border-red-700 w-11/12 border-grey-200 border-2 pl-1 ml-24 ">
                   <div className="flex w-11/12">
                     <div className="w-40">
-                    <p className="text-xl font-normal  pl-1">
-                      Question {index + 1})
-                    </p>
+                      <p className="text-xl font-normal  pl-1">
+                        Question {index + 1})
+                      </p>
                     </div>
-                   <div className="w-10/12 -ml-10">
-                   <p className="text-xl font-normal  ">
-                      {el.que}
-                    </p>
-                   </div>
-                  
+                    <div className="w-10/12 -ml-10">
+                      <p className="text-xl font-normal  ">{el.que}</p>
+                    </div>
                   </div>
                   {el?.answer[0]?.map((e, index) => {
                     // console.log("index",index)
@@ -86,7 +82,7 @@ const [clickoption,setClickOption] = useState(false);
                           className="cursor-pointer hoverOption"
                           onClick={() => handleAnswer(index, e, el)}
                         >
-                          <li  className="text-xl li-option-tag">{e}</li>
+                          <li className="text-xl li-option-tag">{e}</li>
                           {/* onClick={()=>{handlecount(index)}} */}
                         </div>
                       </div>

@@ -6,7 +6,7 @@ export const ShowAllAnswers = () => {
   const resultUser = useSelector((state) => state.mernQuize.result);
   const singleQuiz = useSelector((state) => state?.mernQuize.QuizData);
   const questionArr = singleQuiz[0]?.questionArray;
-  console.log("resultUser", resultUser);
+  // console.log("resultUser", resultUser);
   return (
     <div>
       <div className="flex w-11/12 ml-16 mt-12  mb-1">
@@ -28,9 +28,9 @@ export const ShowAllAnswers = () => {
           })}
         </div>
         <div className=" w-3/12">
-        <div className="text-center">
+          <div className="text-center">
             <h1 className="text-xl font-medium font-serif text-red-600">
-            USER ANSWER
+              USER ANSWER
             </h1>
           </div>
           {resultUser?.map((e) => {
@@ -42,9 +42,9 @@ export const ShowAllAnswers = () => {
           })}
         </div>
         <div className="w-3/12">
-        <div className="text-center">
+          <div className="text-center">
             <h1 className="text-xl font-medium font-serif text-red-600">
-            CORRECT ANSWER
+              CORRECT ANSWER
             </h1>
           </div>
           {questionArr?.map((e) => {
@@ -57,7 +57,9 @@ export const ShowAllAnswers = () => {
         </div>
       </div>
       <div className=" w-36  border-2 p-1 pl-2 text-center  pr-2 bg-teal-400  finalresult ">
-      <Link to="/result"><button className="text-xl  font-bold">Final Marks</button></Link>   
+        <Link to="/result">
+          <button className="text-xl  font-bold">Final Marks</button>
+        </Link>
       </div>
     </div>
   );

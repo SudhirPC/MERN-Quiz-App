@@ -3,16 +3,16 @@ import * as types from "./actiontype.js";
 const init = {
   loading: false,
   userId: null,
-  adminId:null,
+  adminId: null,
   adminName: null,
   error: "",
   userName: null,
   quizTitle: "",
   QuizData: [],
-  result:[],
+  result: [],
   questions: [],
-  Alluser:[],
-  ans:[]
+  Alluser: [],
+  ans: [],
 };
 
 export const QuizReducer = (state = init, action) => {
@@ -24,7 +24,7 @@ export const QuizReducer = (state = init, action) => {
         ...state,
         error: "",
         loading: false,
-        questions: [...state.questions,payload],
+        questions: [...state.questions, payload],
       };
     case types.FETCH_QUIZ_REQUEST:
       return {
@@ -65,7 +65,6 @@ export const QuizReducer = (state = init, action) => {
         loading: false,
       };
 
-
     case types.GETUSERID:
       return {
         ...state,
@@ -82,8 +81,8 @@ export const QuizReducer = (state = init, action) => {
         ...state,
         userId: null,
         userName: null,
-        adminName:null,
-        adminId:null
+        adminName: null,
+        adminId: null,
       };
     case types.GETADMINID:
       return {
@@ -101,39 +100,39 @@ export const QuizReducer = (state = init, action) => {
         userName: null,
       };
 
-      case types.GET_ALL_USER_DATA_REQUEST:
-            return{
-                ...state,
-                loading:true,
-                error:""
-            }
-        case types.GET_ALL_USER_DATA_SUCCESS:
-            return {
-                ...state,
-                loading:false,
-                error:"",
-                Alluser:payload
-            }
-        case types.GET_ALL_USER_DATA_FAILURE:
-            return{
-                ...state,
-                loading:false,
-                error:payload
-            }
-            case types.POST_USER_RESULT_SUCCESS:
-              return {
-                ...state,
-                isLoading: false,
-                isError: false,
-                user: payload,
-              };
-              case types.SET_USER_RESULT_SUCCESS:
-                return {
-                  ...state,
-                  isLoading: false,
-                  isError: false,
-                  result: payload,
-                };
+    case types.GET_ALL_USER_DATA_REQUEST:
+      return {
+        ...state,
+        loading: true,
+        error: "",
+      };
+    case types.GET_ALL_USER_DATA_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        error: "",
+        Alluser: payload,
+      };
+    case types.GET_ALL_USER_DATA_FAILURE:
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    case types.POST_USER_RESULT_SUCCESS:
+      return {
+        ...state,
+        isLoading: false,
+        isError: false,
+        user: payload,
+      };
+    case types.SET_USER_RESULT_SUCCESS:
+      return {
+        ...state,
+        isLoading: false,
+        isError: false,
+        result: payload,
+      };
     default:
       return state;
   }

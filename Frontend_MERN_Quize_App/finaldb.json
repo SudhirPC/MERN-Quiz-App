@@ -6,62 +6,62 @@
         "title": "html",
         "questions": "HTML stands for -",
         "options": [
-          { "option": "HighText Machine Language", "isCorrect": false, "id": 0},
+          {
+            "option": "HighText Machine Language",
+            "isCorrect": false,
+            "id": 0
+          },
           {
             "option": "HyperText and links Markup Language",
             "isCorrect": false,
             "id": 1
           },
-          { "option": "HyperText Markup Language", "isCorrect": true, "id": 2},
-          { "option": "None of these", "isCorrect": false, "id": 3}
+          { "option": "HyperText Markup Language", "isCorrect": true, "id": 2 },
+          { "option": "None of these", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "HyperText Markup Language"
       },
       {
         "title": "html",
-        "questions":
-          "The correct sequence of HTML tags for starting a webpage is -",
+        "questions": "The correct sequence of HTML tags for starting a webpage is -",
         "options": [
-          { "option": "Head-Title-HTML-body", "isCorrect": false, "id": 0},
-          { "option": "HTML-Body-Title-Head", "isCorrect": false, "id": 1},
-          { "option": "HTML-Head-Title-Body", "isCorrect": true, "id": 2},
-          { "option": "Head-HTML-Title-Body", "isCorrect": false, "id": 3}
+          { "option": "Head-Title-HTML-body", "isCorrect": false, "id": 0 },
+          { "option": "HTML-Body-Title-Head", "isCorrect": false, "id": 1 },
+          { "option": "HTML-Head-Title-Body", "isCorrect": true, "id": 2 },
+          { "option": "Head-HTML-Title-Body", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "HTML-Head-Title-Body"
       },
       {
         "title": "html",
-        "questions":
-          "Which of the following element is responsible for making the text bold in HTML?",
+        "questions": "Which of the following element is responsible for making the text bold in HTML?",
         "options": [
-          { "option": "<pre>", "isCorrect": false, "id": 0},
-          { "option": "<a>", "isCorrect": false, "id": 1},
-          { "option": "<b>", "isCorrect": true, "id": 2},
-          { "option": "<br>", "isCorrect": false, "id": 3}
+          { "option": "<pre>", "isCorrect": false, "id": 0 },
+          { "option": "<a>", "isCorrect": false, "id": 1 },
+          { "option": "<b>", "isCorrect": true, "id": 2 },
+          { "option": "<br>", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "<b>"
       },
       {
         "title": "html",
-        "questions":
-          "Which of the following tag is used for inserting the largest heading in HTML?",
+        "questions": "Which of the following tag is used for inserting the largest heading in HTML?",
         "options": [
-          { "option": "<h3>", "isCorrect": false, "id": 0},
-          { "option": "<h4>", "isCorrect": false, "id": 1},
-          { "option": "<h1>", "isCorrect": true, "id": 2},
-          { "option": "<h6>", "isCorrect": false, "id": 3}
+          { "option": "<h3>", "isCorrect": false, "id": 0 },
+          { "option": "<h4>", "isCorrect": false, "id": 1 },
+          { "option": "<h1>", "isCorrect": true, "id": 2 },
+          { "option": "<h6>", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "<h1>"
       },
       {
         "title": "html",
-        "questions":
-          "How to create an unordered list (a list with the list items in bullets) in HTML?",
+        "questions": "How to create an unordered list (a list with the list items in bullets) in HTML?",
         "options": [
-          { "option": "<ul>", "isCorrect": true, "id": 0},
-          { "option": "<ol>", "isCorrect": false, "id": 1},
-          { "option": "<li>", "isCorrect": false, "id": 2},
-          { "option": "<i>", "isCorrect": false, "id": 3}
+          { "option": "<ul>", "isCorrect": true, "id": 0 },
+          { "option": "<ol>", "isCorrect": false, "id": 1 },
+          { "option": "<li>", "isCorrect": false, "id": 2 },
+          { "option": "<i>", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "<ul>"
       },
@@ -69,70 +69,65 @@
         "title": "html",
         "questions": "<input> is -",
         "options": [
-          { "option": "a format tag", "isCorrect": false, "id": 0},
-          { "option": "an empty tag", "isCorrect": true, "id": 1},
-          { "option": "All of the above", "isCorrect": false, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "a format tag", "isCorrect": false, "id": 0 },
+          { "option": "an empty tag", "isCorrect": true, "id": 1 },
+          { "option": "All of the above", "isCorrect": false, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "an empty tag"
       },
       {
         "title": "html",
-        "questions":
-          "Which of the following tag is used to make the underlined text?",
+        "questions": "Which of the following tag is used to make the underlined text?",
         "options": [
-          { "option": "<i>", "isCorrect": false, "id": 0},
-          { "option": "<ul>", "isCorrect": false, "id": 1},
-          { "option": "<u>", "isCorrect": true, "id": 2},
-          { "option": "<pre>", "isCorrect": false, "id": 3}
+          { "option": "<i>", "isCorrect": false, "id": 0 },
+          { "option": "<ul>", "isCorrect": false, "id": 1 },
+          { "option": "<u>", "isCorrect": true, "id": 2 },
+          { "option": "<pre>", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "<u>"
       },
       {
         "title": "html",
-        "questions":
-          "Which of the following tag is used to define options in a drop-down selection list?",
+        "questions": "Which of the following tag is used to define options in a drop-down selection list?",
         "options": [
-          { "option": "<select>", "isCorrect": false, "id": 0},
-          { "option": "<list>", "isCorrect": false, "id": 1},
-          { "option": "<dropdown>", "isCorrect": false, "id": 2},
-          { "option": "<option>", "isCorrect": true, "id": 3}
+          { "option": "<select>", "isCorrect": false, "id": 0 },
+          { "option": "<list>", "isCorrect": false, "id": 1 },
+          { "option": "<dropdown>", "isCorrect": false, "id": 2 },
+          { "option": "<option>", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "<option>"
       },
       {
         "title": "html",
-        "questions":
-          "Which of the following attribute is used to provide a unique name to an element?",
+        "questions": "Which of the following attribute is used to provide a unique name to an element?",
         "options": [
-          { "option": "class", "isCorrect": false, "id": 0},
-          { "option": "id", "sCorrect": true, "id": 1},
-          { "option": "type", "isCorrect": false, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "class", "isCorrect": false, "id": 0 },
+          { "option": "id", "sCorrect": true, "id": 1 },
+          { "option": "type", "isCorrect": false, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "id"
-    },
+      },
       {
         "title": "html",
-        "questions":
-          "Which of the following HTML tag is the special formatting tag?",
+        "questions": "Which of the following HTML tag is the special formatting tag?",
         "options": [
-          { "option": "<p>", "isCorrect": false, "id": 0},
-          { "option": "<b>", "isCorrect": false, "id": 1},
-          { "option": "<pre>", "isCorrect": true, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "<p>", "isCorrect": false, "id": 0 },
+          { "option": "<b>", "isCorrect": false, "id": 1 },
+          { "option": "<pre>", "isCorrect": true, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "<pre>"
       },
       {
         "title": "html",
-        "questions":
-          "Which of the following is the container for <tr>, <th>, and <td> ?",
+        "questions": "Which of the following is the container for <tr>, <th>, and <td> ?",
         "options": [
-          { "option": "<data>", "isCorrect": false, "id": 0},
-          { "option": "<table>", "isCorrect": true, "id": 1},
-          { "option": "<group>", "isCorrect": false, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "<data>", "isCorrect": false, "id": 0 },
+          { "option": "<table>", "isCorrect": true, "id": 1 },
+          { "option": "<group>", "isCorrect": false, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "<table>"
       },
@@ -140,10 +135,14 @@
         "title": "html",
         "questions": "What are the types of unordered or bulleted list in HTML?",
         "options": [
-          { "option": "disc, square, triangle", "isCorrect": false, "id": 0},
-          { "option": "disc, circle, square", "isCorrect": true, "id": 1},
-          { "option": "polygon, triangle, circle", "isCorrect": false, "id": 2},
-          { "option": "All of the above", "isCorrect": false, "id": 3}
+          { "option": "disc, square, triangle", "isCorrect": false, "id": 0 },
+          { "option": "disc, circle, square", "isCorrect": true, "id": 1 },
+          {
+            "option": "polygon, triangle, circle",
+            "isCorrect": false,
+            "id": 2
+          },
+          { "option": "All of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "disc, circle, square"
       },
@@ -151,10 +150,10 @@
         "title": "html",
         "questions": "What are the types of unordered or bulleted list in HTML?",
         "options": [
-          { "option": "style", "isCorrect": true, "id": 0},
-          { "option": "type", "isCorrect": false, "id": 1},
-          { "option": "class", "isCorrect": false, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "style", "isCorrect": true, "id": 0 },
+          { "option": "type", "isCorrect": false, "id": 1 },
+          { "option": "class", "isCorrect": false, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "style"
       },
@@ -162,22 +161,21 @@
         "title": "html",
         "questions": "In HTML, the tags are __________.",
         "options": [
-          { "option": "in upper case", "isCorrect": false, "id": 0},
-          { "option": "case-sensitive", "isCorrect": false, "id": 1},
-          { "option": "in lowercase", "isCorrect": false, "id": 2},
-          { "option": "not case sensitive", "isCorrect": true, "id": 3}
+          { "option": "in upper case", "isCorrect": false, "id": 0 },
+          { "option": "case-sensitive", "isCorrect": false, "id": 1 },
+          { "option": "in lowercase", "isCorrect": false, "id": 2 },
+          { "option": "not case sensitive", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "not case sensitive"
       },
       {
         "title": "html",
-        "questions":
-          "Which of the following tag is used to add rows in the table?",
+        "questions": "Which of the following tag is used to add rows in the table?",
         "options": [
-          { "option": "<td> and </td>", "isCorrect": false, "id": 0},
-          { "option": "<th> and </th>", "isCorrect": false, "id": 1},
-          { "option": "<tr> and </tr>", "isCorrect": true, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "<td> and </td>", "isCorrect": false, "id": 0 },
+          { "option": "<th> and </th>", "isCorrect": false, "id": 1 },
+          { "option": "<tr> and </tr>", "isCorrect": true, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "<tr> and </tr>"
       },
@@ -185,10 +183,10 @@
         "title": "html",
         "questions": "What attribute do we use for data binding?",
         "options": [
-          { "option": "datasrc", "isCorrect": true, "id": 0},
-          { "option": "mayscript", "isCorrect": false, "id": 1},
-          { "option": "name", "isCorrect": false, "id": 2},
-          { "option": "datafld", "isCorrect": false, "id": 3}
+          { "option": "datasrc", "isCorrect": true, "id": 0 },
+          { "option": "mayscript", "isCorrect": false, "id": 1 },
+          { "option": "name", "isCorrect": false, "id": 2 },
+          { "option": "datafld", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "datasrc"
       },
@@ -196,10 +194,10 @@
         "title": "html",
         "questions": "The <hr> tag in HTML is used for -",
         "options": [
-          { "option": "new line", "isCorrect": false, "id": 0},
-          { "option": "vertical ruler", "isCorrect": false, "id": 1},
-          { "option": "new paragraph", "isCorrect": false, "id": 2},
-          { "option": "horizontal ruler", "isCorrect": true, "id": 3}
+          { "option": "new line", "isCorrect": false, "id": 0 },
+          { "option": "vertical ruler", "isCorrect": false, "id": 1 },
+          { "option": "new paragraph", "isCorrect": false, "id": 2 },
+          { "option": "horizontal ruler", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "horizontal ruler"
       },
@@ -207,10 +205,10 @@
         "title": "html",
         "questions": "The <hr> tag in HTML is used for -",
         "options": [
-          { "option": "Web browser", "isCorrect": true, "id": 0},
-          { "option": "Server", "isCorrect": false, "id": 1},
-          { "option": "Interpreter", "isCorrect": false, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "Web browser", "isCorrect": true, "id": 0 },
+          { "option": "Server", "isCorrect": false, "id": 1 },
+          { "option": "Interpreter", "isCorrect": false, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Web browser"
       }
@@ -223,10 +221,13 @@
         "title": "css",
         "questions": "What is CSS ?",
         "options": [
-          { "option": "CSS is a style sheet language", "isCorrect": false, "id": 0},
           {
-            "option":
-              "CSS is designed to separate the presentation and content, including layout, colors, and fonts",
+            "option": "CSS is a style sheet language",
+            "isCorrect": false,
+            "id": 0
+          },
+          {
+            "option": "CSS is designed to separate the presentation and content, including layout, colors, and fonts",
             "isCorrect": false,
             "id": 1
           },
@@ -235,191 +236,176 @@
             "isCorrect": false,
             "id": 2
           },
-          { "option": "All of the mentioned", "isCorrect": true, "id": 3}
+          { "option": "All of the mentioned", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "All of the mentioned"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following tag is used to embed css in html page?",
+        "questions": "Which of the following tag is used to embed css in html page?",
         "options": [
-          { "option": "<css>", "isCorrect": false, "id": 0},
-          { "option": "<!DOCTYPE html>", "isCorrect": false, "id": 1},
-          { "option": "<style>", "isCorrect": true, "id": 2},
-          { "option": "<script>", "isCorrect": false, "id": 3}
+          { "option": "<css>", "isCorrect": false, "id": 0 },
+          { "option": "<!DOCTYPE html>", "isCorrect": false, "id": 1 },
+          { "option": "<style>", "isCorrect": true, "id": 2 },
+          { "option": "<script>", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "<style>"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following CSS selectors are used to specify a group of elements?",
+        "questions": "Which of the following CSS selectors are used to specify a group of elements?",
         "options": [
-          { "option": "id", "sCorrect": false, "id": 0},
-          { "option": "class", "isCorrect": true, "id": 1},
-          { "option": "both class and tag", "isCorrect": false, "id": 2},
-          { "option": "tag", "isCorrect": false, "id": 3}
+          { "option": "id", "sCorrect": false, "id": 0 },
+          { "option": "class", "isCorrect": true, "id": 1 },
+          { "option": "both class and tag", "isCorrect": false, "id": 2 },
+          { "option": "tag", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "class"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following has introduced text, list, box, margin, border, color, and background properties?",
+        "questions": "Which of the following has introduced text, list, box, margin, border, color, and background properties?",
         "options": [
-          { "option": "HTML", "isCorrect": false, "id": 0},
-          { "option": "PHP", "isCorrect": false, "id": 1},
-          { "option": "CSS", "isCorrect": true, "id": 2},
-          { "option": "Ajax", "isCorrect": false, "id": 3}
+          { "option": "HTML", "isCorrect": false, "id": 0 },
+          { "option": "PHP", "isCorrect": false, "id": 1 },
+          { "option": "CSS", "isCorrect": true, "id": 2 },
+          { "option": "Ajax", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "CSS"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following CSS framework is used to create a responsive design?",
+        "questions": "Which of the following CSS framework is used to create a responsive design?",
         "options": [
-          { "option": "django", "isCorrect": false, "id": 0},
-          { "option": "rails", "isCorrect": false, "id": 1},
-          { "option": "larawell", "isCorrect": false, "id": 2},
-          { "option": "bootstrap", "isCorrect": true, "id": 3}
+          { "option": "django", "isCorrect": false, "id": 0 },
+          { "option": "rails", "isCorrect": false, "id": 1 },
+          { "option": "larawell", "isCorrect": false, "id": 2 },
+          { "option": "bootstrap", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "bootstrap"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following CSS selector is used to specify a rule to bind a particular unique element?",
+        "questions": "Which of the following CSS selector is used to specify a rule to bind a particular unique element?",
         "options": [
-          { "option": "tag", "isCorrect": false, "id": 0},
-          { "option": "id", "sCorrect": true, "id": 1},
-          { "option": "class", "isCorrect": false, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "tag", "isCorrect": false, "id": 0 },
+          { "option": "id", "sCorrect": true, "id": 1 },
+          { "option": "class", "isCorrect": false, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "id"
-    },
+      },
       {
         "title": "css",
-        "questions":
-          "Which of the following CSS property is used to make the text bold?",
+        "questions": "Which of the following CSS property is used to make the text bold?",
         "options": [
-          { "option": "text-decoration: bold", "isCorrect": false, "id": 0},
-          { "option": "font-style: bold", "isCorrect": false, "id": 1},
-          { "option": "font-weight: bold", "isCorrect": true, "id": 2},
-          { "option": "text-align: bold", "isCorrect": false, "id": 3}
+          { "option": "text-decoration: bold", "isCorrect": false, "id": 0 },
+          { "option": "font-style: bold", "isCorrect": false, "id": 1 },
+          { "option": "font-weight: bold", "isCorrect": true, "id": 2 },
+          { "option": "text-align: bold", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "font-weight: bold"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following CSS style property is used to specify an italic text?",
+        "questions": "Which of the following CSS style property is used to specify an italic text?",
         "options": [
-          { "option": "style", "isCorrect": false, "id": 0},
-          { "option": "font", "isCorrect": false, "id": 1},
-          { "option": "@font-face", "isCorrect": false, "id": 2},
-          { "option": "font-style", "isCorrect": true, "id": 3}
+          { "option": "style", "isCorrect": false, "id": 0 },
+          { "option": "font", "isCorrect": false, "id": 1 },
+          { "option": "@font-face", "isCorrect": false, "id": 2 },
+          { "option": "font-style", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "font-style"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following are the CSS Extension Prefixes for Webkit?",
+        "questions": "Which of the following are the CSS Extension Prefixes for Webkit?",
         "options": [
-          { "option": "-chrome", "isCorrect": false, "id": 0},
-          { "option": "-web", "isCorrect": false, "id": 1},
-          { "option": "-o-", "isCorrect": false, "id": 2},
-          { "option": "-webkit", "isCorrect": true, "id": 3}
+          { "option": "-chrome", "isCorrect": false, "id": 0 },
+          { "option": "-web", "isCorrect": false, "id": 1 },
+          { "option": "-o-", "isCorrect": false, "id": 2 },
+          { "option": "-webkit", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "-webkit"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following is the first CSS specification to become an official W3C Recommendation?",
+        "questions": "Which of the following is the first CSS specification to become an official W3C Recommendation?",
         "options": [
-          { "option": "CSS level 2", "isCorrect": false, "id": 0},
-          { "option": "<b>", "isCorrect": false, "id": 1},
-          { "option": "CSS level 1", "isCorrect": true, "id": 2},
-          { "option": "CSS level 2.1", "isCorrect": false, "id": 3}
+          { "option": "CSS level 2", "isCorrect": false, "id": 0 },
+          { "option": "<b>", "isCorrect": false, "id": 1 },
+          { "option": "CSS level 1", "isCorrect": true, "id": 2 },
+          { "option": "CSS level 2.1", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "CSS level 1"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following function defines a linear gradient as a CSS image?",
+        "questions": "Which of the following function defines a linear gradient as a CSS image?",
         "options": [
-          { "option": "gradient()", "isCorrect": false, "id": 0},
-          { "option": "linear-gradient()", "isCorrect": true, "id": 1},
-          { "option": "grayscale()", "isCorrect": false, "id": 2},
-          { "option": "image()", "isCorrect": false, "id": 3}
+          { "option": "gradient()", "isCorrect": false, "id": 0 },
+          { "option": "linear-gradient()", "isCorrect": true, "id": 1 },
+          { "option": "grayscale()", "isCorrect": false, "id": 2 },
+          { "option": "image()", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "linear-gradient()"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following CSS property can be used to set the image as a border instead of the border style?",
+        "questions": "Which of the following CSS property can be used to set the image as a border instead of the border style?",
         "options": [
-          { "option": "background-image-source", "isCorrect": false, "id": 0},
-          { "option": "border-image-source", "isCorrect": true, "id": 1},
+          { "option": "background-image-source", "isCorrect": false, "id": 0 },
+          { "option": "border-image-source", "isCorrect": true, "id": 1 },
           {
             "option": "background-image, triangle, circle",
             "isCorrect": false,
             "id": 2
           },
-          { "option": "border-image", "isCorrect": false, "id": 3}
+          { "option": "border-image", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "border-image-source"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following CSS property defines the different properties of all four sides of an element’s border in a single declaration?",
+        "questions": "Which of the following CSS property defines the different properties of all four sides of an element’s border in a single declaration?",
         "options": [
-          { "option": "border-width", "isCorrect": true, "id": 0},
-          { "option": "border-collapse", "isCorrect": false, "id": 1},
-          { "option": "padding", "isCorrect": false, "id": 2},
-          { "option": "border", "isCorrect": false, "id": 3}
+          { "option": "border-width", "isCorrect": true, "id": 0 },
+          { "option": "border-collapse", "isCorrect": false, "id": 1 },
+          { "option": "padding", "isCorrect": false, "id": 2 },
+          { "option": "border", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "border-width"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following CSS property sets the font size of text?",
+        "questions": "Which of the following CSS property sets the font size of text?",
         "options": [
-          { "option": "text-size", "isCorrect": false, "id": 0},
-          { "option": "text", "isCorrect": false, "id": 1},
-          { "option": "size", "isCorrect": false, "id": 2},
-          { "option": "font-size", "isCorrect": true, "id": 3}
+          { "option": "text-size", "isCorrect": false, "id": 0 },
+          { "option": "text", "isCorrect": false, "id": 1 },
+          { "option": "size", "isCorrect": false, "id": 2 },
+          { "option": "font-size", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "font-size"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following is not the property of the CSS box model?",
+        "questions": "Which of the following is not the property of the CSS box model?",
         "options": [
-          { "option": "margin", "isCorrect": false, "id": 0},
-          { "option": "color", "isCorrect": true, "id": 1},
-          { "option": "widthwidth", "isCorrect": false, "id": 2},
-          { "option": "height", "isCorrect": false, "id": 3}
+          { "option": "margin", "isCorrect": false, "id": 0 },
+          { "option": "color", "isCorrect": true, "id": 1 },
+          { "option": "widthwidth", "isCorrect": false, "id": 2 },
+          { "option": "height", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "color"
       },
       {
         "title": "css",
-        "questions":
-          "Which of the following CSS property sets what kind of line decorations are added to an element, such as underlines, overlines, etc?",
+        "questions": "Which of the following CSS property sets what kind of line decorations are added to an element, such as underlines, overlines, etc?",
         "options": [
-          { "option": "text-decoration", "isCorrect": false, "id": 0},
-          { "option": "text-style", "isCorrect": false, "id": 1},
-          { "option": "text-decoration-line", "isCorrect": true, "id": 2},
-          { "option": "text-line", "isCorrect": false, "id": 3}
+          { "option": "text-decoration", "isCorrect": false, "id": 0 },
+          { "option": "text-style", "isCorrect": false, "id": 1 },
+          { "option": "text-decoration-line", "isCorrect": true, "id": 2 },
+          { "option": "text-line", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "text-decoration-line"
       }
@@ -433,72 +419,67 @@
         "questions": "What is javascript ?",
         "options": [
           {
-            "option":
-              "JavaScript is a compiled language used to make the website interactive",
+            "option": "JavaScript is a compiled language used to make the website interactive",
             "isCorrect": false,
             "id": 0
           },
           {
-            "option":
-              "JavaScript is an assembly language used to make the website interactive",
+            "option": "JavaScript is an assembly language used to make the website interactive",
             "isCorrect": false,
             "id": 1
           },
           {
-            "option":
-              "JavaScript is a scripting language used to make the website interactive",
+            "option": "JavaScript is a scripting language used to make the website interactive",
             "isCorrect": true,
             "id": 2
           },
-          { "option": "All of the mentioned", "isCorrect": false, "id": 3}
+          { "option": "All of the mentioned", "isCorrect": false, "id": 3 }
         ],
-        "correctAnswer":
-          "JavaScript is a scripting language used to make the website interactive"
+        "correctAnswer": "JavaScript is a scripting language used to make the website interactive"
       },
       {
         "title": "javascript",
         "questions": "Javascript is an _______ language?",
         "options": [
-          { "option": "Object-Oriented", "isCorrect": true, "id": 0},
-          { "option": "Object-Based", "isCorrect": false, "id": 1},
-          { "option": "Procedural", "isCorrect": false, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "Object-Oriented", "isCorrect": true, "id": 0 },
+          { "option": "Object-Based", "isCorrect": false, "id": 1 },
+          { "option": "Procedural", "isCorrect": false, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Object-Oriented"
       },
       {
         "title": "javascript",
-        "questions":
-          "Among the given statements, which statement defines closures in JavaScript?",
+        "questions": "Among the given statements, which statement defines closures in JavaScript?",
         "options": [
           {
-            "option":
-              "JavaScript is a function that is enclosed with references to its inner function scoper",
+            "option": "JavaScript is a function that is enclosed with references to its inner function scoper",
             "isCorrect": false,
             "id": 0
           },
           {
-            "option":
-              "JavaScript is a function that is enclosed with references to its lexical environment",
+            "option": "JavaScript is a function that is enclosed with references to its lexical environment",
             "isCorrect": true,
             "id": 1
           },
           {
-            "option":
-              "JavaScript is a function that is enclosed with the object to its inner function scope",
+            "option": "JavaScript is a function that is enclosed with the object to its inner function scope",
             "isCorrect": false,
             "id": 2
           },
-          { "option": "None of the mentioned", "isCorrect": false, "id": 3}
+          { "option": "None of the mentioned", "isCorrect": false, "id": 3 }
         ],
-        "correctAnswer":"JavaScript is a function that is enclosed with references to its lexical environment"
+        "correctAnswer": "JavaScript is a function that is enclosed with references to its lexical environment"
       },
       {
         "title": "javascript",
-        "questions":
-          "Arrays in JavaScript are defined by which of the following statements?",
+        "questions": "Arrays in JavaScript are defined by which of the following statements?",
         "options": [
-          { "option": "It is an ordered list of values", "isCorrect": true, "id": 0},
+          {
+            "option": "It is an ordered list of values",
+            "isCorrect": true,
+            "id": 0
+          },
           {
             "option": "It is an ordered list of objects",
             "isCorrect": false,
@@ -513,7 +494,7 @@
             "option": "It is an ordered list of functions",
             "isCorrect": false,
             "id": 3
-         }
+          }
         ],
         "correctAnswer": "It is an ordered list of values"
       },
@@ -521,22 +502,21 @@
         "title": "javascript",
         "questions": "Which of the following is not javascript data types?",
         "options": [
-          { "option": "Null type", "isCorrect": false, "id": 0},
-          { "option": "Undefined type", "isCorrect": false, "id": 1},
-          { "option": "Number type", "isCorrect": false, "id": 2},
-          { "option": "All of the mentioned", "isCorrect": true, "id": 3}
+          { "option": "Null type", "isCorrect": false, "id": 0 },
+          { "option": "Undefined type", "isCorrect": false, "id": 1 },
+          { "option": "Number type", "isCorrect": false, "id": 2 },
+          { "option": "All of the mentioned", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "All of the mentioned"
       },
       {
         "title": "javascript",
-        "questions":
-          "Which of the following can be used to call a JavaScript Code Snippet?",
+        "questions": "Which of the following can be used to call a JavaScript Code Snippet?",
         "options": [
-          { "option": "Preprocessor", "isCorrect": false, "id": 0},
-          { "option": "Function/Method", "isCorrect": true, "id": 1},
-          { "option": "Triggering Event", "isCorrect": false, "id": 2},
-          { "option": "RMI", "isCorrect": false, "id": 3}
+          { "option": "Preprocessor", "isCorrect": false, "id": 0 },
+          { "option": "Function/Method", "isCorrect": true, "id": 1 },
+          { "option": "Triggering Event", "isCorrect": false, "id": 2 },
+          { "option": "RMI", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Function/Method"
       },
@@ -550,15 +530,14 @@
             "id": 0
           },
           {
-            "option":
-              "Functions are values, and there is no hard distinction between methods and fields",
+            "option": "Functions are values, and there is no hard distinction between methods and fields",
             "isCorrect": true,
             "id": 1
           },
-          { "option": "Variables are specific", "isCorrect": false, "id": 2},
-          { "option": "There is no difference", "isCorrect": false, "id": 3}
+          { "option": "Variables are specific", "isCorrect": false, "id": 2 },
+          { "option": "There is no difference", "isCorrect": false, "id": 3 }
         ],
-        "correctAnswer":"Functions are values, and there is no hard distinction between methods and fields"
+        "correctAnswer": "Functions are values, and there is no hard distinction between methods and fields"
       },
       {
         "title": "javascript",
@@ -569,18 +548,25 @@
             "isCorrect": false,
             "id": 0
           },
-          { "option": "Parsing the javascript", "isCorrect": false, "id": 1},
-          { "option": "Compiling the JavaScript", "isCorrect": false, "id": 2},
-          { "option": "Interpreting the JavaScript", "isCorrect": true, "id": 3}
+          { "option": "Parsing the javascript", "isCorrect": false, "id": 1 },
+          { "option": "Compiling the JavaScript", "isCorrect": false, "id": 2 },
+          {
+            "option": "Interpreting the JavaScript",
+            "isCorrect": true,
+            "id": 3
+          }
         ],
         "correctAnswer": "Interpreting the JavaScript"
       },
       {
         "title": "javascript",
-        "questions":
-          "Which of the following methods/operation does javascript use instead of == and !=?",
+        "questions": "Which of the following methods/operation does javascript use instead of == and !=?",
         "options": [
-          { "option": "JavaScript uses equalto()", "isCorrect": false, "id": 0},
+          {
+            "option": "JavaScript uses equalto()",
+            "isCorrect": false,
+            "id": 0
+          },
           {
             "option": "JavaScript uses equals() and notequals() instead",
             "isCorrect": false,
@@ -595,7 +581,7 @@
             "option": "JavaScript uses === and !== instead",
             "isCorrect": true,
             "id": 3
-         }
+          }
         ],
         "correctAnswer": "JavaScript uses === and !== instead"
       },
@@ -603,10 +589,10 @@
         "title": "javascript",
         "questions": "Which of the following is not a framework?",
         "options": [
-          { "option": "JavaScript.NET", "isCorrect": false, "id": 0},
-          { "option": "Cocoa JS", "isCorrect": false, "id": 1},
-          { "option": "JavaScript", "isCorrect": true, "id": 2},
-          { "option": "jQuery", "isCorrect": false, "id": 3}
+          { "option": "JavaScript.NET", "isCorrect": false, "id": 0 },
+          { "option": "Cocoa JS", "isCorrect": false, "id": 1 },
+          { "option": "JavaScript", "isCorrect": true, "id": 2 },
+          { "option": "jQuery", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "JavaScript"
       },
@@ -624,24 +610,27 @@
             "isCorrect": false,
             "id": 1
           },
-          { "option": "Change the server location", "isCorrect": false, "id": 2},
+          {
+            "option": "Change the server location",
+            "isCorrect": false,
+            "id": 2
+          },
           {
             "option": "Performs handling of exceptions and occurrences",
             "isCorrect": false,
             "id": 3
-         }
+          }
         ],
-        "correctAnswer":"Allows JavaScript code to alter the behaviour of windows"
+        "correctAnswer": "Allows JavaScript code to alter the behaviour of windows"
       },
       {
         "title": "javascript",
-        "questions":
-          "Which of the following is the property that is triggered in response to JS errors?",
+        "questions": "Which of the following is the property that is triggered in response to JS errors?",
         "options": [
-          { "option": "onclick", "isCorrect": false, "id": 0},
-          { "option": "onerror", "isCorrect": true, "id": 1},
-          { "option": "onmessage", "isCorrect": false, "id": 2},
-          { "option": "onexception", "isCorrect": false, "id": 3}
+          { "option": "onclick", "isCorrect": false, "id": 0 },
+          { "option": "onerror", "isCorrect": true, "id": 1 },
+          { "option": "onmessage", "isCorrect": false, "id": 2 },
+          { "option": "onexception", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "onerror"
       },
@@ -649,34 +638,32 @@
         "title": "javascript",
         "questions": "Which of the following is not an error in JavaScript?",
         "options": [
-          { "option": "Missing of Bracket", "isCorrect": false, "id": 0},
-          { "option": "Division by zero", "isCorrect": true, "id": 1},
-          { "option": "Syntax error", "isCorrect": false, "id": 2},
-          { "option": "Missing of semicolons", "isCorrect": false, "id": 3}
+          { "option": "Missing of Bracket", "isCorrect": false, "id": 0 },
+          { "option": "Division by zero", "isCorrect": true, "id": 1 },
+          { "option": "Syntax error", "isCorrect": false, "id": 2 },
+          { "option": "Missing of semicolons", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Division by zero"
       },
       {
         "title": "javascript",
-        "questions":
-          "Which of the following function of String object returns a number indicating the Unicode value of the character at the given index?",
+        "questions": "Which of the following function of String object returns a number indicating the Unicode value of the character at the given index?",
         "options": [
-          { "option": "charAt()", "isCorrect": false, "id": 0},
-          { "option": "concat()", "isCorrect": false, "id": 1},
-          { "option": "indexOf()", "isCorrect": false, "id": 2},
-          { "option": "charCodeAt()", "isCorrect": true, "id": 3}
+          { "option": "charAt()", "isCorrect": false, "id": 0 },
+          { "option": "concat()", "isCorrect": false, "id": 1 },
+          { "option": "indexOf()", "isCorrect": false, "id": 2 },
+          { "option": "charCodeAt()", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "charCodeAt()"
       },
       {
         "title": "javascript",
-        "questions":
-          "Which of the following function of Array object joins all elements of an array into a string?",
+        "questions": "Which of the following function of Array object joins all elements of an array into a string?",
         "options": [
-          { "option": "concat()", "isCorrect": false, "id": 0},
-          { "option": "join()", "isCorrect": true, "id": 1},
-          { "option": "pop()", "isCorrect": false, "id": 2},
-          { "option": "map()", "isCorrect": false, "id": 3}
+          { "option": "concat()", "isCorrect": false, "id": 0 },
+          { "option": "join()", "isCorrect": true, "id": 1 },
+          { "option": "pop()", "isCorrect": false, "id": 2 },
+          { "option": "map()", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "join()"
       }
@@ -689,10 +676,10 @@
         "title": "mongodb",
         "questions": "What is MongoDB?",
         "options": [
-          { "option": "A file system.", "isCorrect": false, "id": 0},
-          { "option": "A SQL database.", "isCorrect": false, "id": 1},
-          { "option": "A NoSQL database.", "isCorrect": true, "id": 2},
-          { "option": "An Access database.", "isCorrect": false, "id": 3}
+          { "option": "A file system.", "isCorrect": false, "id": 0 },
+          { "option": "A SQL database.", "isCorrect": false, "id": 1 },
+          { "option": "A NoSQL database.", "isCorrect": true, "id": 2 },
+          { "option": "An Access database.", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "A NoSQL database."
       },
@@ -700,22 +687,21 @@
         "title": "mongodb",
         "questions": "How to create a database in mongodb?",
         "options": [
-          { "option": "use databaseName", "isCorrect": true, "id": 0},
-          { "option": "new databaseName", "isCorrect": false, "id": 1},
-          { "option": "create databaseName", "isCorrect": false, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "use databaseName", "isCorrect": true, "id": 0 },
+          { "option": "new databaseName", "isCorrect": false, "id": 1 },
+          { "option": "create databaseName", "isCorrect": false, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "use databaseName"
       },
       {
         "title": "mongodb",
-        "questions":
-          "MongoDB is a _________ database that provides high performance, high availability, and easy scalability.",
+        "questions": "MongoDB is a _________ database that provides high performance, high availability, and easy scalability.",
         "options": [
-          { "option": "Graph", "isCorrect": false, "id": 0},
-          { "option": "Key value", "isCorrect": false, "id": 1},
-          { "option": "Document", "isCorrect": true, "id": 2},
-          { "option": "All of the mentioned", "isCorrect": false, "id": 3}
+          { "option": "Graph", "isCorrect": false, "id": 0 },
+          { "option": "Key value", "isCorrect": false, "id": 1 },
+          { "option": "Document", "isCorrect": true, "id": 2 },
+          { "option": "All of the mentioned", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Document"
       },
@@ -723,21 +709,19 @@
         "title": "mongodb",
         "questions": "Which field is always the first field in the document.?",
         "options": [
-          { "option": "_id", "isCorrect": true, "id": 0},
-          { "option": "Ob_id", "isCorrect": false, "id": 1},
-          { "option": "id", "sCorrect": false, "id": 2},
-          { "option": "None of these", "isCorrect": false, "id": 3}
+          { "option": "_id", "isCorrect": true, "id": 0 },
+          { "option": "Ob_id", "isCorrect": false, "id": 1 },
+          { "option": "id", "sCorrect": false, "id": 2 },
+          { "option": "None of these", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "_id"
       },
       {
         "title": "mongodb",
-        "questions":
-          "Which of the following is incorrect statement about find and findOne operations in MongoDB?",
+        "questions": "Which of the following is incorrect statement about find and findOne operations in MongoDB?",
         "options": [
           {
-            "option":
-              "find() returns all the documents in a collection while findOne() retrieves only the first one.",
+            "option": "find() returns all the documents in a collection while findOne() retrieves only the first one.",
             "isCorrect": false,
             "id": 0
           },
@@ -747,41 +731,49 @@
             "id": 1
           },
           {
-            "option":
-              "findOne() returns the actual first document retrieved from a collection",
+            "option": "findOne() returns the actual first document retrieved from a collection",
             "isCorrect": false,
             "id": 2
           },
           {
-            "option":
-              "find() and findOne() returns cursors to the collection documents",
+            "option": "find() and findOne() returns cursors to the collection documents",
             "isCorrect": true,
             "id": 3
-         }
+          }
         ],
-        "correctAnswer":"find() and findOne() returns cursors to the collection documents"
+        "correctAnswer": "find() and findOne() returns cursors to the collection documents"
       },
       {
         "title": "mongodb",
-        "questions":
-          "By default, the MongoDB cursor in mongo shell is configured to return how many documents? To get the next set of documents, which command is used?",
+        "questions": "By default, the MongoDB cursor in mongo shell is configured to return how many documents? To get the next set of documents, which command is used?",
         "options": [
-          { "option": "200 more", "isCorrect": false, "id": 0},
-          { "option": "20 it", "isCorrect": true, "id": 1},
-          { "option": "50 it", "isCorrect": false, "id": 2},
-          { "option": "No limit none", "isCorrect": false, "id": 3}
+          { "option": "200 more", "isCorrect": false, "id": 0 },
+          { "option": "20 it", "isCorrect": true, "id": 1 },
+          { "option": "50 it", "isCorrect": false, "id": 2 },
+          { "option": "No limit none", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "20 it"
       },
       {
         "title": "mongodb",
-        "questions":
-          "Which of the following command is used to get all the indexes on a collection?",
+        "questions": "Which of the following command is used to get all the indexes on a collection?",
         "options": [
-          { "option": "db.collection.showIndexes()", "isCorrect": false, "id": 0},
-          { "option": "db.collection.getIndexes()", "isCorrect": true, "id": 1},
-          { "option": "db.collection.findIndexes()", "isCorrect": false, "id": 2},
-          { "option": "db.showIndexes()", "isCorrect": false, "id": 3}
+          {
+            "option": "db.collection.showIndexes()",
+            "isCorrect": false,
+            "id": 0
+          },
+          {
+            "option": "db.collection.getIndexes()",
+            "isCorrect": true,
+            "id": 1
+          },
+          {
+            "option": "db.collection.findIndexes()",
+            "isCorrect": false,
+            "id": 2
+          },
+          { "option": "db.showIndexes()", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "db.collection.getIndexes()"
       },
@@ -789,22 +781,21 @@
         "title": "mongodb",
         "questions": "In which year the MongoDB was Initial release?",
         "options": [
-          { "option": "2008", "isCorrect": false, "id": 0},
-          { "option": "2010", "isCorrect": false, "id": 1},
-          { "option": "2011", "isCorrect": false, "id": 2},
-          { "option": "2009", "isCorrect": true, "id": 3}
+          { "option": "2008", "isCorrect": false, "id": 0 },
+          { "option": "2010", "isCorrect": false, "id": 1 },
+          { "option": "2011", "isCorrect": false, "id": 2 },
+          { "option": "2009", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "2009"
       },
       {
         "title": "mongodb",
-        "questions":
-          "A collection and a document in MongoDB is equivalent to............. concepts respectively.",
+        "questions": "A collection and a document in MongoDB is equivalent to............. concepts respectively.",
         "options": [
-          { "option": "Table and Column", "isCorrect": false, "id": 0},
-          { "option": "Table and Row", "isCorrect": true, "id": 1},
-          { "option": "Column and Row", "isCorrect": false, "id": 2},
-          { "option": "Database and Table", "isCorrect": false, "id": 3}
+          { "option": "Table and Column", "isCorrect": false, "id": 0 },
+          { "option": "Table and Row", "isCorrect": true, "id": 1 },
+          { "option": "Column and Row", "isCorrect": false, "id": 2 },
+          { "option": "Database and Table", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Table and Row"
       },
@@ -812,10 +803,10 @@
         "title": "mongodb",
         "questions": "What is the good alternatives to MongoDB?",
         "options": [
-          { "option": "Redis & CouchDB", "isCorrect": false, "id": 0},
-          { "option": "Riak & Hbase", "isCorrect": false, "id": 1},
-          { "option": "Cassandra", "isCorrect": false, "id": 2},
-          { "option": "All of the mentioned", "isCorrect": true, "id": 3}
+          { "option": "Redis & CouchDB", "isCorrect": false, "id": 0 },
+          { "option": "Riak & Hbase", "isCorrect": false, "id": 1 },
+          { "option": "Cassandra", "isCorrect": false, "id": 2 },
+          { "option": "All of the mentioned", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "All of the mentioned"
       },
@@ -823,22 +814,21 @@
         "title": "mongodb",
         "questions": "MongoDB stores all documents in ...........",
         "options": [
-          { "option": "Rows", "isCorrect": false, "id": 0},
-          { "option": "Tables", "isCorrect": false, "id": 1},
-          { "option": "Collections", "isCorrect": true, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "Rows", "isCorrect": false, "id": 0 },
+          { "option": "Tables", "isCorrect": false, "id": 1 },
+          { "option": "Collections", "isCorrect": true, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Collections"
       },
       {
         "title": "mongodb",
-        "questions":
-          "MongoDB has been adopted as ________ software by a number of major websites and services.",
+        "questions": "MongoDB has been adopted as ________ software by a number of major websites and services.",
         "options": [
-          { "option": "backend", "isCorrect": true, "id": 0},
-          { "option": "frontend", "isCorrect": false, "id": 1},
-          { "option": "proprietary", "isCorrect": false, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "backend", "isCorrect": true, "id": 0 },
+          { "option": "frontend", "isCorrect": false, "id": 1 },
+          { "option": "proprietary", "isCorrect": false, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "backend"
       },
@@ -846,34 +836,36 @@
         "title": "mongodb",
         "questions": "To create index in descending order, the value of key is?",
         "options": [
-          { "option": "0", "isCorrect": false, "id": 0},
-          { "option": "-1", "isCorrect": true, "id": 1},
-          { "option": "1", "isCorrect": false, "id": 2},
-          { "option": "Infinite", "isCorrect": false, "id": 3}
+          { "option": "0", "isCorrect": false, "id": 0 },
+          { "option": "-1", "isCorrect": true, "id": 1 },
+          { "option": "1", "isCorrect": false, "id": 2 },
+          { "option": "Infinite", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "-1"
       },
       {
         "title": "mongodb",
-        "questions":
-          "Which method deletes multiple (specified) indexes on a collection?",
+        "questions": "Which method deletes multiple (specified) indexes on a collection?",
         "options": [
-          { "option": "getIndexes()", "isCorrect": false, "id": 0},
-          { "option": "dropIndex()", "isCorrect": false, "id": 1},
-          { "option": "indexOf()", "isCorrect": false, "id": 2},
-          { "option": "dropIndexes()", "isCorrect": true, "id": 3}
+          { "option": "getIndexes()", "isCorrect": false, "id": 0 },
+          { "option": "dropIndex()", "isCorrect": false, "id": 1 },
+          { "option": "indexOf()", "isCorrect": false, "id": 2 },
+          { "option": "dropIndexes()", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "dropIndexes()"
       },
       {
         "title": "mongodb",
-        "questions":
-          "Which of the following line skips the first 5 documents in the bios collection and returns all remaining documents?",
+        "questions": "Which of the following line skips the first 5 documents in the bios collection and returns all remaining documents?",
         "options": [
-          { "option": "db.bios.find().limit( 5 )", "isCorrect": false, "id": 0},
-          { "option": "db.bios.find().skip( 1 )", "isCorrect": false, "id": 1},
-          { "option": "db.bios.find().skip( 5 )", "isCorrect": true, "id": 2},
-          { "option": "db.bios.find().sort( 5 )", "isCorrect": false, "id": 3}
+          {
+            "option": "db.bios.find().limit( 5 )",
+            "isCorrect": false,
+            "id": 0
+          },
+          { "option": "db.bios.find().skip( 1 )", "isCorrect": false, "id": 1 },
+          { "option": "db.bios.find().skip( 5 )", "isCorrect": true, "id": 2 },
+          { "option": "db.bios.find().sort( 5 )", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "db.bios.find().skip( 5 )"
       },
@@ -881,22 +873,21 @@
         "title": "mongodb",
         "questions": "Command display the list of databases.",
         "options": [
-          { "option": "show db", "isCorrect": false, "id": 0},
-          { "option": "show data", "isCorrect": false, "id": 1},
-          { "option": "display dbs", "isCorrect": false, "id": 2},
-          { "option": "show dbs", "isCorrect": true, "id": 3}
+          { "option": "show db", "isCorrect": false, "id": 0 },
+          { "option": "show data", "isCorrect": false, "id": 1 },
+          { "option": "display dbs", "isCorrect": false, "id": 2 },
+          { "option": "show dbs", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "show dbs"
       },
       {
         "title": "mongodb",
-        "questions":
-          "Which of the following operation adds a new document to the users collection ?",
+        "questions": "Which of the following operation adds a new document to the users collection ?",
         "options": [
-          { "option": "add", "isCorrect": false, "id": 0},
-          { "option": "drop", "isCorrect": false, "id": 1},
-          { "option": "insert", "isCorrect": true, "id": 2},
-          { "option": "truecate", "isCorrect": false, "id": 3}
+          { "option": "add", "isCorrect": false, "id": 0 },
+          { "option": "drop", "isCorrect": false, "id": 1 },
+          { "option": "insert", "isCorrect": true, "id": 2 },
+          { "option": "truecate", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "insert"
       }
@@ -910,14 +901,12 @@
         "questions": "Which of the following are the advantages of React.js?",
         "options": [
           {
-            "option":
-              "React.js can increase the application's performance with Virtual DOM.",
+            "option": "React.js can increase the application's performance with Virtual DOM.",
             "isCorrect": false,
             "id": 0
           },
           {
-            "option":
-              "React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.",
+            "option": "React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.",
             "isCorrect": false,
             "id": 1
           },
@@ -926,31 +915,29 @@
             "isCorrect": false,
             "id": 2
           },
-          { "option": "All of the above", "isCorrect": true, "id": 3}
+          { "option": "All of the above", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "All of the above"
       },
       {
         "title": "react",
-        "questions":
-          "What of the following is used in React.js to increase performance?",
+        "questions": "What of the following is used in React.js to increase performance?",
         "options": [
-          { "option": "Virtual DOM", "isCorrect": true, "id": 0},
-          { "option": "Original DOM", "isCorrect": false, "id": 1},
-          { "option": "Both A and B", "isCorrect": false, "id": 2},
-          { "option": "None of the above.", "isCorrect": false, "id": 3}
+          { "option": "Virtual DOM", "isCorrect": true, "id": 0 },
+          { "option": "Original DOM", "isCorrect": false, "id": 1 },
+          { "option": "Both A and B", "isCorrect": false, "id": 2 },
+          { "option": "None of the above.", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Virtual DOM"
       },
       {
         "title": "react",
-        "questions":
-          "Which of the following acts as the input of a class-based component?",
+        "questions": "Which of the following acts as the input of a class-based component?",
         "options": [
-          { "option": "Class", "isCorrect": false, "id": 0},
-          { "option": "Factory", "isCorrect": false, "id": 1},
-          { "option": "Props", "isCorrect": true, "id": 2},
-          { "option": "Render", "isCorrect": false, "id": 3}
+          { "option": "Class", "isCorrect": false, "id": 0 },
+          { "option": "Factory", "isCorrect": false, "id": 1 },
+          { "option": "Props", "isCorrect": true, "id": 2 },
+          { "option": "Render", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Props"
       },
@@ -958,34 +945,44 @@
         "title": "react",
         "questions": "What is the default port where webpack-server runs?",
         "options": [
-          { "option": "8080", "isCorrect": true, "id": 0},
-          { "option": "3000", "isCorrect": false, "id": 1},
-          { "option": "3030", "isCorrect": false, "id": 2},
-          { "option": "None of these", "isCorrect": false, "id": 3}
+          { "option": "8080", "isCorrect": true, "id": 0 },
+          { "option": "3000", "isCorrect": false, "id": 1 },
+          { "option": "3030", "isCorrect": false, "id": 2 },
+          { "option": "None of these", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "8080"
       },
       {
         "title": "react",
-        "questions":
-          "How many numbers of elements a valid react component can return?",
+        "questions": "How many numbers of elements a valid react component can return?",
         "options": [
-          { "option": "2", "isCorrect": false, "id": 0},
-          { "option": "3", "isCorrect": false, "id": 1},
-          { "option": "5", "isCorrect": false, "id": 2},
-          { "option": "1", "isCorrect": true, "id": 3}
+          { "option": "2", "isCorrect": false, "id": 0 },
+          { "option": "3", "isCorrect": false, "id": 1 },
+          { "option": "5", "isCorrect": false, "id": 2 },
+          { "option": "1", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "1"
       },
       {
         "title": "react",
-        "questions":
-          "What is the declarative way to render a dynamic list of components based on values in an array?",
+        "questions": "What is the declarative way to render a dynamic list of components based on values in an array?",
         "options": [
-          { "option": "Using the reduce array method", "isCorrect": false, "id": 0},
-          { "option": "Using the Array.map() method", "isCorrect": true, "id": 1},
-          { "option": "Using the <Each /> component", "isCorrect": false, "id": 2},
-          { "option": "With a for/while loop", "isCorrect": false, "id": 3}
+          {
+            "option": "Using the reduce array method",
+            "isCorrect": false,
+            "id": 0
+          },
+          {
+            "option": "Using the Array.map() method",
+            "isCorrect": true,
+            "id": 1
+          },
+          {
+            "option": "Using the <Each /> component",
+            "isCorrect": false,
+            "id": 2
+          },
+          { "option": "With a for/while loop", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Using the Array.map() method"
       },
@@ -993,7 +990,7 @@
         "title": "react",
         "questions": "What is a state in React?",
         "options": [
-          { "option": "A permanent storage.", "isCorrect": false, "id": 0},
+          { "option": "A permanent storage.", "isCorrect": false, "id": 0 },
           {
             "option": "Internal storage of the component.",
             "isCorrect": true,
@@ -1004,7 +1001,7 @@
             "isCorrect": false,
             "id": 2
           },
-          { "option": "None of the above.", "isCorrect": false, "id": 3}
+          { "option": "None of the above.", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Internal storage of the component."
       },
@@ -1012,38 +1009,44 @@
         "title": "react",
         "questions": "What are the two ways to handle data in React?",
         "options": [
-          { "option": "Services & Components", "isCorrect": false, "id": 0},
-          { "option": "State & Services", "isCorrect": false, "id": 1},
-          { "option": "State & Component", "isCorrect": false, "id": 2},
-          { "option": "State & Props", "isCorrect": true, "id": 3}
+          { "option": "Services & Components", "isCorrect": false, "id": 0 },
+          { "option": "State & Services", "isCorrect": false, "id": 1 },
+          { "option": "State & Component", "isCorrect": false, "id": 2 },
+          { "option": "State & Props", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "State & Props"
       },
       {
         "title": "react",
-        "questions":
-          "Which of the following option is correct in the case of the Babel?",
+        "questions": "Which of the following option is correct in the case of the Babel?",
         "options": [
-          { "option": "Babel is a Compiler.", "isCorrect": false, "id": 0},
-          { "option": "Babel is a Transpilar.", "isCorrect": false, "id": 1},
-          { "option": "None of the above", "isCorrect": false, "id": 2},
-          { "option": "Both are correct.", "isCorrect": true, "id": 3}
+          { "option": "Babel is a Compiler.", "isCorrect": false, "id": 0 },
+          { "option": "Babel is a Transpilar.", "isCorrect": false, "id": 1 },
+          { "option": "None of the above", "isCorrect": false, "id": 2 },
+          { "option": "Both are correct.", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "Both are correct."
       },
       {
         "title": "react",
-        "questions":
-          "What will happen if you render an input element with disabled = {false}?",
+        "questions": "What will happen if you render an input element with disabled = {false}?",
         "options": [
           {
             "option": "It will be rendered as disabled",
             "isCorrect": false,
             "id": 0
           },
-          { "option": "It will not be rendered at all", "isCorrect": false, "id": 1},
-          { "option": "You cannot set it false.", "isCorrect": false, "id": 2},
-          { "option": "It will be rendered as enabled", "isCorrect": true, "id": 3}
+          {
+            "option": "It will not be rendered at all",
+            "isCorrect": false,
+            "id": 1
+          },
+          { "option": "You cannot set it false.", "isCorrect": false, "id": 2 },
+          {
+            "option": "It will be rendered as enabled",
+            "isCorrect": true,
+            "id": 3
+          }
         ],
         "correctAnswer": "It will be rendered as enabled"
       },
@@ -1051,36 +1054,38 @@
         "title": "react",
         "questions": "React.js is a free and open-source front-end....?",
         "options": [
-          { "option": "Bootstrap library", "isCorrect": false, "id": 0},
-          { "option": "CSS library", "isCorrect": false, "id": 1},
-          { "option": "JavaScript library", "isCorrect": true, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "Bootstrap library", "isCorrect": false, "id": 0 },
+          { "option": "CSS library", "isCorrect": false, "id": 1 },
+          { "option": "JavaScript library", "isCorrect": true, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "JavaScript library"
       },
       {
         "title": "react",
-        "questions":
-          "Which of the following acts as the input of a class-based component?",
+        "questions": "Which of the following acts as the input of a class-based component?",
         "options": [
-          { "option": "Props", "isCorrect": true, "id": 0},
-          { "option": "Factory", "isCorrect": false, "id": 1},
-          { "option": "Render", "isCorrect": false, "id": 2},
-          { "option": "Class", "isCorrect": false, "id": 3}
+          { "option": "Props", "isCorrect": true, "id": 0 },
+          { "option": "Factory", "isCorrect": false, "id": 1 },
+          { "option": "Render", "isCorrect": false, "id": 2 },
+          { "option": "Class", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Props"
       },
       {
         "title": "react",
-        "questions":
-          "Which of the following is the correct data flow sequence of flux concept?",
+        "questions": "Which of the following is the correct data flow sequence of flux concept?",
         "options": [
           {
             "option": "Dispatcher->Action->Store->View",
             "isCorrect": false,
             "id": 0
           },
-          { "option": "Action->Dispatcher->Store->View", "isCorrect": true, "id": 1},
+          {
+            "option": "Action->Dispatcher->Store->View",
+            "isCorrect": true,
+            "id": 1
+          },
           {
             "option": "Action->Dispatcher->View->Store",
             "isCorrect": false,
@@ -1090,7 +1095,7 @@
             "option": "Action->Store->Dispatcher->View",
             "isCorrect": false,
             "id": 3
-         }
+          }
         ],
         "correctAnswer": "Action->Dispatcher->Store->View"
       },
@@ -1098,10 +1103,10 @@
         "title": "react",
         "questions": "React was originally created by...?",
         "options": [
-          { "option": "Miško Hevery", "isCorrect": false, "id": 0},
-          { "option": "Rasmus Lerdorf", "isCorrect": false, "id": 1},
-          { "option": "Jordan Walke", "isCorrect": true, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "Miško Hevery", "isCorrect": false, "id": 0 },
+          { "option": "Rasmus Lerdorf", "isCorrect": false, "id": 1 },
+          { "option": "Jordan Walke", "isCorrect": true, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Jordan Walke"
       },
@@ -1109,10 +1114,10 @@
         "title": "react",
         "questions": "What is the smallest building block of ReactJS?",
         "options": [
-          { "option": "elements", "isCorrect": false, "id": 0},
-          { "option": "components", "isCorrect": true, "id": 1},
-          { "option": "props", "isCorrect": false, "id": 2},
-          { "option": "None of the Above", "isCorrect": false, "id": 3}
+          { "option": "elements", "isCorrect": false, "id": 0 },
+          { "option": "components", "isCorrect": true, "id": 1 },
+          { "option": "props", "isCorrect": false, "id": 2 },
+          { "option": "None of the Above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "components"
       }
@@ -1123,17 +1128,16 @@
     "questionArray": [
       {
         "title": "redux",
-        "questions":
-          "Redux solves this problem by managing application’s state with a single global object called ?",
+        "questions": "Redux solves this problem by managing application’s state with a single global object called ?",
         "options": [
-          { "option": "directory", "isCorrect": false, "id": 0},
+          { "option": "directory", "isCorrect": false, "id": 0 },
           {
             "option": "file",
             "isCorrect": false,
             "id": 1
           },
-          { "option": "store", "isCorrect": true, "id": 2},
-          { "option": "None of these", "isCorrect": false, "id": 3}
+          { "option": "store", "isCorrect": true, "id": 2 },
+          { "option": "None of these", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "store"
       },
@@ -1142,14 +1146,12 @@
         "questions": "Actions and states are held together by a function called?",
         "options": [
           {
-            "option":
-              "Redux is a predictable state container for JavaScript apps.",
+            "option": "Redux is a predictable state container for JavaScript apps.",
             "isCorrect": false,
             "id": 0
           },
           {
-            "option":
-              "Redux fundamental principles help in maintaining consistency throughout your application",
+            "option": "Redux fundamental principles help in maintaining consistency throughout your application",
             "isCorrect": false,
             "id": 1
           },
@@ -1158,7 +1160,7 @@
             "isCorrect": false,
             "id": 2
           },
-          { "option": "All of the above", "isCorrect": true, "id": 3}
+          { "option": "All of the above", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "All of the above"
       },
@@ -1166,22 +1168,21 @@
         "title": "redux",
         "questions": "Actions and states are held together by a function called?",
         "options": [
-          { "option": "Redux", "isCorrect": false, "id": 0},
-          { "option": "suscribe", "isCorrect": false, "id": 1},
-          { "option": "Reducer", "isCorrect": true, "id": 2},
-          { "option": "view", "isCorrect": false, "id": 3}
+          { "option": "Redux", "isCorrect": false, "id": 0 },
+          { "option": "suscribe", "isCorrect": false, "id": 1 },
+          { "option": "Reducer", "isCorrect": true, "id": 2 },
+          { "option": "view", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Reducer"
       },
       {
         "title": "redux",
-        "questions":
-          "The ____________ can retrieve updated state and re-render again.",
+        "questions": "The ____________ can retrieve updated state and re-render again.",
         "options": [
-          { "option": "state", "isCorrect": false, "id": 0},
-          { "option": "store", "isCorrect": false, "id": 1},
-          { "option": "view", "isCorrect": true, "id": 2},
-          { "option": "action", "isCorrect": false, "id": 3}
+          { "option": "state", "isCorrect": false, "id": 0 },
+          { "option": "store", "isCorrect": false, "id": 1 },
+          { "option": "view", "isCorrect": true, "id": 2 },
+          { "option": "action", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "view"
       },
@@ -1189,10 +1190,10 @@
         "title": "redux",
         "questions": "A store is an ___________ object tree in Redux.",
         "options": [
-          { "option": "immutable", "isCorrect": true, "id": 0},
-          { "option": "mutable", "isCorrect": false, "id": 1},
-          { "option": "Both A and B", "isCorrect": false, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "immutable", "isCorrect": true, "id": 0 },
+          { "option": "mutable", "isCorrect": false, "id": 1 },
+          { "option": "Both A and B", "isCorrect": false, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "immutable"
       },
@@ -1200,10 +1201,10 @@
         "title": "redux",
         "questions": "A createStore function can have _________ arguments.",
         "options": [
-          { "option": "1", "isCorrect": false, "id": 0},
-          { "option": "3", "isCorrect": true, "id": 1},
-          { "option": "4", "isCorrect": false, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "1", "isCorrect": false, "id": 0 },
+          { "option": "3", "isCorrect": true, "id": 1 },
+          { "option": "4", "isCorrect": false, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "3"
       },
@@ -1211,22 +1212,21 @@
         "title": "redux",
         "questions": "Which of the following is react-Redux helper method?",
         "options": [
-          { "option": "help()", "isCorrect": false, "id": 0},
-          { "option": "assist()", "isCorrect": false, "id": 1},
-          { "option": "connect()", "isCorrect": true, "id": 2},
-          { "option": "view()", "isCorrect": false, "id": 3}
+          { "option": "help()", "isCorrect": false, "id": 0 },
+          { "option": "assist()", "isCorrect": false, "id": 1 },
+          { "option": "connect()", "isCorrect": true, "id": 2 },
+          { "option": "view()", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "connect()"
       },
       {
         "title": "redux",
-        "questions":
-          "Which of them provide us debugging platform for Redux apps?",
+        "questions": "Which of them provide us debugging platform for Redux apps?",
         "options": [
-          { "option": "Redux-Testing", "isCorrect": false, "id": 0},
-          { "option": "Redux-Middleware", "isCorrect": false, "id": 1},
-          { "option": "Redux-suscriber", "isCorrect": false, "id": 2},
-          { "option": "Redux-Devtools", "isCorrect": true, "id": 3}
+          { "option": "Redux-Testing", "isCorrect": false, "id": 0 },
+          { "option": "Redux-Middleware", "isCorrect": false, "id": 1 },
+          { "option": "Redux-suscriber", "isCorrect": false, "id": 2 },
+          { "option": "Redux-Devtools", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "Redux-Devtools"
       },
@@ -1234,34 +1234,32 @@
         "title": "redux",
         "questions": "Which of the following makes stores available?",
         "options": [
-          { "option": "COMPONENT", "isCorrect": false, "id": 0},
-          { "option": "PROVIDER", "isCorrect": true, "id": 1},
-          { "option": "CONTAINER", "isCorrect": false, "id": 2},
-          { "option": "ACTIONS", "isCorrect": false, "id": 3}
+          { "option": "COMPONENT", "isCorrect": false, "id": 0 },
+          { "option": "PROVIDER", "isCorrect": true, "id": 1 },
+          { "option": "CONTAINER", "isCorrect": false, "id": 2 },
+          { "option": "ACTIONS", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "PROVIDER"
       },
       {
         "title": "redux",
-        "questions":
-          "Predictability of Redux is determined by __________ most important principles.",
+        "questions": "Predictability of Redux is determined by __________ most important principles.",
         "options": [
-          { "option": "Two", "isCorrect": false, "id": 0},
-          { "option": "Four", "isCorrect": false, "id": 1},
-          { "option": "Three", "isCorrect": true, "id": 2},
-          { "option": "Five", "isCorrect": false, "id": 3}
+          { "option": "Two", "isCorrect": false, "id": 0 },
+          { "option": "Four", "isCorrect": false, "id": 1 },
+          { "option": "Three", "isCorrect": true, "id": 2 },
+          { "option": "Five", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "Three"
       },
       {
         "title": "redux",
-        "questions":
-          "___________ is a plain object that describes the intention to cause change with a type property.",
+        "questions": "___________ is a plain object that describes the intention to cause change with a type property.",
         "options": [
-          { "option": "class", "isCorrect": false, "id": 0},
-          { "option": "action", "isCorrect": true, "id": 1},
-          { "option": "plain", "isCorrect": false, "id": 2},
-          { "option": "object", "isCorrect": false, "id": 3}
+          { "option": "class", "isCorrect": false, "id": 0 },
+          { "option": "action", "isCorrect": true, "id": 1 },
+          { "option": "plain", "isCorrect": false, "id": 2 },
+          { "option": "object", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "action"
       },
@@ -1269,22 +1267,21 @@
         "title": "redux",
         "questions": "Redux follows the ____________ data flow.",
         "options": [
-          { "option": "bidirectional", "isCorrect": false, "id": 0},
-          { "option": "unidirectional", "isCorrect": true, "id": 1},
-          { "option": "Both A and B", "isCorrect": false, "id": 2},
-          { "option": "ANone of the above", "isCorrect": false, "id": 3}
+          { "option": "bidirectional", "isCorrect": false, "id": 0 },
+          { "option": "unidirectional", "isCorrect": true, "id": 1 },
+          { "option": "Both A and B", "isCorrect": false, "id": 2 },
+          { "option": "ANone of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "unidirectional"
       },
       {
         "title": "redux",
-        "questions":
-          "The _______ notifies the view by executing their callback functions",
+        "questions": "The _______ notifies the view by executing their callback functions",
         "options": [
-          { "option": "store", "isCorrect": true, "id": 0},
-          { "option": "state", "isCorrect": false, "id": 1},
-          { "option": "reducer", "isCorrect": false, "id": 2},
-          { "option": "action", "isCorrect": false, "id": 3}
+          { "option": "store", "isCorrect": true, "id": 0 },
+          { "option": "state", "isCorrect": false, "id": 1 },
+          { "option": "reducer", "isCorrect": false, "id": 2 },
+          { "option": "action", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "store"
       },
@@ -1292,29 +1289,27 @@
         "title": "redux",
         "questions": "Redux can have _________ store in your application",
         "options": [
-          { "option": "single", "isCorrect": true, "id": 0},
-          { "option": "double", "isCorrect": false, "id": 1},
-          { "option": "multi", "isCorrect": false, "id": 2},
-          { "option": "None of the above", "isCorrect": false, "id": 3}
+          { "option": "single", "isCorrect": true, "id": 0 },
+          { "option": "double", "isCorrect": false, "id": 1 },
+          { "option": "multi", "isCorrect": false, "id": 2 },
+          { "option": "None of the above", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "single"
       },
       {
         "title": "redux",
-        "questions":
-          "Which method helps you retrieve the current state of your Redux store?",
+        "questions": "Which method helps you retrieve the current state of your Redux store?",
         "options": [
-          { "option": "dispatch", "isCorrect": false, "id": 0},
-          { "option": "subscribe", "isCorrect": false, "id": 1},
-          { "option": "getState", "isCorrect": true, "id": 2},
-          { "option": "action", "isCorrect": false, "id": 3}
+          { "option": "dispatch", "isCorrect": false, "id": 0 },
+          { "option": "subscribe", "isCorrect": false, "id": 1 },
+          { "option": "getState", "isCorrect": true, "id": 2 },
+          { "option": "action", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "getState"
       },
       {
         "title": "redux",
-        "questions":
-          "Which of the following rules are correct for Pure Functions?",
+        "questions": "Which of the following rules are correct for Pure Functions?",
         "options": [
           {
             "option": "A function returns the same result for same arguments.",
@@ -1322,8 +1317,7 @@
             "id": 0
           },
           {
-            "option":
-              "Its evaluation has no side effects, i.e., it does not alter input data.",
+            "option": "Its evaluation has no side effects, i.e., it does not alter input data.",
             "isCorrect": false,
             "id": 1
           },
@@ -1332,7 +1326,7 @@
             "isCorrect": false,
             "id": 2
           },
-          { "option": "All of the above", "isCorrect": true, "id": 3}
+          { "option": "All of the above", "isCorrect": true, "id": 3 }
         ],
         "correctAnswer": "All of the above"
       },
@@ -1340,10 +1334,10 @@
         "title": "redux",
         "questions": "Pure functions are unpredictable",
         "options": [
-          { "option": "TRUE", "isCorrect": false, "id": 0},
-          { "option": "FALSE", "isCorrect": true, "id": 1},
-          { "option": "Can be true or false", "isCorrect": false, "id": 2},
-          { "option": "Can not say", "isCorrect": false, "id": 3}
+          { "option": "TRUE", "isCorrect": false, "id": 0 },
+          { "option": "FALSE", "isCorrect": true, "id": 1 },
+          { "option": "Can be true or false", "isCorrect": false, "id": 2 },
+          { "option": "Can not say", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "FALSE"
       },
@@ -1351,10 +1345,10 @@
         "title": "redux",
         "questions": "Both props and state are plain JavaScript objects.",
         "options": [
-          { "option": "TRUE", "isCorrect": true, "id": 0},
-          { "option": "FALSE", "isCorrect": false, "id": 1},
-          { "option": "Can be true or false", "isCorrect": false, "id": 2},
-          { "option": "Can not say", "isCorrect": false, "id": 3}
+          { "option": "TRUE", "isCorrect": true, "id": 0 },
+          { "option": "FALSE", "isCorrect": false, "id": 1 },
+          { "option": "Can be true or false", "isCorrect": false, "id": 2 },
+          { "option": "Can not say", "isCorrect": false, "id": 3 }
         ],
         "correctAnswer": "TRUE"
       }

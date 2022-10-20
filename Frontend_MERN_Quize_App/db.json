@@ -1,1120 +1,797 @@
-[ 
-  {"title":"reactData",
-  "questions":[
-      {
-          "que":"ReactJS is developed by _____?",
-          "answer":[
-                  "Google Engineers",
-                  "Facebook Engineers"
-                ],
-        "correctAnswer":"Facebook Engineers"
-          
-      },
-      {
-          "que":"ReactJS is an MVC based framework?",
-          "answer":[
-              "True",
-              "False"
-                ],
-        "correctAnswer":"False"
-      },
-      {
-        "que":"Which of the following are the advantages of React.js?",
-        "answer":[
-                "React.js can increase the application's performance with Virtual DOM.",
-                "React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.",
-                "React.js can render both on client and server side.",
-                "All of the above"
-              ],
-      "correctAnswer":"All of the above"
-        
-    },
-    {
-        "que":"What of the following is used in React.js to increase performance?",
-        "answer":[
-            "Original DOM",
-            "Virtual DOM",
-           " Both A and B",
-            "None of the above."
-              ],
-      "correctAnswer":"Virtual DOM"
-    },
-    {
-      "que":"Which of the following acts as the input of a class-based component?",
-      "answer":[
-              "Class",
-              "Factory",
-             "Render",
-              "Props"
-            ],
-    "correctAnswer":"Props"
-      
-  },
+[
   {
-      "que":"What is the default port where webpack-server runs?",
-      "answer":[
-        "3000",
-        "8080",
-        "3030",
-        "6060"
-            ],
-    "correctAnswer":"8080"
-  },
-   {
-    "que":"How many numbers of elements a valid react component can return?",
-    "answer":[
-      "1",
-      "2",
-      "4",
-      "5"
-          ],
-  "correctAnswer":"1"
-    
-},
-{
-    "que":"What is the declarative way to render a dynamic list of components based on values in an array?",
-    "answer":[
-      "Using the reduce array method",
-      "Using the <Each /> component",
-      "Using the Array.map() method",
-      "With a for/while loop"
-          ],
-  "correctAnswer":"Using the Array.map() method"
-},
-{
-  "que":" What is a state in React?",
-  "answer":[
+    "title": "reactData",
+    "questions": [
+      {
+        "que": "ReactJS is developed by _____?",
+        "answer": ["Google Engineers", "Facebook Engineers"],
+        "correctAnswer": "Facebook Engineers"
+      },
+      {
+        "que": "ReactJS is an MVC based framework?",
+        "answer": ["True", "False"],
+        "correctAnswer": "False"
+      },
+      {
+        "que": "Which of the following are the advantages of React.js?",
+        "answer": [
+          "React.js can increase the application's performance with Virtual DOM.",
+          "React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.",
+          "React.js can render both on client and server side.",
+          "All of the above"
+        ],
+        "correctAnswer": "All of the above"
+      },
+      {
+        "que": "What of the following is used in React.js to increase performance?",
+        "answer": [
+          "Original DOM",
+          "Virtual DOM",
+          " Both A and B",
+          "None of the above."
+        ],
+        "correctAnswer": "Virtual DOM"
+      },
+      {
+        "que": "Which of the following acts as the input of a class-based component?",
+        "answer": ["Class", "Factory", "Render", "Props"],
+        "correctAnswer": "Props"
+      },
+      {
+        "que": "What is the default port where webpack-server runs?",
+        "answer": ["3000", "8080", "3030", "6060"],
+        "correctAnswer": "8080"
+      },
+      {
+        "que": "How many numbers of elements a valid react component can return?",
+        "answer": ["1", "2", "4", "5"],
+        "correctAnswer": "1"
+      },
+      {
+        "que": "What is the declarative way to render a dynamic list of components based on values in an array?",
+        "answer": [
+          "Using the reduce array method",
+          "Using the <Each /> component",
+          "Using the Array.map() method",
+          "With a for/while loop"
+        ],
+        "correctAnswer": "Using the Array.map() method"
+      },
+      {
+        "que": " What is a state in React?",
+        "answer": [
           "A permanent storage.",
           "Internal storage of the component.",
           "External storage of the component.",
           "None of the above."
         ],
-"correctAnswer":"Internal storage of the component."
-  
-},
-{
-  "que":"What are the two ways to handle data in React?",
-  "answer":[
-      "State & Props",
-      "Services & Components",
-     "State & Services",
-      "State & Component"
+        "correctAnswer": "Internal storage of the component."
+      },
+      {
+        "que": "What are the two ways to handle data in React?",
+        "answer": [
+          "State & Props",
+          "Services & Components",
+          "State & Services",
+          "State & Component"
         ],
-"correctAnswer":"State & Props"
-},
-{
-"que":"Which of the following option is correct in the case of the Babel?",
-"answer":[
-        "Babel is a Compiler.",
-        "Babel is a Transpilar.",
-        "None of the above.",
-        "Both A and B are correct."
-      ],
-"correctAnswer":"Both A and B are correct."
-
-},
-{
-"que":"What will happen if you render an input element with disabled = {false}?",
-"answer":[
-  "It will be rendered as disabled",
-  "It will not be rendered at all",
-  "It will be rendered as enabled",
-  "You cannot set it false."
-      ],
-"correctAnswer":"It will be rendered as enabled"
-},
-{
-  "que":" React.js is a free and open-source front-end....?",
-  "answer":[
-      "JavaScript library",
-      "Bootstrap library",
-      "CSS library",
-      "None of the Above"
+        "correctAnswer": "State & Props"
+      },
+      {
+        "que": "Which of the following option is correct in the case of the Babel?",
+        "answer": [
+          "Babel is a Compiler.",
+          "Babel is a Transpilar.",
+          "None of the above.",
+          "Both A and B are correct."
         ],
-"correctAnswer":"JavaScript library"
-},
-{
-"que":"Which of the following acts as the input of a class-based component?",
-"answer":[
-        "Class",
-        "Factory",
-       "Render",
-        "Props"
-      ],
-"correctAnswer":"Props"
-
-},
-{
-"que":"Which of the following is the correct data flow sequence of flux concept?",
-"answer":[
-  "Dispatcher->Action->Store->View",
-  "Action->Dispatcher->View->Store",
-  "Action->Dispatcher->Store->View",
-  "Action->Store->Dispatcher->View"
-      ],
-"correctAnswer":"Action->Dispatcher->Store->View"
-},
-{
-"que":" React was originally created by...?",
-"answer":[
-"Jordan Walke",
-"Rasmus Lerdorf",
-"Miško Hevery",
-"None of the above"
-    ],
-"correctAnswer":"Jordan Walke"
-
-},
-{
-"que":"What is the smallest building block of ReactJS?",
-"answer":[
-"props",
-"elements",
-"components",
-"None of the Above"
-    ],
-"correctAnswer":"components"
-}
-
-  ]},
-  {"title":"reduxData",
-  "questions":[
-    {
-        "que":"Redux solves this problem by managing application’s state with a single global object called ?",
-        "answer":[
-                "directory",
-                "file",
-                "store",
-                "None of the above"
-              ],
-      "correctAnswer":"store"
-        
-    },
-    {
-        "que":"What is true about redux?",
-        "answer":[
+        "correctAnswer": "Both A and B are correct."
+      },
+      {
+        "que": "What will happen if you render an input element with disabled = {false}?",
+        "answer": [
+          "It will be rendered as disabled",
+          "It will not be rendered at all",
+          "It will be rendered as enabled",
+          "You cannot set it false."
+        ],
+        "correctAnswer": "It will be rendered as enabled"
+      },
+      {
+        "que": " React.js is a free and open-source front-end....?",
+        "answer": [
+          "JavaScript library",
+          "Bootstrap library",
+          "CSS library",
+          "None of the Above"
+        ],
+        "correctAnswer": "JavaScript library"
+      },
+      {
+        "que": "Which of the following acts as the input of a class-based component?",
+        "answer": ["Class", "Factory", "Render", "Props"],
+        "correctAnswer": "Props"
+      },
+      {
+        "que": "Which of the following is the correct data flow sequence of flux concept?",
+        "answer": [
+          "Dispatcher->Action->Store->View",
+          "Action->Dispatcher->View->Store",
+          "Action->Dispatcher->Store->View",
+          "Action->Store->Dispatcher->View"
+        ],
+        "correctAnswer": "Action->Dispatcher->Store->View"
+      },
+      {
+        "que": " React was originally created by...?",
+        "answer": [
+          "Jordan Walke",
+          "Rasmus Lerdorf",
+          "Miško Hevery",
+          "None of the above"
+        ],
+        "correctAnswer": "Jordan Walke"
+      },
+      {
+        "que": "What is the smallest building block of ReactJS?",
+        "answer": ["props", "elements", "components", "None of the Above"],
+        "correctAnswer": "components"
+      }
+    ]
+  },
+  {
+    "title": "reduxData",
+    "questions": [
+      {
+        "que": "Redux solves this problem by managing application’s state with a single global object called ?",
+        "answer": ["directory", "file", "store", "None of the above"],
+        "correctAnswer": "store"
+      },
+      {
+        "que": "What is true about redux?",
+        "answer": [
           "Redux is a predictable state container for JavaScript apps.",
           "Redux fundamental principles help in maintaining consistency throughout your application",
           "Redux makes debugging and testing easier",
           "All of the above"
-              ],
-      "correctAnswer":"All of the above"
-    },
-    {
-      "que":"Actions and states are held together by a function called?",
-      "answer":[
-              "Reducer",
-              "Redux",
-              "suscribe",
-              "view"
-            ],
-    "correctAnswer":"Reducer"
-      
-  },
-  {
-      "que":"The ____________ can retrieve updated state and re-render again.",
-      "answer":[
-          "state",
-          "store",
-         "view",
-          "action"
-            ],
-    "correctAnswer":"view"
-  },
-  {
-    "que":" A store is an ___________ object tree in Redux. ",
-    "answer":[
-            "immutable",
-            "mutable",
-           "Both A and B",
-            "None of the above"
-          ],
-  "correctAnswer":"immutable"
-    
-},
-{
-    "que":"A createStore function can have _________ arguments.",
-    "answer":[
-      "1",
-      "2",
-      "3",
-      "4"
-          ],
-  "correctAnswer":"3"
-},
- {
-  "que":"Which of the following is react-Redux helper method?",
-  "answer":[
-    "help()",
-    "assist()",
-    "view()",
-    "connect()"
         ],
-"correctAnswer":"connect()"
-  
-},
-{
-  "que":"Which of them provide us debugging platform for Redux apps?",
-  "answer":[
-    "Redux-Testing",
-    "Redux-Middleware",
-    "Redux-Devtools",
-    "Redux-suscriber"
+        "correctAnswer": "All of the above"
+      },
+      {
+        "que": "Actions and states are held together by a function called?",
+        "answer": ["Reducer", "Redux", "suscribe", "view"],
+        "correctAnswer": "Reducer"
+      },
+      {
+        "que": "The ____________ can retrieve updated state and re-render again.",
+        "answer": ["state", "store", "view", "action"],
+        "correctAnswer": "view"
+      },
+      {
+        "que": " A store is an ___________ object tree in Redux. ",
+        "answer": ["immutable", "mutable", "Both A and B", "None of the above"],
+        "correctAnswer": "immutable"
+      },
+      {
+        "que": "A createStore function can have _________ arguments.",
+        "answer": ["1", "2", "3", "4"],
+        "correctAnswer": "3"
+      },
+      {
+        "que": "Which of the following is react-Redux helper method?",
+        "answer": ["help()", "assist()", "view()", "connect()"],
+        "correctAnswer": "connect()"
+      },
+      {
+        "que": "Which of them provide us debugging platform for Redux apps?",
+        "answer": [
+          "Redux-Testing",
+          "Redux-Middleware",
+          "Redux-Devtools",
+          "Redux-suscriber"
         ],
-"correctAnswer":"Redux-Devtools"
-},
-{
-"que":"Which of the following makes stores available?",
-"answer":[
-        "COMPONENT",
-        "CONTAINER",
-        "ACTIONS",
-        "PROVIDER"
-      ],
-"correctAnswer":"PROVIDER"
+        "correctAnswer": "Redux-Devtools"
+      },
+      {
+        "que": "Which of the following makes stores available?",
+        "answer": ["COMPONENT", "CONTAINER", "ACTIONS", "PROVIDER"],
+        "correctAnswer": "PROVIDER"
+      },
 
-},
-
-{
-"que":"Predictability of Redux is determined by __________ most important principles.",
-"answer":[
-    "Two",
-    "Three",
-   "Four",
-    "Five"
-      ],
-"correctAnswer":"Three"
-},
-{
-"que":"___________ is a plain object that describes the intention to cause change with a type property.",
-"answer":[
-      "class",
-      "plain",
-      "action",
-      "object"
-    ],
-"correctAnswer":"action"
-
-},
-{
-"que":"Redux follows the ____________ data flow.",
-"answer":[
-"unidirectional",
-"bidirectional",
-"Both A and B",
-"None of the above"
-    ],
-"correctAnswer":"unidirectional"
-},
-{
-"que":"The _______ notifies the view by executing their callback functions",
-"answer":[
-    "state",
-    "store",
-    "reducer",
-    "action"
-      ],
-"correctAnswer":"store"
-},
-{
-"que":"Redux can have _________ store in your application",
-"answer":[
-      "single",
-      "double",
-     "multi",
-      "None of the above"
-    ],
-"correctAnswer":"single"
-
-},
-{
-"que":"Which method helps you retrieve the current state of your Redux store?",
-"answer":[
-"dispatch",
-"subscribe",
-"action",
-"getState"
-    ],
-"correctAnswer":"getState"
-},
-{
-"que":"Which of the following rules are correct for Pure Functions?",
-"answer":[
-"A function returns the same result for same arguments.",
-"Its evaluation has no side effects, i.e., it does not alter input data.",
-"No mutation of local & global variables",
-"All of the above"
-  ],
-"correctAnswer":"All of the above"
-
-},
-{
-"que":"Pure functions are unpredictable",
-"answer":[
-"TRUE",
-"FALSE",
-"Can be true or false",
-"Can not say"
-  ],
-"correctAnswer":"FALSE"
-},
-{
-"que":"Both props and state are plain JavaScript objects.",
-"answer":[
-"TRUE",
-"FALSE",
-"Can be true or false",
-"Can not say"
-  ],
-"correctAnswer":"TRUE"
-
-},
-{
-"que":"Which method allows you to dispatch an action to change a state in your application?",
-"answer":[
-"getState",
-"setState",
-"dispatch",
-"subscribe"
-  ],
-"correctAnswer":"dispatch"
-}
-
-]},
-{"title":"javaScriptData",
-"questions":[
-  {
-    
-    "que":"What is JavaScript?",
-    "answer":[
-      "JavaScript is a scripting language used to make the website interactive",
-      "JavaScript is an assembly language used to make the website interactive",
-      "JavaScript is a compiled language used to make the website interactive",
-      "None of the above"
-          ],
-  "correctAnswer":"JavaScript is a scripting language used to make the website interactive"
+      {
+        "que": "Predictability of Redux is determined by __________ most important principles.",
+        "answer": ["Two", "Three", "Four", "Five"],
+        "correctAnswer": "Three"
+      },
+      {
+        "que": "___________ is a plain object that describes the intention to cause change with a type property.",
+        "answer": ["class", "plain", "action", "object"],
+        "correctAnswer": "action"
+      },
+      {
+        "que": "Redux follows the ____________ data flow.",
+        "answer": [
+          "unidirectional",
+          "bidirectional",
+          "Both A and B",
+          "None of the above"
+        ],
+        "correctAnswer": "unidirectional"
+      },
+      {
+        "que": "The _______ notifies the view by executing their callback functions",
+        "answer": ["state", "store", "reducer", "action"],
+        "correctAnswer": "store"
+      },
+      {
+        "que": "Redux can have _________ store in your application",
+        "answer": ["single", "double", "multi", "None of the above"],
+        "correctAnswer": "single"
+      },
+      {
+        "que": "Which method helps you retrieve the current state of your Redux store?",
+        "answer": ["dispatch", "subscribe", "action", "getState"],
+        "correctAnswer": "getState"
+      },
+      {
+        "que": "Which of the following rules are correct for Pure Functions?",
+        "answer": [
+          "A function returns the same result for same arguments.",
+          "Its evaluation has no side effects, i.e., it does not alter input data.",
+          "No mutation of local & global variables",
+          "All of the above"
+        ],
+        "correctAnswer": "All of the above"
+      },
+      {
+        "que": "Pure functions are unpredictable",
+        "answer": ["TRUE", "FALSE", "Can be true or false", "Can not say"],
+        "correctAnswer": "FALSE"
+      },
+      {
+        "que": "Both props and state are plain JavaScript objects.",
+        "answer": ["TRUE", "FALSE", "Can be true or false", "Can not say"],
+        "correctAnswer": "TRUE"
+      },
+      {
+        "que": "Which method allows you to dispatch an action to change a state in your application?",
+        "answer": ["getState", "setState", "dispatch", "subscribe"],
+        "correctAnswer": "dispatch"
+      }
+    ]
   },
   {
-    "que":"Javascript is an _______ language?",
-    "answer":[
-            "Object-Oriented",
-            "Object-Based",
-            "Procedural",
-            "None of the above"
-          ],
-  "correctAnswer":"Object-Oriented"
-    
-  },
-  {
-    "que":"Among the given statements, which statement defines closures in JavaScript?",
-    "answer":[
-            " JavaScript is a function that is enclosed with references to its inner function scoper",
-            "JavaScript is a function that is enclosed with references to its lexical environment",
-            "JavaScript is a function that is enclosed with the object to its inner function scope",
-            "None of the mentioned"
-          ],
-  "correctAnswer":"JavaScript is a function that is enclosed with references to its lexical environment"
-    
-},
-{
-    "que":"Arrays in JavaScript are defined by which of the following statements?",
-    "answer":[
-        "It is an ordered list of values",
-        "It is an ordered list of objects",
-       "It is an ordered list of string",
-        "It is an ordered list of functions"
-          ],
-  "correctAnswer":"It is an ordered list of values"
-},
-{
-  "que":"Which of the following is not javascript data types?",
-  "answer":[
+    "title": "javaScriptData",
+    "questions": [
+      {
+        "que": "What is JavaScript?",
+        "answer": [
+          "JavaScript is a scripting language used to make the website interactive",
+          "JavaScript is an assembly language used to make the website interactive",
+          "JavaScript is a compiled language used to make the website interactive",
+          "None of the above"
+        ],
+        "correctAnswer": "JavaScript is a scripting language used to make the website interactive"
+      },
+      {
+        "que": "Javascript is an _______ language?",
+        "answer": [
+          "Object-Oriented",
+          "Object-Based",
+          "Procedural",
+          "None of the above"
+        ],
+        "correctAnswer": "Object-Oriented"
+      },
+      {
+        "que": "Among the given statements, which statement defines closures in JavaScript?",
+        "answer": [
+          " JavaScript is a function that is enclosed with references to its inner function scoper",
+          "JavaScript is a function that is enclosed with references to its lexical environment",
+          "JavaScript is a function that is enclosed with the object to its inner function scope",
+          "None of the mentioned"
+        ],
+        "correctAnswer": "JavaScript is a function that is enclosed with references to its lexical environment"
+      },
+      {
+        "que": "Arrays in JavaScript are defined by which of the following statements?",
+        "answer": [
+          "It is an ordered list of values",
+          "It is an ordered list of objects",
+          "It is an ordered list of string",
+          "It is an ordered list of functions"
+        ],
+        "correctAnswer": "It is an ordered list of values"
+      },
+      {
+        "que": "Which of the following is not javascript data types?",
+        "answer": [
           "Null type",
           "Undefined type",
-         "Number type",
+          "Number type",
           "All of the mentioned"
         ],
-"correctAnswer":"All of the mentioned"
-  
-},
-{
-  "que":"Which of the following can be used to call a JavaScript Code Snippet?",
-  "answer":[
-    "Function/Method",
-    "Preprocessor",
-    "Triggering Event",
-    "RMI"
+        "correctAnswer": "All of the mentioned"
+      },
+      {
+        "que": "Which of the following can be used to call a JavaScript Code Snippet?",
+        "answer": [
+          "Function/Method",
+          "Preprocessor",
+          "Triggering Event",
+          "RMI"
         ],
-"correctAnswer":"Function/Method"
-},
-{
-"que":"What is the basic difference between JavaScript and Java?",
-"answer":[
-  "Functions are considered as fields",
-  "Functions are values, and there is no hard distinction between methods and fields",
-  "Variables are specific",
-  "There is no difference"
-      ],
-"correctAnswer":"Functions are values, and there is no hard distinction between methods and fields"
-
-},
-{
-"que":"Why JavaScript Engine is needed?",
-"answer":[
-  "Both Compiling & Interpreting the JavaScript",
-  "Parsing the javascript",
-  "Interpreting the JavaScript",
-  "Compiling the JavaScript"
-      ],
-"correctAnswer":"Interpreting the JavaScript"
-},
-{
-"que":"Which of the following methods/operation does javascript use instead of == and !=?",
-"answer":[
-      "JavaScript uses equalto()",
-      "JavaScript uses equals() and notequals() instead",
-      "JavaScript uses bitwise checking",
-      "JavaScript uses === and !== instead"
-    ],
-"correctAnswer":"JavaScript uses === and !== instead"
-
-},
-
-{
-"que":"Which of the following is not a framework?",
-"answer":[
-  "JavaScript .NET",
-  "JavaScript",
- "Cocoa JS",
-  "jQuery"
-    ],
-"correctAnswer":"JavaScript"
-},
-{
-"que":"Why event handlers is needed in JS?",
-"answer":[
-    "Allows JavaScript code to alter the behaviour of windows",
-    "Adds innerHTML page to the code",
-    "Change the server location",
-    "Performs handling of exceptions and occurrences"
-  ],
-"correctAnswer":"Allows JavaScript code to alter the behaviour of windows"
-
-},
-{
-"que":"Which of the following is the property that is triggered in response to JS errors?",
-"answer":[
-"onclick",
-"onerror",
-"onmessage",
-"onexception"
-  ],
-"correctAnswer":"onerror"
-},
-{
-"que":"Which of the following is not an error in JavaScript?",
-"answer":[
-  "Missing of Bracket",
-  "Division by zero",
-  "Syntax error",
-  "Missing of semicolons"
-    ],
-"correctAnswer":"Division by zero"
-},
-{
-"que":"Which of the following function of String object returns a number indicating the Unicode value of the character at the given index?",
-"answer":[
-    "charAt()",
-    "charCodeAt()",
-   "concat()",
-    "indexOf()"
-  ],
-"correctAnswer":"charCodeAt()"
-
-},
-{
-"que":"Which of the following function of Array object joins all elements of an array into a string?",
-"answer":[
-"concat()", 
-"join()",
-"pop()",
-"map()"
-  ],
-"correctAnswer":"join()"
-}
-]},
-{"title":"cssData",
-"questions":[
-  {
-    
-    "que":"What is CSS",
-    "answer":[
-      "CSS is a style sheet language",
-      "CSS is designed to separate the presentation and content, including layout, colors, and fonts",
-      "CSS is the language used to style the HTML documents",
-      "All of the mentioned"
-          ],
-  "correctAnswer":"All of the mentioned"
-  },
-  {
-    "que":"Which of the following tag is used to embed css in html page?",
-    "answer":[
-            "<css>",
-            "<!DOCTYPE html>",
-            "<style>",
-            "<script>"
-          ],
-  "correctAnswer":"<style>"
-    
-  },
-  {
-    "que":" Which of the following CSS selectors are used to specify a group of elements?",
-    "answer":[
-           "both class and tag",
-           "id",
-           "class",
-            "tag"
-          ],
-  "correctAnswer":"class"
-    
-},
-{
-    "que":"Which of the following has introduced text, list, box, margin, border, color, and background properties?",
-    "answer":[
-        "HTML",
-        "PHP",
-       "CSS",
-        "Ajax"
-          ],
-  "correctAnswer":"CSS"
-},
-{
-  "que":"Which of the following CSS framework is used to create a responsive design?",
-  "answer":[
-          "django",
-          "rails",
-         "larawell",
-          "bootstrap"
+        "correctAnswer": "Function/Method"
+      },
+      {
+        "que": "What is the basic difference between JavaScript and Java?",
+        "answer": [
+          "Functions are considered as fields",
+          "Functions are values, and there is no hard distinction between methods and fields",
+          "Variables are specific",
+          "There is no difference"
         ],
-"correctAnswer":"bootstrap"
-  
-},
-{
-  "que":"Which of the following CSS selector is used to specify a rule to bind a particular unique element?",
-  "answer":[
-    "tag",
-    "id",
-    "class",
-    "both class and tag"
+        "correctAnswer": "Functions are values, and there is no hard distinction between methods and fields"
+      },
+      {
+        "que": "Why JavaScript Engine is needed?",
+        "answer": [
+          "Both Compiling & Interpreting the JavaScript",
+          "Parsing the javascript",
+          "Interpreting the JavaScript",
+          "Compiling the JavaScript"
         ],
-"correctAnswer":"id"
-},
-{
-"que":"Which of the following CSS property is used to make the text bold?",
-"answer":[
-  "text-decoration: bold",
-  "font-weight: bold",
-  "font-style: bold",
-  "text-align: bold"
-      ],
-"correctAnswer":"font-weight: bold"
-
-},
-{
-"que":"Which of the following CSS style property is used to specify an italic text?",
-"answer":[
-  "style",
-  "font",
-  "font-style",
-  "@font-face"
-      ],
-"correctAnswer":"font-style"
-},
-{
-"que":"Which of the following are the CSS Extension Prefixes for Webkit?",
-"answer":[
-      "-chrome",
-      "-web",
-      "-o-",
-      "-webkit"
-    ],
-"correctAnswer":"-webkit"
-
-},
-
-{
-"que":"Which of the following is the correct syntax to link an external style sheet in the HTML file?",
-"answer":[
-  "<link rel=”stylesheet” href=”style.css” />",
-  "<link rel=”stylesheet” src=”style.css” />",
- "<style rel=”stylesheet” src=”style.css” />",
-  "<style rel=”stylesheet” link=”style.css” />"
-    ],
-"correctAnswer":"<link rel=”stylesheet” href=”style.css” />"
-},
-{
-"que":"Which of the following is the first CSS specification to become an official W3C Recommendation?",
-"answer":[
-    "CSS level 2",
-    "(X)HTML CSS",
-    "CSS level 1",
-    "CSS level 2.1"
-  ],
-"correctAnswer":"CSS level 1"
-
-},
-{
-"que":"Which of the following function defines a linear gradient as a CSS image?",
-"answer":[
-"gradient()",
-"linear-gradient()",
-"grayscale()",
-"image()"
-  ],
-"correctAnswer":"linear-gradient()"
-},
-{
-"que":"Which of the following CSS property can be used to set the image as a border instead of the border style?",
-"answer":[
-  "background-image-source",
-  "background-image",
-  "border-image-source",
-  "border-image"
-    ],
-"correctAnswer":"border-image-source"
-},
-{
-"que":"Which of the following CSS property defines the different properties of all four sides of an element’s border in a single declaration?",
-"answer":[
-    "border-collapse",
-    "border-width",
-   "padding",
-    "border"
-  ],
-"correctAnswer":"border-width"
-
-},
-{
-"que":"Which of the following is the correct way to apply CSS Styles?",
-"answer":[
-"in an external CSS file", 
-"in an external CSS file",
-"inside the <head> section of an HTML page",
-"all of the mentioned"
-  ],
-"correctAnswer":"all of the mentioned"
-},
-{
-"que":"Which of the following CSS property sets the font size of text?",
-"answer":[
-  "font-size",
-  "text-size",
-  "text",
-  "size"
-    ],
-"correctAnswer":"font-size"
-},
-{
-"que":"Which of the following is not the property of the CSS box model?",
-"answer":[
-    "margin",
-    "color",
-   "width",
-    "height"
-  ],
-"correctAnswer":"color"
-
-},
-{
-"que":"Which of the following CSS property sets what kind of line decorations are added to an element, such as underlines, overlines, etc?",
-"answer":[
-"text-decoration", 
-"text-style",
-"text-decoration-line",
-"text-line"
-  ],
-"correctAnswer":"text-decoration-line"
-}
-]},
-{"title":"htmlData",
-"questions":[
-  {
-    
-    "que":"HTML stands for -",
-    "answer":[
-      "HighText Machine Language",
-      "HyperText and links Markup Language",
-      "HyperText Markup Language",
-      "None of these"
-          ],
-  "correctAnswer":"HyperText Markup Language"
-  },
-  {
-    "que":"The correct sequence of HTML tags for starting a webpage is -",
-    "answer":[
-            "Head-Title-HTML-body",
-            "HTML-Body-Title-Head",
-            "HTML-Head-Title-Body",
-            "Head-HTML-Title-Body"
-          ],
-  "correctAnswer":"HTML-Head-Title-Body"
-    
-  },
-  {
-    "que":"Which of the following element is responsible for making the text bold in HTML?",
-    "answer":[
-           "<pre>",
-           "<a>",
-           "<b>",
-            "<br>"
-          ],
-  "correctAnswer":"<b>"
-    
-},
-{
-    "que":"Which of the following tag is used for inserting the largest heading in HTML?",
-    "answer":[
-        "<h3>",
-        "<h4>",
-       "<h1>",
-        "<h6>"
-          ],
-  "correctAnswer":"<h1>"
-},
-{
-  "que":"How to create an unordered list (a list with the list items in bullets) in HTML?",
-  "answer":[
-          "<ul>",
-          "<ol>",
-         "<li>",
-          "<i>"
+        "correctAnswer": "Interpreting the JavaScript"
+      },
+      {
+        "que": "Which of the following methods/operation does javascript use instead of == and !=?",
+        "answer": [
+          "JavaScript uses equalto()",
+          "JavaScript uses equals() and notequals() instead",
+          "JavaScript uses bitwise checking",
+          "JavaScript uses === and !== instead"
         ],
-"correctAnswer":"<ul>"
-  
-},
-{
-  "que":"<input> is -",
-  "answer":[
-    "a format tag.",
-    "an empty tag.",
-    "All of the above",
-    "None of the above"
+        "correctAnswer": "JavaScript uses === and !== instead"
+      },
+
+      {
+        "que": "Which of the following is not a framework?",
+        "answer": ["JavaScript .NET", "JavaScript", "Cocoa JS", "jQuery"],
+        "correctAnswer": "JavaScript"
+      },
+      {
+        "que": "Why event handlers is needed in JS?",
+        "answer": [
+          "Allows JavaScript code to alter the behaviour of windows",
+          "Adds innerHTML page to the code",
+          "Change the server location",
+          "Performs handling of exceptions and occurrences"
         ],
-"correctAnswer":"an empty tag."
-},
-{
-"que":"Which of the following tag is used to make the underlined text?",
-"answer":[
-  "<i>",
-  "<ul>",
-  "<u>",
-  "<pre>"
-      ],
-"correctAnswer":"<u>"
-
-},
-{
-"que":"Which of the following tag is used to define options in a drop-down selection list?",
-"answer":[
-  "<select>",
-  "<list>",
-  "<dropdown>",
-  "<option>"
-      ],
-"correctAnswer":"<option>"
-},
-{
-"que":"Which of the following attribute is used to provide a unique name to an element?",
-"answer":[
-      "class",
-      "id",
-      "type",
-      "None of the above"
-    ],
-"correctAnswer":"id"
-
-},
-
-{
-"que":"Which of the following HTML tag is the special formatting tag?",
-"answer":[
-  "<p>",
-  "<b>",
- "<pre>",
-  "None of the above"
-    ],
-"correctAnswer":"<pre>"
-},
-{
-"que":"Which of the following is the container for <tr>, <th>, and <td> ?",
-"answer":[
-    "<data>",
-    "<table>",
-    "<group>",
-    "All of the above"
-  ],
-"correctAnswer":"<table>"
-
-},
-{
-"que":"What are the types of unordered or bulleted list in HTML?",
-"answer":[
-"disc, square, triangle",
-"polygon, triangle, circle",
-"disc, circle, square",
-"All of the above"
-  ],
-"correctAnswer":"disc, circle, square"
-},
-{
-"que":"Which of the following HTML attribute is used to define inline styles?",
-"answer":[
-  "style",
-  "type",
-  "class",
-  "None of the above"
-    ],
-"correctAnswer":"style"
-},
-{
-"que":" In HTML, the tags are __________.",
-"answer":[
-    "in upper case",
-    "case-sensitive",
-   "in lowercase",
-    "not case sensitive"
-  ],
-"correctAnswer":"not case sensitive"
-
-},
-{
-"que":"Which of the following tag is used to add rows in the table?",
-"answer":[
-"<td> and </td>", 
-"<th> and </th>",
-"<tr> and </tr>",
-"None of the above"
-  ],
-"correctAnswer":"<tr> and </tr>"
-},
-{
-"que":"What attribute do we use for data binding?",
-"answer":[
-  "datasrc",
-  "mayscript",
-  "name",
-  "datafld"
-    ],
-"correctAnswer":"datasrc"
-},
-{
-"que":" The <hr> tag in HTML is used for -",
-"answer":[
-    "new line",
-    "vertical ruler",
-   "new paragraph",
-    "horizontal ruler"
-  ],
-"correctAnswer":"horizontal ruler"
-
-},
-{
-"que":"A program in HTML can be rendered and read by -",
-"answer":[
-"Web browser", 
-"Server",
-"Interpreter",
-"None of the above"
-  ],
-"correctAnswer":"Web browser"
-}
-]},
-{"title":"mongodbData",
-"questions":[
-  {
-    "que":"What is MongoDB?",
-    "answer":[
-      "A file system.",
-      "A SQL database.",
-      "A NoSQL database.",
-      "An Access database."
-          ],
-  "correctAnswer":"A NoSQL database."
+        "correctAnswer": "Allows JavaScript code to alter the behaviour of windows"
+      },
+      {
+        "que": "Which of the following is the property that is triggered in response to JS errors?",
+        "answer": ["onclick", "onerror", "onmessage", "onexception"],
+        "correctAnswer": "onerror"
+      },
+      {
+        "que": "Which of the following is not an error in JavaScript?",
+        "answer": [
+          "Missing of Bracket",
+          "Division by zero",
+          "Syntax error",
+          "Missing of semicolons"
+        ],
+        "correctAnswer": "Division by zero"
+      },
+      {
+        "que": "Which of the following function of String object returns a number indicating the Unicode value of the character at the given index?",
+        "answer": ["charAt()", "charCodeAt()", "concat()", "indexOf()"],
+        "correctAnswer": "charCodeAt()"
+      },
+      {
+        "que": "Which of the following function of Array object joins all elements of an array into a string?",
+        "answer": ["concat()", "join()", "pop()", "map()"],
+        "correctAnswer": "join()"
+      }
+    ]
   },
   {
-    "que":"How to create a database in mongodb?",
-    "answer":[
-            "use databaseName",
-            "new databaseName",
-            "create databaseName",
-            "None of the above"
-          ],
-  "correctAnswer":"use databaseName"
+    "title": "cssData",
+    "questions": [
+      {
+        "que": "What is CSS",
+        "answer": [
+          "CSS is a style sheet language",
+          "CSS is designed to separate the presentation and content, including layout, colors, and fonts",
+          "CSS is the language used to style the HTML documents",
+          "All of the mentioned"
+        ],
+        "correctAnswer": "All of the mentioned"
+      },
+      {
+        "que": "Which of the following tag is used to embed css in html page?",
+        "answer": ["<css>", "<!DOCTYPE html>", "<style>", "<script>"],
+        "correctAnswer": "<style>"
+      },
+      {
+        "que": " Which of the following CSS selectors are used to specify a group of elements?",
+        "answer": ["both class and tag", "id", "class", "tag"],
+        "correctAnswer": "class"
+      },
+      {
+        "que": "Which of the following has introduced text, list, box, margin, border, color, and background properties?",
+        "answer": ["HTML", "PHP", "CSS", "Ajax"],
+        "correctAnswer": "CSS"
+      },
+      {
+        "que": "Which of the following CSS framework is used to create a responsive design?",
+        "answer": ["django", "rails", "larawell", "bootstrap"],
+        "correctAnswer": "bootstrap"
+      },
+      {
+        "que": "Which of the following CSS selector is used to specify a rule to bind a particular unique element?",
+        "answer": ["tag", "id", "class", "both class and tag"],
+        "correctAnswer": "id"
+      },
+      {
+        "que": "Which of the following CSS property is used to make the text bold?",
+        "answer": [
+          "text-decoration: bold",
+          "font-weight: bold",
+          "font-style: bold",
+          "text-align: bold"
+        ],
+        "correctAnswer": "font-weight: bold"
+      },
+      {
+        "que": "Which of the following CSS style property is used to specify an italic text?",
+        "answer": ["style", "font", "font-style", "@font-face"],
+        "correctAnswer": "font-style"
+      },
+      {
+        "que": "Which of the following are the CSS Extension Prefixes for Webkit?",
+        "answer": ["-chrome", "-web", "-o-", "-webkit"],
+        "correctAnswer": "-webkit"
+      },
+
+      {
+        "que": "Which of the following is the correct syntax to link an external style sheet in the HTML file?",
+        "answer": [
+          "<link rel=”stylesheet” href=”style.css” />",
+          "<link rel=”stylesheet” src=”style.css” />",
+          "<style rel=”stylesheet” src=”style.css” />",
+          "<style rel=”stylesheet” link=”style.css” />"
+        ],
+        "correctAnswer": "<link rel=”stylesheet” href=”style.css” />"
+      },
+      {
+        "que": "Which of the following is the first CSS specification to become an official W3C Recommendation?",
+        "answer": [
+          "CSS level 2",
+          "(X)HTML CSS",
+          "CSS level 1",
+          "CSS level 2.1"
+        ],
+        "correctAnswer": "CSS level 1"
+      },
+      {
+        "que": "Which of the following function defines a linear gradient as a CSS image?",
+        "answer": ["gradient()", "linear-gradient()", "grayscale()", "image()"],
+        "correctAnswer": "linear-gradient()"
+      },
+      {
+        "que": "Which of the following CSS property can be used to set the image as a border instead of the border style?",
+        "answer": [
+          "background-image-source",
+          "background-image",
+          "border-image-source",
+          "border-image"
+        ],
+        "correctAnswer": "border-image-source"
+      },
+      {
+        "que": "Which of the following CSS property defines the different properties of all four sides of an element’s border in a single declaration?",
+        "answer": ["border-collapse", "border-width", "padding", "border"],
+        "correctAnswer": "border-width"
+      },
+      {
+        "que": "Which of the following is the correct way to apply CSS Styles?",
+        "answer": [
+          "in an external CSS file",
+          "in an external CSS file",
+          "inside the <head> section of an HTML page",
+          "all of the mentioned"
+        ],
+        "correctAnswer": "all of the mentioned"
+      },
+      {
+        "que": "Which of the following CSS property sets the font size of text?",
+        "answer": ["font-size", "text-size", "text", "size"],
+        "correctAnswer": "font-size"
+      },
+      {
+        "que": "Which of the following is not the property of the CSS box model?",
+        "answer": ["margin", "color", "width", "height"],
+        "correctAnswer": "color"
+      },
+      {
+        "que": "Which of the following CSS property sets what kind of line decorations are added to an element, such as underlines, overlines, etc?",
+        "answer": [
+          "text-decoration",
+          "text-style",
+          "text-decoration-line",
+          "text-line"
+        ],
+        "correctAnswer": "text-decoration-line"
+      }
+    ]
   },
   {
-    "que":"MongoDB is a _________ database that provides high performance, high availability, and easy scalability.",
-    "answer":[
-           "Graph",
-           "Key value",
-           "Document",
-            "All of the mentioned"
-          ],
-  "correctAnswer":"Document"
-},
-{
-    "que":"Which field is always the first field in the document.?",
-    "answer":[
-        "_id",
-        "Ob_id",
-       "id",
-        "None of these"
-          ],
-    "correctAnswer":"_id"
-},
-{
-  "que":"Which of the following is incorrect statement about find and findOne operations in MongoDB?",
-  "answer":[
+    "title": "htmlData",
+    "questions": [
+      {
+        "que": "HTML stands for -",
+        "answer": [
+          "HighText Machine Language",
+          "HyperText and links Markup Language",
+          "HyperText Markup Language",
+          "None of these"
+        ],
+        "correctAnswer": "HyperText Markup Language"
+      },
+      {
+        "que": "The correct sequence of HTML tags for starting a webpage is -",
+        "answer": [
+          "Head-Title-HTML-body",
+          "HTML-Body-Title-Head",
+          "HTML-Head-Title-Body",
+          "Head-HTML-Title-Body"
+        ],
+        "correctAnswer": "HTML-Head-Title-Body"
+      },
+      {
+        "que": "Which of the following element is responsible for making the text bold in HTML?",
+        "answer": ["<pre>", "<a>", "<b>", "<br>"],
+        "correctAnswer": "<b>"
+      },
+      {
+        "que": "Which of the following tag is used for inserting the largest heading in HTML?",
+        "answer": ["<h3>", "<h4>", "<h1>", "<h6>"],
+        "correctAnswer": "<h1>"
+      },
+      {
+        "que": "How to create an unordered list (a list with the list items in bullets) in HTML?",
+        "answer": ["<ul>", "<ol>", "<li>", "<i>"],
+        "correctAnswer": "<ul>"
+      },
+      {
+        "que": "<input> is -",
+        "answer": [
+          "a format tag.",
+          "an empty tag.",
+          "All of the above",
+          "None of the above"
+        ],
+        "correctAnswer": "an empty tag."
+      },
+      {
+        "que": "Which of the following tag is used to make the underlined text?",
+        "answer": ["<i>", "<ul>", "<u>", "<pre>"],
+        "correctAnswer": "<u>"
+      },
+      {
+        "que": "Which of the following tag is used to define options in a drop-down selection list?",
+        "answer": ["<select>", "<list>", "<dropdown>", "<option>"],
+        "correctAnswer": "<option>"
+      },
+      {
+        "que": "Which of the following attribute is used to provide a unique name to an element?",
+        "answer": ["class", "id", "type", "None of the above"],
+        "correctAnswer": "id"
+      },
+
+      {
+        "que": "Which of the following HTML tag is the special formatting tag?",
+        "answer": ["<p>", "<b>", "<pre>", "None of the above"],
+        "correctAnswer": "<pre>"
+      },
+      {
+        "que": "Which of the following is the container for <tr>, <th>, and <td> ?",
+        "answer": ["<data>", "<table>", "<group>", "All of the above"],
+        "correctAnswer": "<table>"
+      },
+      {
+        "que": "What are the types of unordered or bulleted list in HTML?",
+        "answer": [
+          "disc, square, triangle",
+          "polygon, triangle, circle",
+          "disc, circle, square",
+          "All of the above"
+        ],
+        "correctAnswer": "disc, circle, square"
+      },
+      {
+        "que": "Which of the following HTML attribute is used to define inline styles?",
+        "answer": ["style", "type", "class", "None of the above"],
+        "correctAnswer": "style"
+      },
+      {
+        "que": " In HTML, the tags are __________.",
+        "answer": [
+          "in upper case",
+          "case-sensitive",
+          "in lowercase",
+          "not case sensitive"
+        ],
+        "correctAnswer": "not case sensitive"
+      },
+      {
+        "que": "Which of the following tag is used to add rows in the table?",
+        "answer": [
+          "<td> and </td>",
+          "<th> and </th>",
+          "<tr> and </tr>",
+          "None of the above"
+        ],
+        "correctAnswer": "<tr> and </tr>"
+      },
+      {
+        "que": "What attribute do we use for data binding?",
+        "answer": ["datasrc", "mayscript", "name", "datafld"],
+        "correctAnswer": "datasrc"
+      },
+      {
+        "que": " The <hr> tag in HTML is used for -",
+        "answer": [
+          "new line",
+          "vertical ruler",
+          "new paragraph",
+          "horizontal ruler"
+        ],
+        "correctAnswer": "horizontal ruler"
+      },
+      {
+        "que": "A program in HTML can be rendered and read by -",
+        "answer": ["Web browser", "Server", "Interpreter", "None of the above"],
+        "correctAnswer": "Web browser"
+      }
+    ]
+  },
+  {
+    "title": "mongodbData",
+    "questions": [
+      {
+        "que": "What is MongoDB?",
+        "answer": [
+          "A file system.",
+          "A SQL database.",
+          "A NoSQL database.",
+          "An Access database."
+        ],
+        "correctAnswer": "A NoSQL database."
+      },
+      {
+        "que": "How to create a database in mongodb?",
+        "answer": [
+          "use databaseName",
+          "new databaseName",
+          "create databaseName",
+          "None of the above"
+        ],
+        "correctAnswer": "use databaseName"
+      },
+      {
+        "que": "MongoDB is a _________ database that provides high performance, high availability, and easy scalability.",
+        "answer": ["Graph", "Key value", "Document", "All of the mentioned"],
+        "correctAnswer": "Document"
+      },
+      {
+        "que": "Which field is always the first field in the document.?",
+        "answer": ["_id", "Ob_id", "id", "None of these"],
+        "correctAnswer": "_id"
+      },
+      {
+        "que": "Which of the following is incorrect statement about find and findOne operations in MongoDB?",
+        "answer": [
           "find() returns all the documents in a collection while findOne() retrieves only the first one.",
           "find() and findOne() returns cursors to the collection documents",
-         "findOne() returns the actual first document retrieved from a collection",
+          "findOne() returns the actual first document retrieved from a collection",
           "find.limit(1) is not the same query as findOne()"
         ],
-"correctAnswer":"find() and findOne() returns cursors to the collection documents"
-  
-},
-{
-  "que":"By default, the MongoDB cursor in mongo shell is configured to return how many documents? To get the next set of documents, which command is used?",
-  "answer":[
-    "20 it",
-    "200 more",
-    "50 it",
-    "No limit none"
+        "correctAnswer": "find() and findOne() returns cursors to the collection documents"
+      },
+      {
+        "que": "By default, the MongoDB cursor in mongo shell is configured to return how many documents? To get the next set of documents, which command is used?",
+        "answer": ["20 it", "200 more", "50 it", "No limit none"],
+        "correctAnswer": "20 it"
+      },
+      {
+        "que": "Which of the following command is used to get all the indexes on a collection?",
+        "answer": [
+          "db.collection.getIndexes()",
+          "db.collection.showIndexes()",
+          "db.collection.findIndexes()",
+          "db.showIndexes()"
         ],
-"correctAnswer":"20 it"
-},
-{
-"que":"Which of the following command is used to get all the indexes on a collection?",
-"answer":[
-  "db.collection.getIndexes()",
-  "db.collection.showIndexes()",
-  "db.collection.findIndexes()",
-  "db.showIndexes()"
-      ],
-"correctAnswer":"db.collection.getIndexes()"
+        "correctAnswer": "db.collection.getIndexes()"
+      },
+      {
+        "que": "In which year the MongoDB was Initial release?",
+        "answer": ["2008", "2009", "2011", "2010"],
+        "correctAnswer": "2009"
+      },
+      {
+        "que": " A collection and a document in MongoDB is equivalent to............. concepts respectively.",
+        "answer": [
+          "Table and Column",
+          "Table and Row",
+          "Column and Row",
+          "Database and Table"
+        ],
+        "correctAnswer": "Table and Row"
+      },
 
-},
-{
-"que":"In which year the MongoDB was Initial release?",
-"answer":[
-  "2008",
-  "2009",
-  "2011",
-  "2010"
-      ],
-"correctAnswer":"2009"
-},
-{
-"que":" A collection and a document in MongoDB is equivalent to............. concepts respectively.",
-"answer":[
-      "Table and Column",
-      "Table and Row",
-      "Column and Row",
-      "Database and Table"
-    ],
-"correctAnswer":"Table and Row"
-
-},
-
-{
-"que":"What is the good alternatives to MongoDB?",
-"answer":[
-  "Redis & CouchDB",
-  "Riak & Hbase",
- "Cassandra",
-  "All of the mentioned"
-    ],
-"correctAnswer":"All of the mentioned"
-},
-{
-"que":"Does MongoDB supports query joins between collections ?",
-"answer":[
-    "No",
-    "Yes"
-  ],
-"correctAnswer":"Yes"
-
-},
-{
-"que":"MongoDB stores all documents in ...........",
-"answer":[
-"Rows",
-"Tables",
-"Collections",
-"None of the above"
-  ],
-"correctAnswer":"Collections"
-},
-{
-"que":"MongoDB has been adopted as ________ software by a number of major websites and services.",
-"answer":[
-  "backend",
-  "frontend",
-  "proprietary",
-  "None of the above"
-    ],
-"correctAnswer":"backend"
-},
-{
-"que":"To create index in descending order, the value of key is?",
-"answer":[
-    "0",
-    "1",
-   "-1",
-    "Infinite"
-  ],
-"correctAnswer":"-1"
-
-},
-{
-"que":"Which method deletes multiple (specified) indexes on a collection?",
-"answer":[
-"dropIndexes()", 
-"dropIndex()",
-"Both A and B can be used",
-"getIndexes()"
-  ],
-"correctAnswer":"dropIndexes()"
-},
-{
-"que":"Which of the following line skips the first 5 documents in the bios collection and returns all remaining documents?",
-"answer":[
-  "db.bios.find().limit( 5 )",
-  "db.bios.find().skip( 1 )",
-  "db.bios.find().skip( 5)",
-  "db.bios.find().sort( 5 )"
-    ],
-"correctAnswer":"db.bios.find().skip( 5)"
-},
-{
-"que":"Command display the list of databases.",
-"answer":[
-    "show db",
-    "show dbs",
-   "show data",
-    "display dbs"
-  ],
-"correctAnswer":"show dbs"
-
-},
-{
-"que":"Which of the following operation adds a new document to the users collection ?",
-"answer":[
-"add", 
-"insert",
-"truecate",
-"drop"
-  ],
-"correctAnswer":"insert"
-}
-]}
+      {
+        "que": "What is the good alternatives to MongoDB?",
+        "answer": [
+          "Redis & CouchDB",
+          "Riak & Hbase",
+          "Cassandra",
+          "All of the mentioned"
+        ],
+        "correctAnswer": "All of the mentioned"
+      },
+      {
+        "que": "Does MongoDB supports query joins between collections ?",
+        "answer": ["No", "Yes"],
+        "correctAnswer": "Yes"
+      },
+      {
+        "que": "MongoDB stores all documents in ...........",
+        "answer": ["Rows", "Tables", "Collections", "None of the above"],
+        "correctAnswer": "Collections"
+      },
+      {
+        "que": "MongoDB has been adopted as ________ software by a number of major websites and services.",
+        "answer": ["backend", "frontend", "proprietary", "None of the above"],
+        "correctAnswer": "backend"
+      },
+      {
+        "que": "To create index in descending order, the value of key is?",
+        "answer": ["0", "1", "-1", "Infinite"],
+        "correctAnswer": "-1"
+      },
+      {
+        "que": "Which method deletes multiple (specified) indexes on a collection?",
+        "answer": [
+          "dropIndexes()",
+          "dropIndex()",
+          "Both A and B can be used",
+          "getIndexes()"
+        ],
+        "correctAnswer": "dropIndexes()"
+      },
+      {
+        "que": "Which of the following line skips the first 5 documents in the bios collection and returns all remaining documents?",
+        "answer": [
+          "db.bios.find().limit( 5 )",
+          "db.bios.find().skip( 1 )",
+          "db.bios.find().skip( 5)",
+          "db.bios.find().sort( 5 )"
+        ],
+        "correctAnswer": "db.bios.find().skip( 5)"
+      },
+      {
+        "que": "Command display the list of databases.",
+        "answer": ["show db", "show dbs", "show data", "display dbs"],
+        "correctAnswer": "show dbs"
+      },
+      {
+        "que": "Which of the following operation adds a new document to the users collection ?",
+        "answer": ["add", "insert", "truecate", "drop"],
+        "correctAnswer": "insert"
+      }
+    ]
+  }
 ]

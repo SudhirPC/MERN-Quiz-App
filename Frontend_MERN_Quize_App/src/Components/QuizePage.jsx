@@ -23,12 +23,8 @@ export const QuizePage = () => {
       // console.log("right answer")
       setCount(count + 1);
     }
-    console.log("option click");
-    // console.log(index1)
-    // console.log("e",e[index])
   };
-  //  console.log("count",count)
-  // console.log(data)
+
   return (
     <div>
       <div> Count:{count}</div>

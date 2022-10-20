@@ -12,11 +12,11 @@ export const NewQuizPage = () => {
     // console.log("e[index]",e[index])
     if (clickoption == false) {
       if (el.answer[0][index] === el.correctAnswer) {
-        console.log("right answer");
+        // console.log("right answer");
         setCount(count + 1);
       }
     }
-    console.log("option click");
+    // console.log("option click");
   };
 
   // ------taking path from window object and compairing with the backend data
@@ -97,45 +97,3 @@ export const NewQuizPage = () => {
     </div>
   );
 };
-
-{
-  /* <h4>count:{count}</h4> */
-}
-{
-  /* {filtertopicwise.map((e,index)=>{
-            // console.log("e",e)
-            return(
-             <div>
-               {e.questions.map((el,index1)=>{
-                // console.log("el",el)
-              return(
-                <div className="ml-28 pl-6 w-10/12 mb-8  border-red-900 border-2" key={e.id}>
-                  <div className="flex border border-grey-200 pl-1 pt-2 pb-2 mt-2  mr-4">
-                    <div className="w-32">
-                      <h1>Question {index1 + 1})</h1>
-                    </div>
-                  <div className="w-11/12 -ml-8 ">
-                  <h1>{el.que}</h1>
-                  </div>
-                  </div>
-                 </div>
-              )
-              })}
-             </div>
-            )
-            
-        })}   */
-}
-
-{
-  /* {newfilterquestions.map((el,index1)=>{
-          console.log("el",el)
-
-          return(
-            <div>
-
-
-            </div>
-          )
-        })} */
-}

@@ -1,11 +1,13 @@
 const express=require('express');
 const connect=require("./configs/db.js")
+const bodyParser = require("body-parser");
 const Port = process.env.PORT || 3755
 var cors = require('cors')
 const app=express();
 app.use(express.json());
 app.use(cors())
-
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 const loginAuth=require("./controller/auth.controller.js")
 app.use("/",loginAuth)
 const RegisterAuth=require("./controller/auth.controller.js")

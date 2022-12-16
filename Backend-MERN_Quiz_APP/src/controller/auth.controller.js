@@ -7,6 +7,7 @@ router.post('/login', (req, res) => {
        User.findOne({email:email},(err,user)=>{
            if(user){
                 if(password===user.password){
+                  console.log("login successful")
                     res.send({ message:"Login Succesfully",user:user})
                 }else{
                     res.send({message:"Invalid Password"})

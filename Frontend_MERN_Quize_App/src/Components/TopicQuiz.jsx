@@ -9,19 +9,6 @@ export const TopicQuiz = () => {
   const navigate = useNavigate();
   const name = useSelector((state) => state.mernQuize.userName);
 
-  // useEffect(() => {
-
-  //     if(userId) {
-  //       toast(`Best of Luck! ${name}`,{
-  //         type:"success"
-  //     })
-  //     }else{
-  //       toast(`First Do Registration`,{
-  //         type:"error"
-  //     })
-  //     }
-
-  // },[userId,name])
   return (
     <div className="mt-10 mb-10 ">
       <div className="justify-self-center ml-96">

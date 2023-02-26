@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchQuizDataFrombackend } from "../Redux/action.js";
-import { Questions } from "./Questions.jsx";
 export const NewQuizPage = () => {
   const data = useSelector((state) => state.mernQuize.QuizData);
   const [count, setCount] = useState(0);

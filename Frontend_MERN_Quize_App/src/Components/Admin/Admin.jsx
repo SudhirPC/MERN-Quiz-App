@@ -19,7 +19,6 @@ export const Admin = () => {
     dispatch(getAllUserDataFromBackend());
   }, []);
 
-  // console.log("allUsers",allUsers)
   return (
     <div>
       <div className="md:w-11/12 mx-auto bg-gray-100/10 flex p-4 my-6 mt-24">

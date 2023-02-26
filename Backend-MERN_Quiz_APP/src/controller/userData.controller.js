@@ -5,7 +5,6 @@ const User=require("../model/auth.model.js")
 
 
 router.post("/:id", async (req, res) => {
-    console.log(req.params.id, "hello");
     try {
       const data = await User.findByIdAndUpdate(
         req.params.id,

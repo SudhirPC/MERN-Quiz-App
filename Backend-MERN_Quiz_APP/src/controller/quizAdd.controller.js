@@ -12,10 +12,8 @@ router.post("/", async (req, res) => {
 });
 
 router.get("/:value", async (req, res) => {
-  console.log(req.params.value, "hello2");
   try {
     const Data = await PostQuiz.find({ title: req.params.value });
-    console.log(Data, "hello3");
     res.status(200).json(Data);
   } catch (err) {
     res.status(400).json(err);

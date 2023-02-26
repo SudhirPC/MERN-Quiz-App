@@ -8,14 +8,11 @@ export const NewQuizPage = () => {
   const [clickoption, setClickOption] = useState(false);
 
   const handleAnswer = (index, e, el) => {
-    // console.log("e[index]",e[index])
     if (clickoption == false) {
       if (el.answer[0][index] === el.correctAnswer) {
-        // console.log("right answer");
         setCount(count + 1);
       }
     }
-    // console.log("option click");
   };
 
   // ------taking path from window object and compairing with the backend data
@@ -29,11 +26,7 @@ export const NewQuizPage = () => {
     return pathname === el.title;
   });
 
-  // console.log(pathname);
   const newfilterquestions = filtertopicwise[0]?.questions;
-  // console.log("filtertopicwise", newfilterquestions);
-
-  // console.log("newfilter",filtertopicwise[0])
   const dispatch = useDispatch();
 
   const fetchQuizData = () => {
@@ -42,12 +35,9 @@ export const NewQuizPage = () => {
 
   useEffect(() => {
     fetchQuizData();
-    // fetchtopicwisedata()
   }, []);
-  // console.log("data",);
 
   const handlecount = (index) => {
-    // console.log("index", index);
     setClickOption(true);
   };
 
@@ -73,7 +63,6 @@ export const NewQuizPage = () => {
                     </div>
                   </div>
                   {el?.answer[0]?.map((e, index) => {
-                    // console.log("index",index)
                     return (
                       <div className="flex ml-32">
                         <p className="mr-2">{index + 1})</p>

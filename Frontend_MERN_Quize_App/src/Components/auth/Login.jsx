@@ -33,7 +33,6 @@ export const Login = () => {
     axios
       .post("https://mernquiz-by-sudhir.herokuapp.com/login", user)
       .then((res) => {
-        // console.log(res.data)
         if (res.data.user.email == "sudhirchavhan100@gmail.com") {
           dispatch(loginAdminId(res.data.user._id));
           dispatch(loginAdminName(res.data.user.name));
@@ -70,7 +69,6 @@ export const Login = () => {
   return (
     <div className=" flex w-4/5 justify-around m-auto mt-16 mb-16">
       <div className="login mb-28 w-1/2 ml-48 ">
-        {console.log(user)}
         <h1 className="text-2xl font-semibold">Login</h1>
         <input
           type="text"

@@ -19,7 +19,6 @@ export const Register = () => {
       axios
         .post("https://mernquiz-by-sudhir.herokuapp.com/register", user)
         .then((res) => {
-          // console.log("res",res)
           toast("Successfully Registered", {
             type: "success",
           });
@@ -50,7 +49,6 @@ export const Register = () => {
   return (
     <div className="flex w-4/5 registermain justify-around m-auto mt-10">
       <div className="register w-1/2 h-96 ml-24">
-        {console.log(user)}
         <p className="text-2xl font-semibold">Register</p>
         <input
           type="text"

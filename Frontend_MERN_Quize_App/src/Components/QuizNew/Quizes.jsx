@@ -11,7 +11,6 @@ export const Quizes = () => {
   const dispatch = useDispatch();
   const [isLoading, setLoading] = useState(true);
   const questionArr = singleQuiz[0]?.questionArray;
-  // console.log("questionArr",questionArr);
   useEffect(() => {
     dispatch(getQuiz(params));
   }, []);

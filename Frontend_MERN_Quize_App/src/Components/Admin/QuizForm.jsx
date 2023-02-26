@@ -6,7 +6,7 @@ import { postQuizObj, quizSuccess } from "../../Redux/action.js";
 export const QuizForm = () => {
   const data = useSelector((state) => state.mernQuize.questions);
   const dispatch = useDispatch();
-  // console.log(data);
+
   const [ans, setAns] = useState([
     { option: "", isCorrect: false, id: 0 },
     { option: "", isCorrect: false, id: 1 },
@@ -21,12 +21,9 @@ export const QuizForm = () => {
     correctAnswer: "",
   });
 
-  // console.log(ans);
 
   const handleQuiz = (event) => {
     event.preventDefault();
-    // console.log(ans, "ans");
-    // console.log(quiz);
     dispatch(quizSuccess(quiz));
   };
   const handleUploadnew = (event) => {
@@ -35,7 +32,6 @@ export const QuizForm = () => {
       title: data[0].title,
       questionArray: data,
     };
-    // console.log("handleUploadnew",obj);
 
     dispatch(postQuizObj(obj));
   };

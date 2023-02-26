@@ -9,7 +9,6 @@ export const quizRequest = () => {
 };
 
 export const quizSuccess = (quiz) => {
-  // console.log("hello", quiz);
   return {
     type: types.CREATE_QUIZ_SUCCESS,
     payload: quiz,
@@ -71,14 +70,12 @@ export const Logouthandleraction = (payload) => {
 };
 
 export const loginAdminId = (payload) => {
-  // console.log(payload)
   return {
     type: types.GETADMINID,
     payload,
   };
 };
 export const loginAdminName = (payload) => {
-  // console.log(payload)
   return {
     type: types.GETADMINNAME,
     payload,
@@ -136,14 +133,13 @@ export const deleteUserByAdmin = (payload) => (dispatch) => {
 // ----------post quiz--------------
 
 export const postQuizObj = (obj) => (dispatch) => {
-  // console.log("obj", obj);
   axios
     .post("https://mernquiz-by-sudhir.herokuapp.com/admin", obj)
     .then((res) => {
-      // console.log(res.data);
+     
     })
     .catch((err) => {
-      // console.log(err);
+      
     });
 };
 
@@ -175,15 +171,13 @@ export const fetchQuizDataFrombackend = () => (dispatch) => {
 };
 
 export const getQuiz = (params) => (dispatch) => {
-  console.log(params, "helo");
   axios
     .get(`https://mernquiz-by-sudhir.herokuapp.com/quiz/${params.id}`)
     .then((res) => {
-      // console.log(res.data);
+    
       dispatch(fetchQuizSuccess(res.data));
     })
     .catch((err) => {
-      // console.log(err);
     });
 };
 
@@ -207,7 +201,6 @@ const postUserResultRequest = (ans) => {
   };
 };
 const postUserResultSuccess = (ans) => {
-  // console.log("hello", ans);
   return {
     type: types.POST_USER_RESULT_SUCCESS,
     payload: ans,
@@ -225,7 +218,6 @@ export const postQuizResult = (obj) => (dispatch) => {
   axios
     .post(`https://mernquiz-by-sudhir.herokuapp.com/userResult/${userId}`, obj)
     .then((res) => {
-      // console.log(res.data.quizAttempted,"datafrombaceknd");
       dispatch(postUserResultSuccess(res.data));
     })
     .catch((err) => {

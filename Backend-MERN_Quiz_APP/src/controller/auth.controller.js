@@ -7,7 +7,7 @@ router.post('/login', (req, res) => {
        User.findOne({email:email},(err,user)=>{
            if(user){
                 if(password===user.password){
-                  console.log("login successful")
+                  console.log("login successfull")
                     res.send({ message:"Login Succesfully",user:user})
                 }else{
                     res.send({message:"Invalid Password"})
@@ -18,7 +18,6 @@ router.post('/login', (req, res) => {
        })
 })
 router.post('/register', (req, res) => {
-  // console.log(req.body)
   const { name, email, password } = req.body
   User.findOne({ email: email }, (err, user) => {
     if (user) {
@@ -52,7 +51,6 @@ router.get('/getuser', async (req, res) => {
 //  ------------delete user by admin controller-----------
 
 router.delete('/:id',async (req, res) => {
-  console.log(req.params.id)
   User.deleteOne({_id:req.params.id}).then(()=>{
    res.send("user deleted")
   }).catch((err) => {

@@ -7,20 +7,16 @@ import { postQuizResult, postUserResult } from "../../Redux/action.js";
 import { Link } from "react-router-dom";
 
 export const Quiz = (props) => {
-  // console.log("Quiz.js", props.questionArr)
   const questionArr = props.questionArr;
   const data = useSelector((state) => state.mernQuize.QuizData);
   const result = useSelector((state) => state.mernQuize.result);
-  // console.log("datanew",data)
   const userID = useSelector((state) => state.mernQuize.userId);
-  // console.log("userId",userID)
   const quizID = data[0]._id;
   const dispatch = useDispatch();
 
   const [num, setNum] = useState(0);
   const [ans, setAns] = useState([]);
   const [btnshow, setBtnshow] = useState(false);
-  // console.log("btnshow",btnshow);
   const [disable, setDisable] = useState(null);
   const handleQue = (index) => {
     setDisable(index);

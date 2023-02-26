@@ -6,7 +6,7 @@ export const ShowAllAnswers = () => {
   const resultUser = useSelector((state) => state.mernQuize.result);
   const singleQuiz = useSelector((state) => state?.mernQuize.QuizData);
   const questionArr = singleQuiz[0]?.questionArray;
-  // console.log("resultUser", resultUser);
+
   return (
     <div>
       <div className="flex w-11/12 ml-16 mt-12  mb-1">

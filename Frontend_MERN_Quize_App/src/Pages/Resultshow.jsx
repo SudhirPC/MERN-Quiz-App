@@ -7,7 +7,6 @@ export const Resultshow = () => {
   let [feedback, setFeedback] = useState("");
   const UserName = useSelector((state) => state.mernQuize.userName);
   const resultUser = useSelector((state) => state.mernQuize.result);
-  // console.log("resultshowUser",resultUser)
 
   let originalResult = [];
   const singleQuiz = useSelector((state) => state?.mernQuize.QuizData);
@@ -19,7 +18,6 @@ export const Resultshow = () => {
     });
   };
   filterAtualAnswer(questionArr);
-  // console.log("resultshow",originalResult)
 
   for (let i = 0; i < originalResult.length; i++) {
     for (let j = 0; j < resultUser.length; j++) {
@@ -43,7 +41,6 @@ export const Resultshow = () => {
       );
     }
 
-    // console.log("percent",percentage);
   };
   useEffect(() => {
     calcPercent();

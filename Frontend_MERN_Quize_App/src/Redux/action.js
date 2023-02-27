@@ -110,7 +110,7 @@ const getAllUserDataFailure = (payload) => {
 export const getAllUserDataFromBackend = (payload) => (dispatch) => {
   dispatch(getAllUserDataRequest());
   axios
-    .get("https://mernquiz-by-sudhir.herokuapp.com/getuser")
+    .get("https://mern-quiz-server-sudhir.onrender.com/getuser")
     .then((res) => {
       dispatch(getAllUserDataSuccess(res.data));
     })
@@ -121,7 +121,7 @@ export const getAllUserDataFromBackend = (payload) => (dispatch) => {
 
 export const deleteUserByAdmin = (payload) => (dispatch) => {
   axios
-    .delete(`https://mernquiz-by-sudhir.herokuapp.com/user/${payload}`)
+    .delete(`https://mern-quiz-server-sudhir.onrender.com/${payload}`)
     .then((response) => {
       dispatch(getAllUserDataFromBackend());
     })
@@ -134,7 +134,7 @@ export const deleteUserByAdmin = (payload) => (dispatch) => {
 
 export const postQuizObj = (obj) => (dispatch) => {
   axios
-    .post("https://mernquiz-by-sudhir.herokuapp.com/admin", obj)
+    .post("https://mern-quiz-server-sudhir.onrender.com/admin", obj)
     .then((res) => {
      
     })
@@ -165,14 +165,14 @@ const fetchQuizFailure = (payload) => {
 };
 export const fetchQuizDataFrombackend = () => (dispatch) => {
   axios
-    .get("https://mernquiz-by-sudhir.herokuapp.com/api/quiz")
+    .get("https://mern-quiz-server-sudhir.onrender.com/api/quiz")
     .then((res) => dispatch(fetchQuizSuccess(res.data)))
     .catch((err) => console.log(err));
 };
 
 export const getQuiz = (params) => (dispatch) => {
   axios
-    .get(`https://mernquiz-by-sudhir.herokuapp.com/quiz/${params.id}`)
+    .get(`https://mern-quiz-server-sudhir.onrender.com/${params.id}`)
     .then((res) => {
     
       dispatch(fetchQuizSuccess(res.data));
@@ -216,7 +216,7 @@ export const postQuizResult = (obj) => (dispatch) => {
   const { quizId, userId, quizResult } = obj;
   dispatch(postUserResultRequest());
   axios
-    .post(`https://mernquiz-by-sudhir.herokuapp.com/userResult/${userId}`, obj)
+    .post(`https://mern-quiz-server-sudhir.onrender.com/userResult/${userId}`, obj)
     .then((res) => {
       dispatch(postUserResultSuccess(res.data));
     })

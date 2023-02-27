@@ -31,7 +31,7 @@ export const Login = () => {
 
   const login = () => {
     axios
-      .post("https://mernquiz-by-sudhir.herokuapp.com/login", user)
+      .post("https://mern-quiz-server-sudhir.onrender.com/login", user)
       .then((res) => {
         if (res.data.user.email == "sudhirchavhan100@gmail.com") {
           dispatch(loginAdminId(res.data.user._id));

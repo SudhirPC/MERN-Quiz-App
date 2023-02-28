@@ -1,5 +1,5 @@
 # MERN-Quiz-App
-The MERN-Quiz-App is a place where users can come and attempt the quiz and get the result. Also,  Admin has access to add the Quiz on a front page and delete the user functionality . The Tech Stack used HTML, CSS, JavaScript, MongoDB, React, Redux, and Tailwind CSS. Deploy Link : https://mern-quiz-app-by-sudhirpchavhan.vercel.app/
+The MERN-Quiz-App is a place where users can come and attempt the quiz and get the result. Also,  Admin has access to add the Quiz on a front page and delete the user functionality . The Tech Stack used HTML, CSS, JavaScript, MongoDB, React, Redux, and Tailwind CSS. Deploy Link :https://mern-quiz-app-ten.vercel.app/
 <i><h2>1) Landing Page</h2></i>
 <img src="https://user-images.githubusercontent.com/97445870/183289413-d10a5133-4164-4720-ad86-cf2dc54c4a31.png"/>
 <i><h2>2) Registration Page</h2></i>

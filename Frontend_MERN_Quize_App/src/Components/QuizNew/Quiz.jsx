@@ -8,9 +8,10 @@ import { Link } from "react-router-dom";
 
 export const Quiz = (props) => {
   const questionArr = props.questionArr;
-  const data = useSelector((state) => state.mernQuize.QuizData);
-  const result = useSelector((state) => state.mernQuize.result);
-  const userID = useSelector((state) => state.mernQuize.userId);
+  const data = useSelector((state) => state?.mernQuize?.QuizData);
+  const result = useSelector((state) => state?.mernQuize?.result);
+  const userID = useSelector((state) => state?.mernQuize?.userId);
+console.log("data",data)
   const quizID = data[0]._id;
   const dispatch = useDispatch();
 

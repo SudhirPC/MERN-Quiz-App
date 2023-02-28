@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchQuizDataFrombackend } from "../Redux/action.js";
 export const NewQuizPage = () => {

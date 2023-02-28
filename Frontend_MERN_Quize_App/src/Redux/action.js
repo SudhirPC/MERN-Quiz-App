@@ -172,7 +172,7 @@ export const fetchQuizDataFrombackend = () => (dispatch) => {
 
 export const getQuiz = (params) => (dispatch) => {
   axios
-    .get(`https://mern-quiz-server-sudhir.onrender.com/${params.id}`)
+    .get(`https://mern-quiz-server-sudhir.onrender.com/quiz/${params.id}`)
     .then((res) => {
     
       dispatch(fetchQuizSuccess(res.data));
